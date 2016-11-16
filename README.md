@@ -10,3 +10,4 @@ Ce projet vise à appréhender les notions de modèles et de métamodèles et de
   - Modeling tools Sirius
   - Modeling tools Xtext
   
+![archi](https://github.com/Kribouille/IM_project/blob/master/archi.jpg)

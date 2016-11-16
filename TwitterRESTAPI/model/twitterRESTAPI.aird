@@ -270,9 +270,9 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_n1YEEKvfEeaEMev4rzklrA" name="Status" tooltipText="" outgoingEdges="_-h3NoKvgEeaEMev4rzklrA" incomingEdges="_D51-8KvhEeaEMev4rzklrA" width="12" height="10">
-        <target xmi:type="ecore:EClass" href="twitterRESTAPI.ecore#//Status"/>
-        <semanticElements xmi:type="ecore:EClass" href="twitterRESTAPI.ecore#//Status"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_n1YEEKvfEeaEMev4rzklrA" name="Tweet" tooltipText="" outgoingEdges="_-h3NoKvgEeaEMev4rzklrA" incomingEdges="_D51-8KvhEeaEMev4rzklrA" width="12" height="10">
+        <target xmi:type="ecore:EClass" href="twitterRESTAPI.ecore#//Tweet"/>
+        <semanticElements xmi:type="ecore:EClass" href="twitterRESTAPI.ecore#//Tweet"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -361,8 +361,8 @@
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_-h3NoKvgEeaEMev4rzklrA" name="[0..*] entity" sourceNode="_n1YEEKvfEeaEMev4rzklrA" targetNode="_sd_1AKvfEeaEMev4rzklrA">
-        <target xmi:type="ecore:EReference" href="twitterRESTAPI.ecore#//Status/entity"/>
-        <semanticElements xmi:type="ecore:EReference" href="twitterRESTAPI.ecore#//Status/entity"/>
+        <target xmi:type="ecore:EReference" href="twitterRESTAPI.ecore#//Tweet/entity"/>
+        <semanticElements xmi:type="ecore:EReference" href="twitterRESTAPI.ecore#//Tweet/entity"/>
         <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_-h30sKvgEeaEMev4rzklrA" routingStyle="manhattan" strokeColor="0,0,0">
           <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']/@style"/>
           <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_-h30savgEeaEMev4rzklrA" showIcon="false">

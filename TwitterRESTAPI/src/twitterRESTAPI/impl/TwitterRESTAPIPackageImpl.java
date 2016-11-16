@@ -13,7 +13,7 @@ import twitterRESTAPI.Hashtag;
 import twitterRESTAPI.Media;
 import twitterRESTAPI.Message;
 import twitterRESTAPI.Place;
-import twitterRESTAPI.Status;
+import twitterRESTAPI.Tweet;
 import twitterRESTAPI.TwitterRESTAPIFactory;
 import twitterRESTAPI.TwitterRESTAPIPackage;
 import twitterRESTAPI.User;
@@ -37,7 +37,7 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass statusEClass = null;
+	private EClass tweetEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -185,8 +185,8 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getStatus() {
-		return statusEClass;
+	public EClass getTweet() {
+		return tweetEClass;
 	}
 
 	/**
@@ -194,8 +194,8 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getStatus_Entity() {
-		return (EReference)statusEClass.getEStructuralFeatures().get(0);
+	public EReference getTweet_Entity() {
+		return (EReference)tweetEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -304,8 +304,8 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 		createEReference(userEClass, USER__STATUS);
 		createEReference(userEClass, USER__PLACE);
 
-		statusEClass = createEClass(STATUS);
-		createEReference(statusEClass, STATUS__ENTITY);
+		tweetEClass = createEClass(TWEET);
+		createEReference(tweetEClass, TWEET__ENTITY);
 
 		messageEClass = createEClass(MESSAGE);
 		createEReference(messageEClass, MESSAGE__AUTHOR);
@@ -356,11 +356,11 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 		initEClass(userEClass, User.class, "User", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getUser_Followers(), this.getUser(), null, "followers", null, 0, -1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getUser_Friends(), this.getUser(), null, "friends", null, 0, -1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getUser_Status(), this.getStatus(), null, "status", null, 0, -1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUser_Status(), this.getTweet(), null, "status", null, 0, -1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getUser_Place(), this.getPlace(), this.getPlace_User(), "place", null, 0, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(statusEClass, Status.class, "Status", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getStatus_Entity(), this.getEntity(), null, "entity", null, 0, -1, Status.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(tweetEClass, Tweet.class, "Tweet", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getTweet_Entity(), this.getEntity(), null, "entity", null, 0, -1, Tweet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(messageEClass, Message.class, "Message", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMessage_Author(), this.getUser(), null, "author", null, 1, 1, Message.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

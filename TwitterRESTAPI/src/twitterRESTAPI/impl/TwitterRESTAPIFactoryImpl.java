@@ -57,7 +57,7 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case TwitterRESTAPIPackage.USER: return createUser();
-			case TwitterRESTAPIPackage.STATUS: return createStatus();
+			case TwitterRESTAPIPackage.TWEET: return createTweet();
 			case TwitterRESTAPIPackage.MESSAGE: return createMessage();
 			case TwitterRESTAPIPackage.ENTITY: return createEntity();
 			case TwitterRESTAPIPackage.PLACE: return createPlace();
@@ -83,9 +83,9 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Status createStatus() {
-		StatusImpl status = new StatusImpl();
-		return status;
+	public Tweet createTweet() {
+		TweetImpl tweet = new TweetImpl();
+		return tweet;
 	}
 
 	/**

@@ -72,8 +72,8 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 				return createUserAdapter();
 			}
 			@Override
-			public Adapter caseStatus(Status object) {
-				return createStatusAdapter();
+			public Adapter caseTweet(Tweet object) {
+				return createTweetAdapter();
 			}
 			@Override
 			public Adapter caseMessage(Message object) {
@@ -130,16 +130,16 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Status <em>Status</em>}'.
+	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Tweet <em>Tweet</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see twitterRESTAPI.Status
+	 * @see twitterRESTAPI.Tweet
 	 * @generated
 	 */
-	public Adapter createStatusAdapter() {
+	public Adapter createTweetAdapter() {
 		return null;
 	}
 

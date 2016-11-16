@@ -13,23 +13,23 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 import twitterRESTAPI.Entity;
-import twitterRESTAPI.Status;
+import twitterRESTAPI.Tweet;
 import twitterRESTAPI.TwitterRESTAPIPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Status</b></em>'.
+ * An implementation of the model object '<em><b>Tweet</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link twitterRESTAPI.impl.StatusImpl#getEntity <em>Entity</em>}</li>
+ *   <li>{@link twitterRESTAPI.impl.TweetImpl#getEntity <em>Entity</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
+public class TweetImpl extends MinimalEObjectImpl.Container implements Tweet {
 	/**
 	 * The cached value of the '{@link #getEntity() <em>Entity</em>}' reference list.
 	 * <!-- begin-user-doc -->
@@ -45,7 +45,7 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected StatusImpl() {
+	protected TweetImpl() {
 		super();
 	}
 
@@ -56,7 +56,7 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return TwitterRESTAPIPackage.Literals.STATUS;
+		return TwitterRESTAPIPackage.Literals.TWEET;
 	}
 
 	/**
@@ -66,7 +66,7 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
 	 */
 	public EList<Entity> getEntity() {
 		if (entity == null) {
-			entity = new EObjectResolvingEList<Entity>(Entity.class, this, TwitterRESTAPIPackage.STATUS__ENTITY);
+			entity = new EObjectResolvingEList<Entity>(Entity.class, this, TwitterRESTAPIPackage.TWEET__ENTITY);
 		}
 		return entity;
 	}
@@ -79,7 +79,7 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case TwitterRESTAPIPackage.STATUS__ENTITY:
+			case TwitterRESTAPIPackage.TWEET__ENTITY:
 				return getEntity();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -94,7 +94,7 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case TwitterRESTAPIPackage.STATUS__ENTITY:
+			case TwitterRESTAPIPackage.TWEET__ENTITY:
 				getEntity().clear();
 				getEntity().addAll((Collection<? extends Entity>)newValue);
 				return;
@@ -110,7 +110,7 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case TwitterRESTAPIPackage.STATUS__ENTITY:
+			case TwitterRESTAPIPackage.TWEET__ENTITY:
 				getEntity().clear();
 				return;
 		}
@@ -125,10 +125,10 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case TwitterRESTAPIPackage.STATUS__ENTITY:
+			case TwitterRESTAPIPackage.TWEET__ENTITY:
 				return entity != null && !entity.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //StatusImpl
+} //TweetImpl

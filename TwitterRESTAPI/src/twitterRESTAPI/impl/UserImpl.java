@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 import twitterRESTAPI.Place;
-import twitterRESTAPI.Status;
+import twitterRESTAPI.Tweet;
 import twitterRESTAPI.TwitterRESTAPIPackage;
 import twitterRESTAPI.User;
 
@@ -67,7 +67,7 @@ public class UserImpl extends MinimalEObjectImpl.Container implements User {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Status> status;
+	protected EList<Tweet> status;
 
 	/**
 	 * The cached value of the '{@link #getPlace() <em>Place</em>}' reference.
@@ -127,9 +127,9 @@ public class UserImpl extends MinimalEObjectImpl.Container implements User {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Status> getStatus() {
+	public EList<Tweet> getStatus() {
 		if (status == null) {
-			status = new EObjectResolvingEList<Status>(Status.class, this, TwitterRESTAPIPackage.USER__STATUS);
+			status = new EObjectResolvingEList<Tweet>(Tweet.class, this, TwitterRESTAPIPackage.USER__STATUS);
 		}
 		return status;
 	}
@@ -264,7 +264,7 @@ public class UserImpl extends MinimalEObjectImpl.Container implements User {
 				return;
 			case TwitterRESTAPIPackage.USER__STATUS:
 				getStatus().clear();
-				getStatus().addAll((Collection<? extends Status>)newValue);
+				getStatus().addAll((Collection<? extends Tweet>)newValue);
 				return;
 			case TwitterRESTAPIPackage.USER__PLACE:
 				setPlace((Place)newValue);

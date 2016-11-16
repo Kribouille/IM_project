@@ -120,14 +120,14 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int USER_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link twitterRESTAPI.impl.StatusImpl <em>Status</em>}' class.
+	 * The meta object id for the '{@link twitterRESTAPI.impl.TweetImpl <em>Tweet</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see twitterRESTAPI.impl.StatusImpl
-	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getStatus()
+	 * @see twitterRESTAPI.impl.TweetImpl
+	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getTweet()
 	 * @generated
 	 */
-	int STATUS = 1;
+	int TWEET = 1;
 
 	/**
 	 * The feature id for the '<em><b>Entity</b></em>' reference list.
@@ -136,25 +136,25 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS__ENTITY = 0;
+	int TWEET__ENTITY = 0;
 
 	/**
-	 * The number of structural features of the '<em>Status</em>' class.
+	 * The number of structural features of the '<em>Tweet</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_FEATURE_COUNT = 1;
+	int TWEET_FEATURE_COUNT = 1;
 
 	/**
-	 * The number of operations of the '<em>Status</em>' class.
+	 * The number of operations of the '<em>Tweet</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_OPERATION_COUNT = 0;
+	int TWEET_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link twitterRESTAPI.impl.MessageImpl <em>Message</em>}' class.
@@ -379,25 +379,25 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	EReference getUser_Place();
 
 	/**
-	 * Returns the meta object for class '{@link twitterRESTAPI.Status <em>Status</em>}'.
+	 * Returns the meta object for class '{@link twitterRESTAPI.Tweet <em>Tweet</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Status</em>'.
-	 * @see twitterRESTAPI.Status
+	 * @return the meta object for class '<em>Tweet</em>'.
+	 * @see twitterRESTAPI.Tweet
 	 * @generated
 	 */
-	EClass getStatus();
+	EClass getTweet();
 
 	/**
-	 * Returns the meta object for the reference list '{@link twitterRESTAPI.Status#getEntity <em>Entity</em>}'.
+	 * Returns the meta object for the reference list '{@link twitterRESTAPI.Tweet#getEntity <em>Entity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Entity</em>'.
-	 * @see twitterRESTAPI.Status#getEntity()
-	 * @see #getStatus()
+	 * @see twitterRESTAPI.Tweet#getEntity()
+	 * @see #getTweet()
 	 * @generated
 	 */
-	EReference getStatus_Entity();
+	EReference getTweet_Entity();
 
 	/**
 	 * Returns the meta object for class '{@link twitterRESTAPI.Message <em>Message</em>}'.
@@ -548,14 +548,14 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		EReference USER__PLACE = eINSTANCE.getUser_Place();
 
 		/**
-		 * The meta object literal for the '{@link twitterRESTAPI.impl.StatusImpl <em>Status</em>}' class.
+		 * The meta object literal for the '{@link twitterRESTAPI.impl.TweetImpl <em>Tweet</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see twitterRESTAPI.impl.StatusImpl
-		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getStatus()
+		 * @see twitterRESTAPI.impl.TweetImpl
+		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getTweet()
 		 * @generated
 		 */
-		EClass STATUS = eINSTANCE.getStatus();
+		EClass TWEET = eINSTANCE.getTweet();
 
 		/**
 		 * The meta object literal for the '<em><b>Entity</b></em>' reference list feature.
@@ -563,7 +563,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference STATUS__ENTITY = eINSTANCE.getStatus_Entity();
+		EReference TWEET__ENTITY = eINSTANCE.getTweet_Entity();
 
 		/**
 		 * The meta object literal for the '{@link twitterRESTAPI.impl.MessageImpl <em>Message</em>}' class.

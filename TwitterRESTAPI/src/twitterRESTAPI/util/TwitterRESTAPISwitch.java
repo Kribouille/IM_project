@@ -72,9 +72,9 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case TwitterRESTAPIPackage.STATUS: {
-				Status status = (Status)theEObject;
-				T result = caseStatus(status);
+			case TwitterRESTAPIPackage.TWEET: {
+				Tweet tweet = (Tweet)theEObject;
+				T result = caseTweet(tweet);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -130,17 +130,17 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Status</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Tweet</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Status</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Tweet</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseStatus(Status object) {
+	public T caseTweet(Tweet object) {
 		return null;
 	}
 

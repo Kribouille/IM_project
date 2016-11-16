@@ -31,13 +31,13 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	User createUser();
 
 	/**
-	 * Returns a new object of class '<em>Status</em>'.
+	 * Returns a new object of class '<em>Tweet</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Status</em>'.
+	 * @return a new object of class '<em>Tweet</em>'.
 	 * @generated
 	 */
-	Status createStatus();
+	Tweet createTweet();
 
 	/**
 	 * Returns a new object of class '<em>Message</em>'.

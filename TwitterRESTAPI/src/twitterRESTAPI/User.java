@@ -60,7 +60,7 @@ public interface User extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Status</b></em>' reference list.
-	 * The list contents are of type {@link twitterRESTAPI.Status}.
+	 * The list contents are of type {@link twitterRESTAPI.Tweet}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Status</em>' reference list isn't clear,
@@ -72,7 +72,7 @@ public interface User extends EObject {
 	 * @model
 	 * @generated
 	 */
-	EList<Status> getStatus();
+	EList<Tweet> getStatus();
 
 	/**
 	 * Returns the value of the '<em><b>Place</b></em>' reference.

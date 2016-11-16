@@ -12,8 +12,8 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//User/status"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//User/place"/>
     </genClasses>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//Tweet">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Tweet/entity"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Status">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Status/entity"/>
     </genClasses>
     <genClasses ecoreClass="twitterRESTAPI.ecore#//Message">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Message/author"/>

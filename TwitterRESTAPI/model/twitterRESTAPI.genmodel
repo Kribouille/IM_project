@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/TwitterRESTAPI/src" modelPluginID="TwitterRESTAPI"
+    modelName="TwitterRESTAPI" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>twitterRESTAPI.ecore</foreignModel>
+  <genPackages prefix="TwitterRESTAPI" disposableProviderFactory="true" ecorePackage="twitterRESTAPI.ecore#/">
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//User">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//User/followers"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//User/friends"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//User/status"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//User/place"/>
+    </genClasses>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Status">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Status/entity"/>
+    </genClasses>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Message">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Message/author"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Message/recipient"/>
+    </genClasses>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Entity"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Place">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Place/user"/>
+    </genClasses>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Hashtag"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Media"/>
+  </genPackages>
+</genmodel:GenModel>

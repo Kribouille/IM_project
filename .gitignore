@@ -62,3 +62,7 @@ local.properties
 
 # Code Recommenders
 .recommenders/
+
+### node ###
+############
+node_modules/**/*

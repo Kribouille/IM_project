@@ -1,11 +1,53 @@
 <!doctype html>
-<html>
+<html ng-app="app" ng-controller="appCtrl">
 <head>
-  <title>Hippo Land</title>
+  <title>Pas de temps pour niaser Tweet Book</title>
   <meta charset="utf-8">
-  <script src="/node_modules/angular/angular.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <style>
+    .container-fluid {
+      background-color: #d9d9d9;
+    }
+
+    /*.row-fluid {
+      background-color: #f2f2f2;
+    }*/
+  </style>
 </head>
 <body>
-  <p>Hello world!</p>
+  <div class="container-fluid">
+    <div class="row-fluid" style="margin-top: 12px;">
+      <div class="col-sm-offset-8 col-sm-4">
+        <input class="form-control input-lg" placeholder="Search" ng-model="searchKey"/>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="col-sm-6">
+        <h1>Tweets</h1>
+        <div class="row" ng-repeat="deck in mockTweets | filter: searchKey">
+          <div eip-tweet-deck></div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <h1>Pubs</h1>
+        <div ng-repeat="deck in mockPubs | filter: searchKey">
+          <div eip-pub-deck></div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <h1>Hashtags</h1>
+        <div ng-repeat="deck in mockHashtags | filter: searchKey"></div>
+        <div eip-hashtag-deck></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.module.js"></script>
+  <script src="app.controller.js"></script>
+  <script src="app.directive.js"></script>
+
 </body>
 </html>

@@ -25,6 +25,6 @@ File → New Project →Xtext > Xtext Project From Existing Ecore Models → Add
 
 - Paramètres du New Xtext Project :
 
-org.xtext.twitter.twt : project name
-name langage : org.xtext.twitter.twt.TwitterRESTAPI
-extension : twt
+  - Project name : org.xtext.twitter.twt
+  - Name langage : org.xtext.twitter.twt.TwitterRESTAPI
+  - Extension : twt

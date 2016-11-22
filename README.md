@@ -28,3 +28,7 @@ File → New Project →Xtext > Xtext Project From Existing Ecore Models → Add
   - Project name : org.xtext.twitter.twt
   - Name langage : org.xtext.twitter.twt.TwitterRESTAPI
   - Extension : twt
+  
+  ##Process
+  
+  ![process](https://github.com/Kribouille/IM_project/blob/master/process.jpg)

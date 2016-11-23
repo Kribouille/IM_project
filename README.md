@@ -11,3 +11,24 @@ Ce projet vise à appréhender les notions de modèles et de métamodèles et de
   - Modeling tools Xtext
   
 ![archi](https://github.com/Kribouille/IM_project/blob/master/archi.jpg)
+
+## Intégration
+
+- Génération du .edit / .editor / .tests :
+
+Dans TwitterRESTAPI > model > twitterRESTAPI.genmodel :
+Clique-droit dans la partie droite : « Generate All »
+
+- Xtext :
+
+File → New Project →Xtext > Xtext Project From Existing Ecore Models → Add Epackages → select genModel
+
+- Paramètres du New Xtext Project :
+
+  - Project name : org.xtext.twitter.twt
+  - Name langage : org.xtext.twitter.twt.TwitterRESTAPI
+  - Extension : twt
+  
+  ##Process
+  
+  ![process](https://github.com/Kribouille/IM_project/blob/master/process.jpg)

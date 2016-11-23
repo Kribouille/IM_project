@@ -4,23 +4,25 @@ package twitterRESTAPI.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
-import twitterRESTAPI.Media;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
 import twitterRESTAPI.TwitterRESTAPIPackage;
+import twitterRESTAPI.upperThan;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Media</b></em>'.
+ * An implementation of the model object '<em><b>upper Than</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class MediaImpl extends EntityImpl implements Media {
+public class upperThanImpl extends MinimalEObjectImpl.Container implements upperThan {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MediaImpl() {
+	protected upperThanImpl() {
 		super();
 	}
 
@@ -31,7 +33,7 @@ public class MediaImpl extends EntityImpl implements Media {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return TwitterRESTAPIPackage.Literals.MEDIA;
+		return TwitterRESTAPIPackage.Literals.UPPER_THAN;
 	}
 
-} //MediaImpl
+} //upperThanImpl

@@ -57,12 +57,17 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case TwitterRESTAPIPackage.USER: return createUser();
-			case TwitterRESTAPIPackage.TWEET: return createTweet();
-			case TwitterRESTAPIPackage.MESSAGE: return createMessage();
-			case TwitterRESTAPIPackage.ENTITY: return createEntity();
-			case TwitterRESTAPIPackage.PLACE: return createPlace();
 			case TwitterRESTAPIPackage.HASHTAG: return createHashtag();
-			case TwitterRESTAPIPackage.MEDIA: return createMedia();
+			case TwitterRESTAPIPackage.DATE: return createDate();
+			case TwitterRESTAPIPackage.DECK: return createDeck();
+			case TwitterRESTAPIPackage.AND: return createAnd();
+			case TwitterRESTAPIPackage.PLACE: return createPlace();
+			case TwitterRESTAPIPackage.OR: return createOr();
+			case TwitterRESTAPIPackage.NOT: return createNot();
+			case TwitterRESTAPIPackage.EQUALS: return createequals();
+			case TwitterRESTAPIPackage.LESS_THAN: return createlessThan();
+			case TwitterRESTAPIPackage.EXPR_SIMPLE: return createExprSimple();
+			case TwitterRESTAPIPackage.UPPER_THAN: return createupperThan();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -83,39 +88,69 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Tweet createTweet() {
-		TweetImpl tweet = new TweetImpl();
-		return tweet;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Message createMessage() {
-		MessageImpl message = new MessageImpl();
-		return message;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Entity createEntity() {
-		EntityImpl entity = new EntityImpl();
-		return entity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Place createPlace() {
 		PlaceImpl place = new PlaceImpl();
 		return place;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Or createOr() {
+		OrImpl or = new OrImpl();
+		return or;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Not createNot() {
+		NotImpl not = new NotImpl();
+		return not;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public equals createequals() {
+		equalsImpl equals = new equalsImpl();
+		return equals;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public lessThan createlessThan() {
+		lessThanImpl lessThan = new lessThanImpl();
+		return lessThan;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExprSimple createExprSimple() {
+		ExprSimpleImpl exprSimple = new ExprSimpleImpl();
+		return exprSimple;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public upperThan createupperThan() {
+		upperThanImpl upperThan = new upperThanImpl();
+		return upperThan;
 	}
 
 	/**
@@ -133,9 +168,29 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Media createMedia() {
-		MediaImpl media = new MediaImpl();
-		return media;
+	public Date createDate() {
+		DateImpl date = new DateImpl();
+		return date;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Deck createDeck() {
+		DeckImpl deck = new DeckImpl();
+		return deck;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public And createAnd() {
+		AndImpl and = new AndImpl();
+		return and;
 	}
 
 	/**

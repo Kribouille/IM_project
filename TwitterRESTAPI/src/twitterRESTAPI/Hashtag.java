@@ -13,5 +13,5 @@ package twitterRESTAPI;
  * @model
  * @generated
  */
-public interface Hashtag extends Entity {
+public interface Hashtag extends Type {
 } // Hashtag

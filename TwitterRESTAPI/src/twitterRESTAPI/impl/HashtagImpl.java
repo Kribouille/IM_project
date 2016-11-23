@@ -4,6 +4,7 @@ package twitterRESTAPI.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import twitterRESTAPI.Hashtag;
 import twitterRESTAPI.TwitterRESTAPIPackage;
 
@@ -14,7 +15,7 @@ import twitterRESTAPI.TwitterRESTAPIPackage;
  *
  * @generated
  */
-public class HashtagImpl extends EntityImpl implements Hashtag {
+public class HashtagImpl extends MinimalEObjectImpl.Container implements Hashtag {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -6,24 +6,33 @@
     operationReflection="true" importOrganizing="true">
   <foreignModel>twitterRESTAPI.ecore</foreignModel>
   <genPackages prefix="TwitterRESTAPI" disposableProviderFactory="true" ecorePackage="twitterRESTAPI.ecore#/">
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//User">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//User/followers"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//User/friends"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//User/status"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//User/place"/>
-    </genClasses>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//Status">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Status/entity"/>
-    </genClasses>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//Message">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Message/author"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Message/recipient"/>
-    </genClasses>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//Entity"/>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//Place">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Place/user"/>
-    </genClasses>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//User"/>
     <genClasses ecoreClass="twitterRESTAPI.ecore#//Hashtag"/>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//Media"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Date"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Deck">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//Deck/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Deck/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//And"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Expression"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Place"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//ExprBinaire">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//ExprBinaire/exp1"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//ExprBinaire/exp2"/>
+    </genClasses>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Or"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Not">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Not/exp"/>
+    </genClasses>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//equals"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//lessThan"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//ExprSimple">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//ExprSimple/value"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//ExprSimple/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//ExprSimple/operation"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="twitterRESTAPI.ecore#//Type"/>
+    <genClasses image="false" ecoreClass="twitterRESTAPI.ecore#//Operation"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//upperThan"/>
   </genPackages>
 </genmodel:GenModel>

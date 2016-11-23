@@ -2,6 +2,8 @@
  */
 package twitterRESTAPI.tests;
 
+import junit.framework.TestCase;
+
 import junit.textui.TestRunner;
 
 import twitterRESTAPI.Hashtag;
@@ -13,7 +15,15 @@ import twitterRESTAPI.TwitterRESTAPIFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class HashtagTest extends EntityTest {
+public class HashtagTest extends TestCase {
+
+	/**
+	 * The fixture for this Hashtag test case.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Hashtag fixture = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -35,14 +45,23 @@ public class HashtagTest extends EntityTest {
 	}
 
 	/**
+	 * Sets the fixture for this Hashtag test case.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void setFixture(Hashtag fixture) {
+		this.fixture = fixture;
+	}
+
+	/**
 	 * Returns the fixture for this Hashtag test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	protected Hashtag getFixture() {
-		return (Hashtag)fixture;
+		return fixture;
 	}
 
 	/**

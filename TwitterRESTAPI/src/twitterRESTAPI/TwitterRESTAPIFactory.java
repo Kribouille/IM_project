@@ -31,33 +31,6 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	User createUser();
 
 	/**
-	 * Returns a new object of class '<em>Tweet</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Tweet</em>'.
-	 * @generated
-	 */
-	Tweet createTweet();
-
-	/**
-	 * Returns a new object of class '<em>Message</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Message</em>'.
-	 * @generated
-	 */
-	Message createMessage();
-
-	/**
-	 * Returns a new object of class '<em>Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Entity</em>'.
-	 * @generated
-	 */
-	Entity createEntity();
-
-	/**
 	 * Returns a new object of class '<em>Place</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -65,6 +38,60 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	 * @generated
 	 */
 	Place createPlace();
+
+	/**
+	 * Returns a new object of class '<em>Or</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Or</em>'.
+	 * @generated
+	 */
+	Or createOr();
+
+	/**
+	 * Returns a new object of class '<em>Not</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Not</em>'.
+	 * @generated
+	 */
+	Not createNot();
+
+	/**
+	 * Returns a new object of class '<em>equals</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>equals</em>'.
+	 * @generated
+	 */
+	equals createequals();
+
+	/**
+	 * Returns a new object of class '<em>less Than</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>less Than</em>'.
+	 * @generated
+	 */
+	lessThan createlessThan();
+
+	/**
+	 * Returns a new object of class '<em>Expr Simple</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Expr Simple</em>'.
+	 * @generated
+	 */
+	ExprSimple createExprSimple();
+
+	/**
+	 * Returns a new object of class '<em>upper Than</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>upper Than</em>'.
+	 * @generated
+	 */
+	upperThan createupperThan();
 
 	/**
 	 * Returns a new object of class '<em>Hashtag</em>'.
@@ -76,13 +103,31 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	Hashtag createHashtag();
 
 	/**
-	 * Returns a new object of class '<em>Media</em>'.
+	 * Returns a new object of class '<em>Date</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Media</em>'.
+	 * @return a new object of class '<em>Date</em>'.
 	 * @generated
 	 */
-	Media createMedia();
+	Date createDate();
+
+	/**
+	 * Returns a new object of class '<em>Deck</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Deck</em>'.
+	 * @generated
+	 */
+	Deck createDeck();
+
+	/**
+	 * Returns a new object of class '<em>And</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>And</em>'.
+	 * @generated
+	 */
+	And createAnd();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -95,72 +95,95 @@ public class TwitterRESTAPIItemProviderAdapterFactory extends TwitterRESTAPIAdap
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.Tweet} instances.
+	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.Hashtag} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TweetItemProvider tweetItemProvider;
+	protected HashtagItemProvider hashtagItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link twitterRESTAPI.Tweet}.
+	 * This creates an adapter for a {@link twitterRESTAPI.Hashtag}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createTweetAdapter() {
-		if (tweetItemProvider == null) {
-			tweetItemProvider = new TweetItemProvider(this);
+	public Adapter createHashtagAdapter() {
+		if (hashtagItemProvider == null) {
+			hashtagItemProvider = new HashtagItemProvider(this);
 		}
 
-		return tweetItemProvider;
+		return hashtagItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.Message} instances.
+	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.Date} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MessageItemProvider messageItemProvider;
+	protected DateItemProvider dateItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link twitterRESTAPI.Message}.
+	 * This creates an adapter for a {@link twitterRESTAPI.Date}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createMessageAdapter() {
-		if (messageItemProvider == null) {
-			messageItemProvider = new MessageItemProvider(this);
+	public Adapter createDateAdapter() {
+		if (dateItemProvider == null) {
+			dateItemProvider = new DateItemProvider(this);
 		}
 
-		return messageItemProvider;
+		return dateItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.Entity} instances.
+	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.Deck} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EntityItemProvider entityItemProvider;
+	protected DeckItemProvider deckItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link twitterRESTAPI.Entity}.
+	 * This creates an adapter for a {@link twitterRESTAPI.Deck}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createEntityAdapter() {
-		if (entityItemProvider == null) {
-			entityItemProvider = new EntityItemProvider(this);
+	public Adapter createDeckAdapter() {
+		if (deckItemProvider == null) {
+			deckItemProvider = new DeckItemProvider(this);
 		}
 
-		return entityItemProvider;
+		return deckItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.And} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AndItemProvider andItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link twitterRESTAPI.And}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAndAdapter() {
+		if (andItemProvider == null) {
+			andItemProvider = new AndItemProvider(this);
+		}
+
+		return andItemProvider;
 	}
 
 	/**
@@ -187,49 +210,141 @@ public class TwitterRESTAPIItemProviderAdapterFactory extends TwitterRESTAPIAdap
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.Hashtag} instances.
+	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.Or} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected HashtagItemProvider hashtagItemProvider;
+	protected OrItemProvider orItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link twitterRESTAPI.Hashtag}.
+	 * This creates an adapter for a {@link twitterRESTAPI.Or}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createHashtagAdapter() {
-		if (hashtagItemProvider == null) {
-			hashtagItemProvider = new HashtagItemProvider(this);
+	public Adapter createOrAdapter() {
+		if (orItemProvider == null) {
+			orItemProvider = new OrItemProvider(this);
 		}
 
-		return hashtagItemProvider;
+		return orItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.Media} instances.
+	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.Not} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected MediaItemProvider mediaItemProvider;
+	protected NotItemProvider notItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link twitterRESTAPI.Media}.
+	 * This creates an adapter for a {@link twitterRESTAPI.Not}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createMediaAdapter() {
-		if (mediaItemProvider == null) {
-			mediaItemProvider = new MediaItemProvider(this);
+	public Adapter createNotAdapter() {
+		if (notItemProvider == null) {
+			notItemProvider = new NotItemProvider(this);
 		}
 
-		return mediaItemProvider;
+		return notItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.equals} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected equalsItemProvider equalsItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link twitterRESTAPI.equals}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createequalsAdapter() {
+		if (equalsItemProvider == null) {
+			equalsItemProvider = new equalsItemProvider(this);
+		}
+
+		return equalsItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.lessThan} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected lessThanItemProvider lessThanItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link twitterRESTAPI.lessThan}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createlessThanAdapter() {
+		if (lessThanItemProvider == null) {
+			lessThanItemProvider = new lessThanItemProvider(this);
+		}
+
+		return lessThanItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.ExprSimple} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ExprSimpleItemProvider exprSimpleItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link twitterRESTAPI.ExprSimple}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createExprSimpleAdapter() {
+		if (exprSimpleItemProvider == null) {
+			exprSimpleItemProvider = new ExprSimpleItemProvider(this);
+		}
+
+		return exprSimpleItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.upperThan} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected upperThanItemProvider upperThanItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link twitterRESTAPI.upperThan}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createupperThanAdapter() {
+		if (upperThanItemProvider == null) {
+			upperThanItemProvider = new upperThanItemProvider(this);
+		}
+
+		return upperThanItemProvider;
 	}
 
 	/**
@@ -332,12 +447,17 @@ public class TwitterRESTAPIItemProviderAdapterFactory extends TwitterRESTAPIAdap
 	 */
 	public void dispose() {
 		if (userItemProvider != null) userItemProvider.dispose();
-		if (tweetItemProvider != null) tweetItemProvider.dispose();
-		if (messageItemProvider != null) messageItemProvider.dispose();
-		if (entityItemProvider != null) entityItemProvider.dispose();
-		if (placeItemProvider != null) placeItemProvider.dispose();
 		if (hashtagItemProvider != null) hashtagItemProvider.dispose();
-		if (mediaItemProvider != null) mediaItemProvider.dispose();
+		if (dateItemProvider != null) dateItemProvider.dispose();
+		if (deckItemProvider != null) deckItemProvider.dispose();
+		if (andItemProvider != null) andItemProvider.dispose();
+		if (placeItemProvider != null) placeItemProvider.dispose();
+		if (orItemProvider != null) orItemProvider.dispose();
+		if (notItemProvider != null) notItemProvider.dispose();
+		if (equalsItemProvider != null) equalsItemProvider.dispose();
+		if (lessThanItemProvider != null) lessThanItemProvider.dispose();
+		if (exprSimpleItemProvider != null) exprSimpleItemProvider.dispose();
+		if (upperThanItemProvider != null) upperThanItemProvider.dispose();
 	}
 
 }

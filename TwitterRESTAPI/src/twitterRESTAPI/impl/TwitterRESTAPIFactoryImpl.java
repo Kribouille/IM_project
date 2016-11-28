@@ -68,6 +68,7 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 			case TwitterRESTAPIPackage.LESS_THAN: return createlessThan();
 			case TwitterRESTAPIPackage.EXPR_SIMPLE: return createExprSimple();
 			case TwitterRESTAPIPackage.UPPER_THAN: return createupperThan();
+			case TwitterRESTAPIPackage.WEB_PAGE: return createWebPage();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -151,6 +152,16 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 	public upperThan createupperThan() {
 		upperThanImpl upperThan = new upperThanImpl();
 		return upperThan;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WebPage createWebPage() {
+		WebPageImpl webPage = new WebPageImpl();
+		return webPage;
 	}
 
 	/**

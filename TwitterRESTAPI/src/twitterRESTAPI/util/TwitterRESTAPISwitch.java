@@ -175,6 +175,12 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case TwitterRESTAPIPackage.WEB_PAGE: {
+				WebPage webPage = (WebPage)theEObject;
+				T result = caseWebPage(webPage);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -341,6 +347,21 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseupperThan(upperThan object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Web Page</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Web Page</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseWebPage(WebPage object) {
 		return null;
 	}
 

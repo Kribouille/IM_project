@@ -24,6 +24,7 @@ import twitterRESTAPI.TwitterRESTAPIFactory;
 import twitterRESTAPI.TwitterRESTAPIPackage;
 import twitterRESTAPI.Type;
 import twitterRESTAPI.User;
+import twitterRESTAPI.WebPage;
 import twitterRESTAPI.equals;
 import twitterRESTAPI.lessThan;
 import twitterRESTAPI.upperThan;
@@ -111,6 +112,13 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * @generated
 	 */
 	private EClass upperThanEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass webPageEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -366,6 +374,24 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getWebPage() {
+		return webPageEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getWebPage_Deck() {
+		return (EReference)webPageEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getHashtag() {
 		return hashtagEClass;
 	}
@@ -491,6 +517,9 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 		operationEClass = createEClass(OPERATION);
 
 		upperThanEClass = createEClass(UPPER_THAN);
+
+		webPageEClass = createEClass(WEB_PAGE);
+		createEReference(webPageEClass, WEB_PAGE__DECK);
 	}
 
 	/**
@@ -573,6 +602,9 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 		initEClass(operationEClass, Operation.class, "Operation", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(upperThanEClass, upperThan.class, "upperThan", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(webPageEClass, WebPage.class, "WebPage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getWebPage_Deck(), this.getDeck(), null, "deck", null, 1, -1, WebPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -348,6 +348,29 @@ public class TwitterRESTAPIItemProviderAdapterFactory extends TwitterRESTAPIAdap
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.WebPage} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected WebPageItemProvider webPageItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link twitterRESTAPI.WebPage}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createWebPageAdapter() {
+		if (webPageItemProvider == null) {
+			webPageItemProvider = new WebPageItemProvider(this);
+		}
+
+		return webPageItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -458,6 +481,7 @@ public class TwitterRESTAPIItemProviderAdapterFactory extends TwitterRESTAPIAdap
 		if (lessThanItemProvider != null) lessThanItemProvider.dispose();
 		if (exprSimpleItemProvider != null) exprSimpleItemProvider.dispose();
 		if (upperThanItemProvider != null) upperThanItemProvider.dispose();
+		if (webPageItemProvider != null) webPageItemProvider.dispose();
 	}
 
 }

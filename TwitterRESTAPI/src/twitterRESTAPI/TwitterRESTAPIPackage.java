@@ -613,6 +613,43 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int UPPER_THAN_OPERATION_COUNT = OPERATION_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link twitterRESTAPI.impl.WebPageImpl <em>Web Page</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see twitterRESTAPI.impl.WebPageImpl
+	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getWebPage()
+	 * @generated
+	 */
+	int WEB_PAGE = 16;
+
+	/**
+	 * The feature id for the '<em><b>Deck</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEB_PAGE__DECK = 0;
+
+	/**
+	 * The number of structural features of the '<em>Web Page</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEB_PAGE_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Web Page</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEB_PAGE_OPERATION_COUNT = 0;
+
+	/**
 	 * Returns the meta object for class '{@link twitterRESTAPI.User <em>User</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -787,6 +824,27 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getupperThan();
+
+	/**
+	 * Returns the meta object for class '{@link twitterRESTAPI.WebPage <em>Web Page</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Web Page</em>'.
+	 * @see twitterRESTAPI.WebPage
+	 * @generated
+	 */
+	EClass getWebPage();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link twitterRESTAPI.WebPage#getDeck <em>Deck</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Deck</em>'.
+	 * @see twitterRESTAPI.WebPage#getDeck()
+	 * @see #getWebPage()
+	 * @generated
+	 */
+	EReference getWebPage_Deck();
 
 	/**
 	 * Returns the meta object for class '{@link twitterRESTAPI.Hashtag <em>Hashtag</em>}'.
@@ -1040,6 +1098,24 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		 * @generated
 		 */
 		EClass UPPER_THAN = eINSTANCE.getupperThan();
+
+		/**
+		 * The meta object literal for the '{@link twitterRESTAPI.impl.WebPageImpl <em>Web Page</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see twitterRESTAPI.impl.WebPageImpl
+		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getWebPage()
+		 * @generated
+		 */
+		EClass WEB_PAGE = eINSTANCE.getWebPage();
+
+		/**
+		 * The meta object literal for the '<em><b>Deck</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WEB_PAGE__DECK = eINSTANCE.getWebPage_Deck();
 
 		/**
 		 * The meta object literal for the '{@link twitterRESTAPI.impl.HashtagImpl <em>Hashtag</em>}' class.

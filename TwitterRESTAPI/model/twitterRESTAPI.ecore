@@ -37,4 +37,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Type" abstract="true" interface="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Operation" abstract="true" interface="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="upperThan" eSuperTypes="#//Operation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="WebPage">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="deck" lowerBound="1" upperBound="-1"
+        eType="#//Deck" containment="true"/>
+  </eClassifiers>
 </ecore:EPackage>

@@ -94,6 +94,15 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	upperThan createupperThan();
 
 	/**
+	 * Returns a new object of class '<em>Web Page</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Web Page</em>'.
+	 * @generated
+	 */
+	WebPage createWebPage();
+
+	/**
 	 * Returns a new object of class '<em>Hashtag</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -132,6 +132,10 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 				return createupperThanAdapter();
 			}
 			@Override
+			public Adapter caseWebPage(WebPage object) {
+				return createWebPageAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -302,6 +306,20 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createupperThanAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.WebPage <em>Web Page</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see twitterRESTAPI.WebPage
+	 * @generated
+	 */
+	public Adapter createWebPageAdapter() {
 		return null;
 	}
 

@@ -4,12 +4,12 @@ grammar org.xtext.twitter.twt.TwitterRESTAPI with org.eclipse.xtext.common.Termi
 import "http://www.example.org/twitterRESTAPI" 
 import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 
-And returns And:
-	'And'
+WebPage returns WebPage:
+	'WebPage'
 	'{'
-		'exp1' exp1=Expression
-		'exp2' exp2=Expression
+		'deck' '{' deck+=Deck ( "," deck+=Deck)* '}' 
 	'}';
+
 
 Expression returns Expression:
 	And | Or | ExprSimple;
@@ -19,6 +19,23 @@ Type returns Type:
 
 Operation returns Operation:
 	equals | lessThan | upperThan;
+
+Deck returns Deck:
+	'Deck'
+	name=EString
+	'{'
+		'expression' expression=Expression
+	'}';
+
+EString returns ecore::EString:
+	STRING | ID;
+
+And returns And:
+	'And'
+	'{'
+		'exp1' exp1=Expression
+		'exp2' exp2=Expression
+	'}';
 
 Or returns Or:
 	'Or'
@@ -34,9 +51,6 @@ ExprSimple returns ExprSimple:
 		'type' type=Type
 		'operation' operation=Operation
 	'}';
-
-EString returns ecore::EString:
-	STRING | ID;
 
 User returns User:
 	{User}

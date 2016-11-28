@@ -21,6 +21,7 @@ Clique-droit dans la partie droite : « Generate All »
 
 - Xtext :
 
+ATTENTION : Penser à configurer le projet principal en tant que Xtext Project (clic droit sur le projet / Configure / Configure to Xtext Project)
 File → New Project →Xtext > Xtext Project From Existing Ecore Models → Add Epackages → select genModel
 
 - Paramètres du New Xtext Project :

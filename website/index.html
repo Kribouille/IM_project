@@ -1,7 +1,7 @@
 <!doctype html>
 <html ng-app="app" ng-controller="appCtrl">
 <head>
-  <title>Pas de temps pour niaser Tweet Book</title>
+  <title>Tweet Book</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -17,30 +17,57 @@
     }*/
   </style>
 </head>
-<body>
-  <div class="container-fluid">
-    <div class="row-fluid" style="margin-top: 12px;">
-      <div class="col-sm-offset-8 col-sm-4">
-        <input class="form-control input-lg" placeholder="Search" ng-model="searchKey"/>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Tweet Deck</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li> 
+          <li><a href="#">Page 3</a></li> 
+        </ul>
+        <div class="pull-right col-sm-4">
+          <input class="form-control input-lg" placeholder="Search" ng-model="searchKey"/>
+        </div>
       </div>
-    </div>
+    </nav>
+  
+
+  <div class="container-fluid">
     <div class="row-fluid">
       <div class="col-sm-6">
-        <h1>Tweets</h1>
-        <div class="row" ng-repeat="deck in mockTweets | filter: searchKey">
-          <div eip-tweet-deck></div>
+        <div class="panel panel-default" style="margin-top: 12px;">
+          <div class="panel-heading">Tweets</div>
+          <div class="panel-body">
+            <div class="row" ng-repeat="deck in mockTweets | filter: searchKey">
+              <div eip-tweet-deck></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-sm-3">
-        <h1>Pubs</h1>
-        <div ng-repeat="deck in mockPubs | filter: searchKey">
-          <div eip-pub-deck></div>
+        <div class="panel panel-default" style="margin-top: 12px;">
+          <div class="panel-heading">Pubs</div>
+          <div class="panel-body">
+            <div ng-repeat="deck in mockPubs | filter: searchKey">
+              <div eip-pub-deck></div>
+            </div>
+          </div>
         </div>
       </div>
+      </div>
       <div class="col-sm-3">
-        <h1>Hashtags</h1>
-        <div ng-repeat="deck in mockHashtags | filter: searchKey"></div>
-        <div eip-hashtag-deck></div>
+        <div class="panel panel-default" style="margin-top: 12px;">
+          <div class="panel-heading">Hashtags</div>
+          <div class="panel-body">
+            <div ng-repeat="deck in mockHashtags | filter: searchKey">
+              <div eip-hashtag-deck></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

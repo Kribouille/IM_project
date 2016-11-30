@@ -8,5 +8,19 @@ Bundle-ActivationPolicy: lazy
 Require-Bundle: TwitterRESTAPI,
  org.eclipse.xtext,
  org.eclipse.xtext.xbase,
- org.eclipse.equinox.common;bundle-version="3.5.0"
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib,
+ org.antlr.runtime
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.xtext.twitter.twt.formatting,
+ org.xtext.twitter.twt.scoping,
+ org.xtext.twitter.twt,
+ org.xtext.twitter.twt.validation,
+ org.xtext.twitter.twt.services,
+ org.xtext.twitter.twt.serializer,
+ org.xtext.twitter.twt.generator,
+ org.xtext.twitter.twt.parser.antlr,
+ org.xtext.twitter.twt.parser.antlr.internal
+Import-Package: org.apache.log4j

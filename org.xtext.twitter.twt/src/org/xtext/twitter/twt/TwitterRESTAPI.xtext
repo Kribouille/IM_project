@@ -12,7 +12,7 @@ WebPage returns WebPage:
 
 
 Expression returns Expression:
-	And | Or | ExprSimple;
+	=>And | Or | ExprSimple;
 
 Type returns Type:
 	User | Hashtag | Date | Place;
@@ -31,25 +31,25 @@ EString returns ecore::EString:
 	STRING | ID;
 
 And returns And:
-	'And'
 	'{'
 		'exp1' exp1=Expression
+		'&&'
 		'exp2' exp2=Expression
 	'}';
 
 Or returns Or:
-	'Or'
 	'{'
 		'exp1' exp1=Expression
+		'||'
 		'exp2' exp2=Expression
 	'}';
 
 ExprSimple returns ExprSimple:
 	'ExprSimple'
 	'{'
-		'value' value=EString
 		'type' type=Type
 		'operation' operation=Operation
+		'value' value=EString
 	'}';
 
 User returns User:
@@ -74,15 +74,15 @@ Place returns Place:
 
 equals returns equals:
 	{equals}
-	'equals'
+	'=='
 	;
 
 lessThan returns lessThan:
 	{lessThan}
-	'lessThan'
+	'<'
 	;
 
 upperThan returns upperThan:
 	{upperThan}
-	'upperThan'
+	'>'
 	;

@@ -10,3 +10,6 @@ Require-Bundle: org.xtext.twitter.twt,
  org.eclipse.xtext.ide,
  org.eclipse.xtext.xbase.ide
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.xtext.twitter.twt.ide.contentassist.antlr.internal,
+ org.xtext.twitter.twt.ide.contentassist.antlr
+

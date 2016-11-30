@@ -2,8 +2,6 @@
  */
 package twitterRESTAPI;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Not</b></em>'.
@@ -20,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Not extends EObject {
+public interface Not extends Expression {
 	/**
 	 * Returns the value of the '<em><b>Exp</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

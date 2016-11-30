@@ -557,6 +557,7 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 		placeEClass.getESuperTypes().add(this.getType());
 		exprBinaireEClass.getESuperTypes().add(this.getExpression());
 		orEClass.getESuperTypes().add(this.getExprBinaire());
+		notEClass.getESuperTypes().add(this.getExpression());
 		equalsEClass.getESuperTypes().add(this.getOperation());
 		lessThanEClass.getESuperTypes().add(this.getOperation());
 		exprSimpleEClass.getESuperTypes().add(this.getExpression());

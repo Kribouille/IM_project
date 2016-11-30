@@ -192,6 +192,11 @@ public class DeckItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(TwitterRESTAPIPackage.Literals.DECK__EXPRESSION,
+				 TwitterRESTAPIFactory.eINSTANCE.createNot()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TwitterRESTAPIPackage.Literals.DECK__EXPRESSION,
 				 TwitterRESTAPIFactory.eINSTANCE.createExprSimple()));
 	}
 

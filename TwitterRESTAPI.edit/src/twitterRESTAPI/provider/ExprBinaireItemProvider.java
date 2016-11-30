@@ -163,6 +163,11 @@ public class ExprBinaireItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(TwitterRESTAPIPackage.Literals.EXPR_BINAIRE__EXP1,
+				 TwitterRESTAPIFactory.eINSTANCE.createNot()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TwitterRESTAPIPackage.Literals.EXPR_BINAIRE__EXP1,
 				 TwitterRESTAPIFactory.eINSTANCE.createExprSimple()));
 
 		newChildDescriptors.add
@@ -174,6 +179,11 @@ public class ExprBinaireItemProvider
 			(createChildParameter
 				(TwitterRESTAPIPackage.Literals.EXPR_BINAIRE__EXP2,
 				 TwitterRESTAPIFactory.eINSTANCE.createOr()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TwitterRESTAPIPackage.Literals.EXPR_BINAIRE__EXP2,
+				 TwitterRESTAPIFactory.eINSTANCE.createNot()));
 
 		newChildDescriptors.add
 			(createChildParameter

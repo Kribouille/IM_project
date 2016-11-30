@@ -161,6 +161,11 @@ public class NotItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(TwitterRESTAPIPackage.Literals.NOT__EXP,
+				 TwitterRESTAPIFactory.eINSTANCE.createNot()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TwitterRESTAPIPackage.Literals.NOT__EXP,
 				 TwitterRESTAPIFactory.eINSTANCE.createExprSimple()));
 	}
 

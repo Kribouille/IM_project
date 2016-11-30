@@ -20,7 +20,7 @@
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Or" eSuperTypes="#//ExprBinaire"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Not">
+  <eClassifiers xsi:type="ecore:EClass" name="Not" eSuperTypes="#//Expression">
     <eStructuralFeatures xsi:type="ecore:EReference" name="exp" lowerBound="1" eType="#//Expression"
         containment="true"/>
   </eClassifiers>

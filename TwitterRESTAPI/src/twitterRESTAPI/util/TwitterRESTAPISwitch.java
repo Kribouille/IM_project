@@ -132,6 +132,7 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 			case TwitterRESTAPIPackage.NOT: {
 				Not not = (Not)theEObject;
 				T result = caseNot(not);
+				if (result == null) result = caseExpression(not);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}

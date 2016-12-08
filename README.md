@@ -30,6 +30,15 @@ File → New Project →Xtext > Xtext Project From Existing Ecore Models → Add
   - Name langage : org.xtext.twitter.twt.TwitterRESTAPI
   - Extension : twt
   
-  ##Process
+## Mettre à jour le repo
+- `git pull`
+- Clic Droit sur la Grammaire `TwitterRESTAPI.xtext`
+- Choisir "Generate Xtext Artifact"
+Cela corrige les erreurs produites par Xtext
+  
+##Process
   
   ![process](https://github.com/Kribouille/IM_project/blob/master/process.jpg)
+##### A faire :
+- Coder le générateur avec Xtend
+- Faire un appel REST avec angularjs

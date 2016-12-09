@@ -40,104 +40,125 @@ class TwitterRESTAPIGenerator extends AbstractGenerator {
 	}
 	
 	def compile(WebPage wp) '''
-		// TODO
-		«for (Deck d : wp.deck) {
-			d.compile
-		}»
+		{
+			"decks" : [
+			«for (Deck d : wp.deck) {d.compile}»
+			]
+		}
 	'''
 			
 	
 	
 	def compile(Deck d) '''
-	// TODO
-	«d.name»
-	«d.expression.compile»
+	{
+	"name" : «d.name» ,
+	"expression" : «d.expression.compile»
+	}
 	'''
 	
 	/***********************************
 	 * EXPRESSIONS
 	 ***********************************/
 	def compile(Expression e) '''
+	{
 	«switch(e) {
-		case ExprSimple : ((ExprSimple) e).compile
-		case And: ((And) e).compile
-		case Or: ((Or) e).compile
-		case Not: ((Not) e).compile
+		case ExprSimple : (e as ExprSimple).compile
+		case And: (e as And).compile
+		case Or: (e as Or).compile
+		case Not: (e as Not).compile
 		default: e.class.name
 		}»
+	}
 	'''
 	
 	def compileExprS(ExprSimple es) '''
 	«IF (es.type.class.name.equals("User") || es.type.class.name.equals("Hashtag")) && !es.operation.class.equals("equals")»
-	ERREUR : Opération incohérente par rapport au type proposé
+		ERREUR : Opération incohérente par rapport au type proposé. Type => «es.type.class» | Opération => «es.operation.class»
 	«ELSE»
-		«switch(es.type) {
-			case User : es.type.compile(es.operation, es.value)
-			case Hashtag : es.type.compile(es.operation, es.value)
-			case Date : es.type.compile(es.operation, compileValueDate(es.value))
-			case Place : es.type.compile(es.operation, compileValuePlace(es.value))
-			default : es.type.class.name
-			}»
-	«es.operation.compile»
-	«es.value»
+		"type" : «es.type.compile»
+		"op" : «es.operation.compile»
+		"value" : «es.value»
 	«ENDIF»
 	'''
 	
 	def compile(And a) '''
-	«a.exp1.compile» && «a.exp2.compile»
+		"class" : "And"
+		"exp1" : {
+			«a.exp1.compile»
+			}
+		"exp2" : {
+			«a.exp2.compile»
+			}
 	'''
 	
 	def compile(Or o) '''
-	«o.exp1.compile» || «o.exp2.compile»
+		"class" : "Or"
+			"exp1" : {
+				«o.exp1.compile»
+				}
+			"exp2" : {
+				«o.exp2.compile»
+				}
 	'''
 	
 	def compile(Not n) '''
-	! «n.exp.compile»
+		"class" : "Not"
+			"exp" : {
+				«n.exp.compile»
+				}
 	'''
 	
 	/***********************************
 	 * TYPES
 	 ***********************************/
 	def compile(Type t) '''
-	«»
+	«switch(t) {
+		case User : (t as User).compile
+		case Hashtag : (t as Hashtag).compile
+		case Date : (t as Date).compile
+		case Place : (t as Place).compile
+		default : t.class.name
+	}»
 	'''
 	
-	def compile(User u, Operation o, String v) '''
+	def compile(User u) '''
+	"User"
 	'''
 	
-	def compile(Hashtag h, Operation o, String v) '''
+	def compile(Hashtag h) '''
+	"Hashtag"
 	'''
 	
 	def compile(Date d) '''
+	"Date"
 	'''
 	
 	def compile(Place p) '''
+	"Place"
 	'''
 	
 	/***********************************
 	 * OPERATIONS
 	 ***********************************/
 	 def compile(Operation o)'''
+	 «switch(o) {
+		case equals : (o as equals).compile
+		case lessThan : (o as lessThan).compile
+		case upperThan : (o as upperThan).compile
+		default : o.class.name
+	}»
 	 '''
 	 
 	 def compile(equals e) '''
+	 "equals"
 	 '''
 	 
 	 def compile(lessThan l) '''
+	 "lessThan"
 	 '''
 	 
 	 def compile(upperThan u) '''
+	 "upperThan"
 	 '''
-	
-	/***********************************
-	 * VALUES COMPILE
-	 ***********************************/
-	 def compileValueDate(String s) {
-	 	
-	 }
-	 
-	 def compileValuePlace(String s) {
-	 	
-	 }
 	
 }

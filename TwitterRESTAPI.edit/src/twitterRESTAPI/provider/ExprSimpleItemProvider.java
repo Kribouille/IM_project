@@ -204,17 +204,17 @@ public class ExprSimpleItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(TwitterRESTAPIPackage.Literals.EXPR_SIMPLE__OPERATION,
-				 TwitterRESTAPIFactory.eINSTANCE.createequals()));
+				 TwitterRESTAPIFactory.eINSTANCE.createEquals()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(TwitterRESTAPIPackage.Literals.EXPR_SIMPLE__OPERATION,
-				 TwitterRESTAPIFactory.eINSTANCE.createlessThan()));
+				 TwitterRESTAPIFactory.eINSTANCE.createLessThan()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(TwitterRESTAPIPackage.Literals.EXPR_SIMPLE__OPERATION,
-				 TwitterRESTAPIFactory.eINSTANCE.createupperThan()));
+				 TwitterRESTAPIFactory.eINSTANCE.createUpperThan()));
 	}
 
 	/**

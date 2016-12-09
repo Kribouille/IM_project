@@ -7,23 +7,23 @@ import junit.framework.TestCase;
 import junit.textui.TestRunner;
 
 import twitterRESTAPI.TwitterRESTAPIFactory;
-import twitterRESTAPI.upperThan;
+import twitterRESTAPI.UpperThan;
 
 /**
  * <!-- begin-user-doc -->
- * A test case for the model object '<em><b>upper Than</b></em>'.
+ * A test case for the model object '<em><b>Upper Than</b></em>'.
  * <!-- end-user-doc -->
  * @generated
  */
-public class upperThanTest extends TestCase {
+public class UpperThanTest extends TestCase {
 
 	/**
-	 * The fixture for this upper Than test case.
+	 * The fixture for this Upper Than test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected upperThan fixture = null;
+	protected UpperThan fixture = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -31,36 +31,36 @@ public class upperThanTest extends TestCase {
 	 * @generated
 	 */
 	public static void main(String[] args) {
-		TestRunner.run(upperThanTest.class);
+		TestRunner.run(UpperThanTest.class);
 	}
 
 	/**
-	 * Constructs a new upper Than test case with the given name.
+	 * Constructs a new Upper Than test case with the given name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public upperThanTest(String name) {
+	public UpperThanTest(String name) {
 		super(name);
 	}
 
 	/**
-	 * Sets the fixture for this upper Than test case.
+	 * Sets the fixture for this Upper Than test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void setFixture(upperThan fixture) {
+	protected void setFixture(UpperThan fixture) {
 		this.fixture = fixture;
 	}
 
 	/**
-	 * Returns the fixture for this upper Than test case.
+	 * Returns the fixture for this Upper Than test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected upperThan getFixture() {
+	protected UpperThan getFixture() {
 		return fixture;
 	}
 
@@ -72,7 +72,7 @@ public class upperThanTest extends TestCase {
 	 */
 	@Override
 	protected void setUp() throws Exception {
-		setFixture(TwitterRESTAPIFactory.eINSTANCE.createupperThan());
+		setFixture(TwitterRESTAPIFactory.eINSTANCE.createUpperThan());
 	}
 
 	/**
@@ -86,4 +86,4 @@ public class upperThanTest extends TestCase {
 		setFixture(null);
 	}
 
-} //upperThanTest
+} //UpperThanTest

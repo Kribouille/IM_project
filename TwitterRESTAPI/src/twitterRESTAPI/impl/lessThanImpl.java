@@ -6,23 +6,23 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import twitterRESTAPI.LessThan;
 import twitterRESTAPI.TwitterRESTAPIPackage;
-import twitterRESTAPI.lessThan;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>less Than</b></em>'.
+ * An implementation of the model object '<em><b>Less Than</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class lessThanImpl extends MinimalEObjectImpl.Container implements lessThan {
+public class LessThanImpl extends MinimalEObjectImpl.Container implements LessThan {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected lessThanImpl() {
+	protected LessThanImpl() {
 		super();
 	}
 
@@ -36,4 +36,4 @@ public class lessThanImpl extends MinimalEObjectImpl.Container implements lessTh
 		return TwitterRESTAPIPackage.Literals.LESS_THAN;
 	}
 
-} //lessThanImpl
+} //LessThanImpl

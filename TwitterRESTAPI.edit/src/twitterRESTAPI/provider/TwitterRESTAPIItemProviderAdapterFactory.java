@@ -256,46 +256,46 @@ public class TwitterRESTAPIItemProviderAdapterFactory extends TwitterRESTAPIAdap
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.equals} instances.
+	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.Equals} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected equalsItemProvider equalsItemProvider;
+	protected EqualsItemProvider equalsItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link twitterRESTAPI.equals}.
+	 * This creates an adapter for a {@link twitterRESTAPI.Equals}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createequalsAdapter() {
+	public Adapter createEqualsAdapter() {
 		if (equalsItemProvider == null) {
-			equalsItemProvider = new equalsItemProvider(this);
+			equalsItemProvider = new EqualsItemProvider(this);
 		}
 
 		return equalsItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.lessThan} instances.
+	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.LessThan} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected lessThanItemProvider lessThanItemProvider;
+	protected LessThanItemProvider lessThanItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link twitterRESTAPI.lessThan}.
+	 * This creates an adapter for a {@link twitterRESTAPI.LessThan}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createlessThanAdapter() {
+	public Adapter createLessThanAdapter() {
 		if (lessThanItemProvider == null) {
-			lessThanItemProvider = new lessThanItemProvider(this);
+			lessThanItemProvider = new LessThanItemProvider(this);
 		}
 
 		return lessThanItemProvider;
@@ -325,23 +325,23 @@ public class TwitterRESTAPIItemProviderAdapterFactory extends TwitterRESTAPIAdap
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.upperThan} instances.
+	 * This keeps track of the one adapter used for all {@link twitterRESTAPI.UpperThan} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected upperThanItemProvider upperThanItemProvider;
+	protected UpperThanItemProvider upperThanItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link twitterRESTAPI.upperThan}.
+	 * This creates an adapter for a {@link twitterRESTAPI.UpperThan}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createupperThanAdapter() {
+	public Adapter createUpperThanAdapter() {
 		if (upperThanItemProvider == null) {
-			upperThanItemProvider = new upperThanItemProvider(this);
+			upperThanItemProvider = new UpperThanItemProvider(this);
 		}
 
 		return upperThanItemProvider;

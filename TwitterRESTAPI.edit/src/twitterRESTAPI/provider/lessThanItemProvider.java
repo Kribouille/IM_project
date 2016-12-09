@@ -20,12 +20,12 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 
 /**
- * This is the item provider adapter for a {@link twitterRESTAPI.lessThan} object.
+ * This is the item provider adapter for a {@link twitterRESTAPI.LessThan} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class lessThanItemProvider 
+public class LessThanItemProvider 
 	extends ItemProviderAdapter
 	implements
 		IEditingDomainItemProvider,
@@ -39,7 +39,7 @@ public class lessThanItemProvider
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public lessThanItemProvider(AdapterFactory adapterFactory) {
+	public LessThanItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -59,14 +59,14 @@ public class lessThanItemProvider
 	}
 
 	/**
-	 * This returns lessThan.gif.
+	 * This returns LessThan.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/lessThan"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/LessThan"));
 	}
 
 	/**
@@ -77,7 +77,7 @@ public class lessThanItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_lessThan_type");
+		return getString("_UI_LessThan_type");
 	}
 	
 

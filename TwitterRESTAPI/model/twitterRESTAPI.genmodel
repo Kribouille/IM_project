@@ -24,8 +24,8 @@
     <genClasses ecoreClass="twitterRESTAPI.ecore#//Not">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Not/exp"/>
     </genClasses>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//equals"/>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//lessThan"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Equals"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//LessThan"/>
     <genClasses ecoreClass="twitterRESTAPI.ecore#//ExprSimple">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//ExprSimple/value"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//ExprSimple/type"/>
@@ -33,7 +33,7 @@
     </genClasses>
     <genClasses image="false" ecoreClass="twitterRESTAPI.ecore#//Type"/>
     <genClasses image="false" ecoreClass="twitterRESTAPI.ecore#//Operation"/>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//upperThan"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//UpperThan"/>
     <genClasses ecoreClass="twitterRESTAPI.ecore#//WebPage">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//WebPage/deck"/>
     </genClasses>

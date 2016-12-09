@@ -2,6 +2,7 @@
  */
 package twitterRESTAPI;
 
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Place</b></em>'.
@@ -13,5 +14,4 @@ package twitterRESTAPI;
  * @generated
  */
 public interface Place extends Type {
-
 } // Place

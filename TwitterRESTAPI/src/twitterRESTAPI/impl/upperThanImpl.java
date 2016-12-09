@@ -7,22 +7,22 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import twitterRESTAPI.TwitterRESTAPIPackage;
-import twitterRESTAPI.upperThan;
+import twitterRESTAPI.UpperThan;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>upper Than</b></em>'.
+ * An implementation of the model object '<em><b>Upper Than</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class upperThanImpl extends MinimalEObjectImpl.Container implements upperThan {
+public class UpperThanImpl extends MinimalEObjectImpl.Container implements UpperThan {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected upperThanImpl() {
+	protected UpperThanImpl() {
 		super();
 	}
 
@@ -36,4 +36,4 @@ public class upperThanImpl extends MinimalEObjectImpl.Container implements upper
 		return TwitterRESTAPIPackage.Literals.UPPER_THAN;
 	}
 
-} //upperThanImpl
+} //UpperThanImpl

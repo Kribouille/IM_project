@@ -31,78 +31,6 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	User createUser();
 
 	/**
-	 * Returns a new object of class '<em>Place</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Place</em>'.
-	 * @generated
-	 */
-	Place createPlace();
-
-	/**
-	 * Returns a new object of class '<em>Or</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Or</em>'.
-	 * @generated
-	 */
-	Or createOr();
-
-	/**
-	 * Returns a new object of class '<em>Not</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Not</em>'.
-	 * @generated
-	 */
-	Not createNot();
-
-	/**
-	 * Returns a new object of class '<em>equals</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>equals</em>'.
-	 * @generated
-	 */
-	equals createequals();
-
-	/**
-	 * Returns a new object of class '<em>less Than</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>less Than</em>'.
-	 * @generated
-	 */
-	lessThan createlessThan();
-
-	/**
-	 * Returns a new object of class '<em>Expr Simple</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Expr Simple</em>'.
-	 * @generated
-	 */
-	ExprSimple createExprSimple();
-
-	/**
-	 * Returns a new object of class '<em>upper Than</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>upper Than</em>'.
-	 * @generated
-	 */
-	upperThan createupperThan();
-
-	/**
-	 * Returns a new object of class '<em>Web Page</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Web Page</em>'.
-	 * @generated
-	 */
-	WebPage createWebPage();
-
-	/**
 	 * Returns a new object of class '<em>Hashtag</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -137,6 +65,78 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	 * @generated
 	 */
 	And createAnd();
+
+	/**
+	 * Returns a new object of class '<em>Place</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Place</em>'.
+	 * @generated
+	 */
+	Place createPlace();
+
+	/**
+	 * Returns a new object of class '<em>Or</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Or</em>'.
+	 * @generated
+	 */
+	Or createOr();
+
+	/**
+	 * Returns a new object of class '<em>Not</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Not</em>'.
+	 * @generated
+	 */
+	Not createNot();
+
+	/**
+	 * Returns a new object of class '<em>Equals</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Equals</em>'.
+	 * @generated
+	 */
+	Equals createEquals();
+
+	/**
+	 * Returns a new object of class '<em>Less Than</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Less Than</em>'.
+	 * @generated
+	 */
+	LessThan createLessThan();
+
+	/**
+	 * Returns a new object of class '<em>Expr Simple</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Expr Simple</em>'.
+	 * @generated
+	 */
+	ExprSimple createExprSimple();
+
+	/**
+	 * Returns a new object of class '<em>Upper Than</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Upper Than</em>'.
+	 * @generated
+	 */
+	UpperThan createUpperThan();
+
+	/**
+	 * Returns a new object of class '<em>Web Page</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Web Page</em>'.
+	 * @generated
+	 */
+	WebPage createWebPage();
 
 	/**
 	 * Returns the package supported by this factory.

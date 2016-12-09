@@ -24,8 +24,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="exp" lowerBound="1" eType="#//Expression"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="equals" eSuperTypes="#//Operation"/>
-  <eClassifiers xsi:type="ecore:EClass" name="lessThan" eSuperTypes="#//Operation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Equals" eSuperTypes="#//Operation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LessThan" eSuperTypes="#//Operation"/>
   <eClassifiers xsi:type="ecore:EClass" name="ExprSimple" eSuperTypes="#//Expression">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" unique="false" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -36,7 +36,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Type" abstract="true" interface="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Operation" abstract="true" interface="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="upperThan" eSuperTypes="#//Operation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="UpperThan" eSuperTypes="#//Operation"/>
   <eClassifiers xsi:type="ecore:EClass" name="WebPage">
     <eStructuralFeatures xsi:type="ecore:EReference" name="deck" lowerBound="1" upperBound="-1"
         eType="#//Deck" containment="true"/>

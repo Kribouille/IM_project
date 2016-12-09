@@ -6,24 +6,24 @@ import junit.framework.TestCase;
 
 import junit.textui.TestRunner;
 
+import twitterRESTAPI.Equals;
 import twitterRESTAPI.TwitterRESTAPIFactory;
-import twitterRESTAPI.equals;
 
 /**
  * <!-- begin-user-doc -->
- * A test case for the model object '<em><b>equals</b></em>'.
+ * A test case for the model object '<em><b>Equals</b></em>'.
  * <!-- end-user-doc -->
  * @generated
  */
-public class equalsTest extends TestCase {
+public class EqualsTest extends TestCase {
 
 	/**
-	 * The fixture for this equals test case.
+	 * The fixture for this Equals test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected equals fixture = null;
+	protected Equals fixture = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -31,36 +31,36 @@ public class equalsTest extends TestCase {
 	 * @generated
 	 */
 	public static void main(String[] args) {
-		TestRunner.run(equalsTest.class);
+		TestRunner.run(EqualsTest.class);
 	}
 
 	/**
-	 * Constructs a new equals test case with the given name.
+	 * Constructs a new Equals test case with the given name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public equalsTest(String name) {
+	public EqualsTest(String name) {
 		super(name);
 	}
 
 	/**
-	 * Sets the fixture for this equals test case.
+	 * Sets the fixture for this Equals test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void setFixture(equals fixture) {
+	protected void setFixture(Equals fixture) {
 		this.fixture = fixture;
 	}
 
 	/**
-	 * Returns the fixture for this equals test case.
+	 * Returns the fixture for this Equals test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected equals getFixture() {
+	protected Equals getFixture() {
 		return fixture;
 	}
 
@@ -72,7 +72,7 @@ public class equalsTest extends TestCase {
 	 */
 	@Override
 	protected void setUp() throws Exception {
-		setFixture(TwitterRESTAPIFactory.eINSTANCE.createequals());
+		setFixture(TwitterRESTAPIFactory.eINSTANCE.createEquals());
 	}
 
 	/**
@@ -86,4 +86,4 @@ public class equalsTest extends TestCase {
 		setFixture(null);
 	}
 
-} //equalsTest
+} //EqualsTest

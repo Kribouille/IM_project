@@ -5,6 +5,7 @@ package twitterRESTAPI.impl;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
 import twitterRESTAPI.Hashtag;
 import twitterRESTAPI.TwitterRESTAPIPackage;
 

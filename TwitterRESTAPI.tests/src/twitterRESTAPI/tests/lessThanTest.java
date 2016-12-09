@@ -6,24 +6,24 @@ import junit.framework.TestCase;
 
 import junit.textui.TestRunner;
 
+import twitterRESTAPI.LessThan;
 import twitterRESTAPI.TwitterRESTAPIFactory;
-import twitterRESTAPI.lessThan;
 
 /**
  * <!-- begin-user-doc -->
- * A test case for the model object '<em><b>less Than</b></em>'.
+ * A test case for the model object '<em><b>Less Than</b></em>'.
  * <!-- end-user-doc -->
  * @generated
  */
-public class lessThanTest extends TestCase {
+public class LessThanTest extends TestCase {
 
 	/**
-	 * The fixture for this less Than test case.
+	 * The fixture for this Less Than test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected lessThan fixture = null;
+	protected LessThan fixture = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -31,36 +31,36 @@ public class lessThanTest extends TestCase {
 	 * @generated
 	 */
 	public static void main(String[] args) {
-		TestRunner.run(lessThanTest.class);
+		TestRunner.run(LessThanTest.class);
 	}
 
 	/**
-	 * Constructs a new less Than test case with the given name.
+	 * Constructs a new Less Than test case with the given name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public lessThanTest(String name) {
+	public LessThanTest(String name) {
 		super(name);
 	}
 
 	/**
-	 * Sets the fixture for this less Than test case.
+	 * Sets the fixture for this Less Than test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void setFixture(lessThan fixture) {
+	protected void setFixture(LessThan fixture) {
 		this.fixture = fixture;
 	}
 
 	/**
-	 * Returns the fixture for this less Than test case.
+	 * Returns the fixture for this Less Than test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected lessThan getFixture() {
+	protected LessThan getFixture() {
 		return fixture;
 	}
 
@@ -72,7 +72,7 @@ public class lessThanTest extends TestCase {
 	 */
 	@Override
 	protected void setUp() throws Exception {
-		setFixture(TwitterRESTAPIFactory.eINSTANCE.createlessThan());
+		setFixture(TwitterRESTAPIFactory.eINSTANCE.createLessThan());
 	}
 
 	/**
@@ -86,4 +86,4 @@ public class lessThanTest extends TestCase {
 		setFixture(null);
 	}
 
-} //lessThanTest
+} //LessThanTest

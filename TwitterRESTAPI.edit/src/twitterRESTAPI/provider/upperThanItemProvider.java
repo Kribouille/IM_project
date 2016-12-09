@@ -20,12 +20,12 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 
 /**
- * This is the item provider adapter for a {@link twitterRESTAPI.upperThan} object.
+ * This is the item provider adapter for a {@link twitterRESTAPI.UpperThan} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class upperThanItemProvider 
+public class UpperThanItemProvider 
 	extends ItemProviderAdapter
 	implements
 		IEditingDomainItemProvider,
@@ -39,7 +39,7 @@ public class upperThanItemProvider
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public upperThanItemProvider(AdapterFactory adapterFactory) {
+	public UpperThanItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -59,14 +59,14 @@ public class upperThanItemProvider
 	}
 
 	/**
-	 * This returns upperThan.gif.
+	 * This returns UpperThan.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/upperThan"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/UpperThan"));
 	}
 
 	/**
@@ -77,7 +77,7 @@ public class upperThanItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_upperThan_type");
+		return getString("_UI_UpperThan_type");
 	}
 	
 

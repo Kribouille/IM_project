@@ -20,12 +20,12 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 
 /**
- * This is the item provider adapter for a {@link twitterRESTAPI.equals} object.
+ * This is the item provider adapter for a {@link twitterRESTAPI.Equals} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class equalsItemProvider 
+public class EqualsItemProvider 
 	extends ItemProviderAdapter
 	implements
 		IEditingDomainItemProvider,
@@ -39,7 +39,7 @@ public class equalsItemProvider
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public equalsItemProvider(AdapterFactory adapterFactory) {
+	public EqualsItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -59,14 +59,14 @@ public class equalsItemProvider
 	}
 
 	/**
-	 * This returns equals.gif.
+	 * This returns Equals.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/equals"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/Equals"));
 	}
 
 	/**
@@ -77,7 +77,7 @@ public class equalsItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_equals_type");
+		return getString("_UI_Equals_type");
 	}
 	
 

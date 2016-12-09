@@ -3,23 +3,42 @@
  */
 package org.xtext.twitter.twt.validation
 
+import twitterRESTAPI.ExprSimple
+import org.eclipse.xtext.validation.Check
+import org.eclipse.emf.ecore.EStructuralFeature
+import twitterRESTAPI.TwitterRESTAPIPackage
+import twitterRESTAPI.Date
 
 /**
- * This class contains custom validation rules. 
+ * This class contains custom validation rules.
  *
  * See https://www.eclipse.org/Xtext/documentation/303_runtime_concepts.html#validation
  */
 class TwitterRESTAPIValidator extends AbstractTwitterRESTAPIValidator {
-	
+
 //	public static val INVALID_NAME = 'invalidName'
 //
 //	@Check
 //	def checkGreetingStartsWithCapital(Greeting greeting) {
 //		if (!Character.isUpperCase(greeting.name.charAt(0))) {
-//			warning('Name should start with a capital', 
+//			warning('Name should start with a capital',
 //					TwitterRESTAPIPackage.Literals.GREETING__NAME,
 //					INVALID_NAME)
 //		}
 //	}
+
+	@Check
+	def checkEqualsIsNotOnUserOrHashtag(ExprSimple e) {
+		//TODO
+		if ((e.type.class.name.equals("User") || e.type.class.name.equals("Hashtag")) && !e.operation.class.equals("Equals")) {
+			//error("User and Hashtag types can only be used with Equals operation", e, TwitterRESTAPIPackage.Literals.EXPR_SIMPLE__OPERATION);
+			warning("toto de warning", TwitterRESTAPIPackage.Literals.EXPR_SIMPLE__OPERATION, "Invalid Operation");
+		}
+	}
 	
+	@Check
+	def checkIfDateIsWellFormed(Date d) {
+		
+	}
+
 }

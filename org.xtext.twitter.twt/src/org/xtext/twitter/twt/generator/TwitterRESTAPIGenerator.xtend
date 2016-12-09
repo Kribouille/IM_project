@@ -20,13 +20,13 @@ import twitterRESTAPI.Date
 import twitterRESTAPI.Hashtag
 import twitterRESTAPI.User
 import twitterRESTAPI.Operation
-import twitterRESTAPI.equals
-import twitterRESTAPI.lessThan
-import twitterRESTAPI.upperThan
+import twitterRESTAPI.Equals
+import twitterRESTAPI.LessThan
+import twitterRESTAPI.UpperThan
 
 /**
  * Generates code from your model files on save.
- * 
+ *
  * See https://www.eclipse.org/Xtext/documentation/303_runtime_concepts.html#code-generation
  */
 class TwitterRESTAPIGenerator extends AbstractGenerator {
@@ -35,7 +35,7 @@ class TwitterRESTAPIGenerator extends AbstractGenerator {
 		for(w: resource.allContents.toIterable.filter(WebPage))
 					fsa.generateFile("generatedCode.json", w.compile)
 	}
-	
+
 	def compile(WebPage wp) '''
 		{
 			"decks" : [
@@ -43,16 +43,16 @@ class TwitterRESTAPIGenerator extends AbstractGenerator {
 			]
 		}
 	'''
-			
-	
-	
+
+
+
 	def compile(Deck d) '''
 	{
 	"name" : «d.name» ,
 	"expression" : «d.expression.compile»
 	}
 	'''
-	
+
 	/***********************************
 	 * EXPRESSIONS
 	 ***********************************/
@@ -67,17 +67,13 @@ class TwitterRESTAPIGenerator extends AbstractGenerator {
 		}»
 	}
 	'''
-	
+
 	def compileExprS(ExprSimple es) '''
-	«IF (es.type.class.name.equals("User") || es.type.class.name.equals("Hashtag")) && !es.operation.class.equals("equals")»
-		ERREUR : Opération incohérente par rapport au type proposé. Type => «es.type.class» | Opération => «es.operation.class»
-	«ELSE»
 		"type" : «es.type.compile»
 		"op" : «es.operation.compile»
 		"value" : «es.value»
-	«ENDIF»
 	'''
-	
+
 	def compile(And a) '''
 		"class" : "And"
 		"exp1" : {
@@ -87,7 +83,7 @@ class TwitterRESTAPIGenerator extends AbstractGenerator {
 			«a.exp2.compile»
 			}
 	'''
-	
+
 	def compile(Or o) '''
 		"class" : "Or"
 			"exp1" : {
@@ -97,14 +93,14 @@ class TwitterRESTAPIGenerator extends AbstractGenerator {
 				«o.exp2.compile»
 				}
 	'''
-	
+
 	def compile(Not n) '''
 		"class" : "Not"
 			"exp" : {
 				«n.exp.compile»
 				}
 	'''
-	
+
 	/***********************************
 	 * TYPES
 	 ***********************************/
@@ -117,45 +113,45 @@ class TwitterRESTAPIGenerator extends AbstractGenerator {
 		default : t.class.name
 	}»
 	'''
-	
+
 	def compile(User u) '''
 	"User"
 	'''
-	
+
 	def compile(Hashtag h) '''
 	"Hashtag"
 	'''
-	
+
 	def compile(Date d) '''
 	"Date"
 	'''
-	
+
 	def compile(Place p) '''
 	"Place"
 	'''
-	
+
 	/***********************************
 	 * OPERATIONS
 	 ***********************************/
 	 def compile(Operation o)'''
 	 «switch(o) {
-		case equals : (o as equals).compile
-		case lessThan : (o as lessThan).compile
-		case upperThan : (o as upperThan).compile
+		case Equals : (o as Equals).compile
+		case LessThan : (o as LessThan).compile
+		case UpperThan : (o as UpperThan).compile
 		default : o.class.name
 	}»
 	 '''
-	 
-	 def compile(equals e) '''
-	 "equals"
+
+	 def compile(Equals e) '''
+	 "Equals"
 	 '''
-	 
-	 def compile(lessThan l) '''
-	 "lessThan"
+
+	 def compile(LessThan l) '''
+	 "LessThan"
 	 '''
-	 
-	 def compile(upperThan u) '''
-	 "upperThan"
+
+	 def compile(UpperThan u) '''
+	 "UpperThan"
 	 '''
-	
+
 }

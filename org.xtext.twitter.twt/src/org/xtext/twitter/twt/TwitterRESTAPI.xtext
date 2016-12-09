@@ -18,7 +18,7 @@ Type returns Type:
 	User | Hashtag | Date | Place;
 
 Operation returns Operation:
-	equals | lessThan | upperThan;
+	Equals | LessThan | UpperThan;
 
 Deck returns Deck:
 	'Deck' name=EString
@@ -73,17 +73,17 @@ Place returns Place:
 	'Place'
 	;
 
-equals returns equals:
-	{equals}
+Equals returns Equals:
+	{Equals}
 	'='
 	;
 
-lessThan returns lessThan:
-	{lessThan}
+LessThan returns LessThan:
+	{LessThan}
 	'<'
 	;
 
-upperThan returns upperThan:
-	{upperThan}
+UpperThan returns UpperThan:
+	{UpperThan}
 	'>'
 	;

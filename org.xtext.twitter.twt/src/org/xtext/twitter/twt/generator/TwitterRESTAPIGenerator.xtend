@@ -32,11 +32,8 @@ import twitterRESTAPI.upperThan
 class TwitterRESTAPIGenerator extends AbstractGenerator {
 
 	override void doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext context) {
-//		fsa.generateFile('greetings.txt', 'People to greet: ' + 
-//			resource.allContents
-//				.filter(typeof(Greeting))
-//				.map[name]
-//				.join(', '))
+		for(w: resource.allContents.toIterable.filter(WebPage))
+					fsa.generateFile("generatedCode.json", w.compile)
 	}
 	
 	def compile(WebPage wp) '''

@@ -3,11 +3,15 @@
  */
 package org.xtext.twitter.twt.validation
 
-import twitterRESTAPI.ExprSimple
+import javax.inject.Inject
+import org.eclipse.emf.ecore.resource.Resource
+import org.eclipse.xtext.util.CancelIndicator
 import org.eclipse.xtext.validation.Check
-import org.eclipse.emf.ecore.EStructuralFeature
-import twitterRESTAPI.TwitterRESTAPIPackage
+import org.eclipse.xtext.validation.CheckMode
+import org.eclipse.xtext.validation.IResourceValidator
 import twitterRESTAPI.Date
+import twitterRESTAPI.ExprSimple
+import twitterRESTAPI.TwitterRESTAPIPackage
 
 /**
  * This class contains custom validation rules.
@@ -27,6 +31,26 @@ class TwitterRESTAPIValidator extends AbstractTwitterRESTAPIValidator {
 //		}
 //	}
 
+	@Inject IResourceValidator resourceValidator
+	def checkResource(Resource r) {
+		val issues = resourceValidator.validate(r,
+            CheckMode.ALL, CancelIndicator.NullImpl)
+    for (issue: issues) {
+        switch issue.severity {
+            case ERROR:
+                println("ERROR: " + issue.message)
+            case WARNING:
+                println("WARNING: " + issue.message)
+			case IGNORE: {
+				println("IGNORING: " + issue.message)
+			}
+			case INFO: {
+				println("INFO: " + issue.message)
+			}
+        }
+    }
+	}
+
 	@Check
 	def checkEqualsIsNotOnUserOrHashtag(ExprSimple e) {
 		//TODO
@@ -35,10 +59,11 @@ class TwitterRESTAPIValidator extends AbstractTwitterRESTAPIValidator {
 			warning("toto de warning", TwitterRESTAPIPackage.Literals.EXPR_SIMPLE__OPERATION, "Invalid Operation");
 		}
 	}
-	
+
 	@Check
 	def checkIfDateIsWellFormed(Date d) {
-		
+		//error("User and Hashtag types can only be used with Equals operation", e, TwitterRESTAPIPackage.Literals.EXPR_SIMPLE__OPERATION);
+		print('ERREUR !!!!!!!!!!!!!!!!!!!!!!!!!!!!');
 	}
 
 }

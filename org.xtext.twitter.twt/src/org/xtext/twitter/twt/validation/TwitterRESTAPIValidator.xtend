@@ -12,6 +12,9 @@ import org.eclipse.xtext.validation.IResourceValidator
 import twitterRESTAPI.Date
 import twitterRESTAPI.ExprSimple
 import twitterRESTAPI.TwitterRESTAPIPackage
+import org.eclipse.emf.ecore.EStructuralFeature
+import java.util.regex.Pattern
+import java.util.regex.Matcher
 
 /**
  * This class contains custom validation rules.
@@ -19,17 +22,16 @@ import twitterRESTAPI.TwitterRESTAPIPackage
  * See https://www.eclipse.org/Xtext/documentation/303_runtime_concepts.html#validation
  */
 class TwitterRESTAPIValidator extends AbstractTwitterRESTAPIValidator {
-
-//	public static val INVALID_NAME = 'invalidName'
-//
-//	@Check
-//	def checkGreetingStartsWithCapital(Greeting greeting) {
-//		if (!Character.isUpperCase(greeting.name.charAt(0))) {
-//			warning('Name should start with a capital',
-//					TwitterRESTAPIPackage.Literals.GREETING__NAME,
-//					INVALID_NAME)
-//		}
-//	}
+	
+	// Class constants
+	private final static String CLASS_USER = "twitterRESTAPI.impl.UserImpl";
+	private final static String CLASS_HASHTAG = "twitterRESTAPI.impl.HashtagImpl";
+	private final static String CLASS_DATE = "twitterRESTAPI.impl.DateImpl";
+	private final static String CLASS_EQUALS = "twitterRESTAPI.impl.EqualsImpl";
+	
+	// Date pattern
+	private final static String PATTERN_DATE = "((0[1-9])|((1|2)[0-9])|(3[0-1]))/((0[1-9])|(1[0-2]))/(19[0-9]{2}|20[0-9]{2})";
+	var p = Pattern.compile(PATTERN_DATE);
 
 	@Inject IResourceValidator resourceValidator
 	def checkResource(Resource r) {
@@ -52,18 +54,18 @@ class TwitterRESTAPIValidator extends AbstractTwitterRESTAPIValidator {
 	}
 
 	@Check
-	def checkEqualsIsNotOnUserOrHashtag(ExprSimple e) {
-		//TODO
-		if ((e.type.class.name.equals("User") || e.type.class.name.equals("Hashtag")) && !e.operation.class.equals("Equals")) {
-			//error("User and Hashtag types can only be used with Equals operation", e, TwitterRESTAPIPackage.Literals.EXPR_SIMPLE__OPERATION);
-			warning("toto de warning", TwitterRESTAPIPackage.Literals.EXPR_SIMPLE__OPERATION, "Invalid Operation");
+	def checkWellFormedDateAndOperationWithUserOrHashtag(ExprSimple e) {
+		if (e.type.class.name.equals(CLASS_USER) || e.type.class.name.equals(CLASS_HASHTAG)) {
+			if (!e.operation.class.name.equals(CLASS_EQUALS)) {
+				error("Hashtag (#) and User (@) types can only be used with Equals (=) operation", e, TwitterRESTAPIPackage.Literals.EXPR_SIMPLE__OPERATION);
+			}
+		} else if (e.type.class.name.equals(CLASS_DATE)) {
+ 			var m = p.matcher(e.value);
+ 			if (!m.matches()) {
+ 				error("Incorrect date value. Required pattern = dd/MM/yyyy", e, TwitterRESTAPIPackage.Literals.EXPR_SIMPLE__VALUE);
+ 			}
+			
 		}
-	}
-
-	@Check
-	def checkIfDateIsWellFormed(Date d) {
-		//error("User and Hashtag types can only be used with Equals operation", e, TwitterRESTAPIPackage.Literals.EXPR_SIMPLE__OPERATION);
-		print('ERREUR !!!!!!!!!!!!!!!!!!!!!!!!!!!!');
 	}
 
 }

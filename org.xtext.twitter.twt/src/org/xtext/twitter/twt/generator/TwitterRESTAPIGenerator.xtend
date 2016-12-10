@@ -23,6 +23,12 @@ import twitterRESTAPI.Operation
 import twitterRESTAPI.Equals
 import twitterRESTAPI.LessThan
 import twitterRESTAPI.UpperThan
+import org.xtext.twitter.twt.TwitterRESTAPIStandaloneSetup
+import org.eclipse.xtext.resource.XtextResourceSet
+import org.eclipse.emf.common.util.URI
+import org.eclipse.emf.ecore.util.EcoreUtil
+import java.io.FileWriter
+import java.io.BufferedWriter
 
 /**
  * Generates code from your model files on save.
@@ -31,6 +37,34 @@ import twitterRESTAPI.UpperThan
  */
 class TwitterRESTAPIGenerator extends AbstractGenerator {
 
+	/**
+	 * External call to generate
+	 */
+	def public void generate(String in, String outputFile) {
+		val injector = new TwitterRESTAPIStandaloneSetup().createInjectorAndDoEMFRegistration();
+		val resourceSet = injector.getInstance(XtextResourceSet);
+		val uri = URI.createURI(in);
+		val xtextResource = resourceSet.getResource(uri, true);
+		EcoreUtil.resolveAll(xtextResource);
+		
+		var out = outputFile
+		if(out.equals(""))
+			out = in + "gen.json"
+			
+		try {
+  			val fstream = new FileWriter(out)
+  			val buff = new BufferedWriter(fstream)
+  			for(p: xtextResource.allContents.toIterable.filter(WebPage))
+				buff.write(p.compile.toString)
+  			buff.close()
+  		}catch (Exception e){
+  			println("Can't write " + out + " - Error: " + e.getMessage())
+  		}
+	}
+
+	/**
+	 * Internal call for XText
+	 */
 	override void doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext context) {
 		for(w: resource.allContents.toIterable.filter(WebPage))
 					fsa.generateFile("generatedCode.json", w.compile)

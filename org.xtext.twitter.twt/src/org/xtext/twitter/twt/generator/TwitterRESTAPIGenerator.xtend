@@ -3,32 +3,32 @@
  */
 package org.xtext.twitter.twt.generator
 
+import java.io.BufferedWriter
+import java.io.FileWriter
+import org.eclipse.emf.common.util.URI
 import org.eclipse.emf.ecore.resource.Resource
+import org.eclipse.emf.ecore.util.EcoreUtil
 import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
-import twitterRESTAPI.Deck
-import twitterRESTAPI.WebPage
-import twitterRESTAPI.Expression
-import twitterRESTAPI.ExprSimple
-import twitterRESTAPI.And
-import twitterRESTAPI.Or
-import twitterRESTAPI.Not
-import twitterRESTAPI.Type
-import twitterRESTAPI.Place
-import twitterRESTAPI.Date
-import twitterRESTAPI.Hashtag
-import twitterRESTAPI.User
-import twitterRESTAPI.Operation
-import twitterRESTAPI.Equals
-import twitterRESTAPI.LessThan
-import twitterRESTAPI.UpperThan
-import org.xtext.twitter.twt.TwitterRESTAPIStandaloneSetup
 import org.eclipse.xtext.resource.XtextResourceSet
-import org.eclipse.emf.common.util.URI
-import org.eclipse.emf.ecore.util.EcoreUtil
-import java.io.FileWriter
-import java.io.BufferedWriter
+import org.xtext.twitter.twt.TwitterRESTAPIStandaloneSetup
+import twitterRESTAPI.And
+import twitterRESTAPI.Date
+import twitterRESTAPI.Deck
+import twitterRESTAPI.Equals
+import twitterRESTAPI.ExprSimple
+import twitterRESTAPI.Expression
+import twitterRESTAPI.Hashtag
+import twitterRESTAPI.LessThan
+import twitterRESTAPI.Not
+import twitterRESTAPI.Operation
+import twitterRESTAPI.Or
+import twitterRESTAPI.Place
+import twitterRESTAPI.Type
+import twitterRESTAPI.UpperThan
+import twitterRESTAPI.User
+import twitterRESTAPI.WebPage
 
 /**
  * Generates code from your model files on save.
@@ -42,9 +42,8 @@ class TwitterRESTAPIGenerator extends AbstractGenerator {
 	 */
 	def public void generate(String in, String outputFile) {
 		val injector = new TwitterRESTAPIStandaloneSetup().createInjectorAndDoEMFRegistration();
-		val resourceSet = injector.getInstance(XtextResourceSet);
-		val uri = URI.createURI(in);
-		val xtextResource = resourceSet.getResource(uri, true);
+		val resourceSet = injector.getInstance(XtextResourceSet);		
+		val xtextResource = resourceSet.getResource(URI.createURI("C:\\tmp\\irn.twt"), true);
 		EcoreUtil.resolveAll(xtextResource);
 		
 		var out = outputFile

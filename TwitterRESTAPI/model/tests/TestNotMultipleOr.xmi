@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<twitterRESTAPI:WebPage
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:twitterRESTAPI="http://www.example.org/twitterRESTAPI"
+    xsi:schemaLocation="http://www.example.org/twitterRESTAPI ../twitterRESTAPI.ecore">
+  <deck name="NotMultipleOr">
+    <instruction
+        xsi:type="twitterRESTAPI:Or"
+        isNot="true">
+      <right
+          xsi:type="twitterRESTAPI:Or">
+        <right
+            xsi:type="twitterRESTAPI:Or"
+            isNot="true">
+          <right
+              xsi:type="twitterRESTAPI:Or">
+            <right
+                xsi:type="twitterRESTAPI:Date"
+                isNot="true"
+                value="0006-07-10T00:00:00.000+0100"/>
+            <left
+                xsi:type="twitterRESTAPI:Date"
+                isNot="true"
+                value="0028-11-26T00:00:00.000+0100"/>
+          </right>
+        </right>
+        <left
+            xsi:type="twitterRESTAPI:Or">
+          <right
+              xsi:type="twitterRESTAPI:Hashtag"
+              isNot="true"
+              value="battlefield1"/>
+          <left
+              xsi:type="twitterRESTAPI:Hashtag"
+              isNot="true"
+              value="sexyredpanda"/>
+        </left>
+      </right>
+      <left
+          xsi:type="twitterRESTAPI:Or"
+          isNot="true">
+        <right
+            xsi:type="twitterRESTAPI:Or">
+          <right
+              xsi:type="twitterRESTAPI:User"
+              value="SaintePelle"/>
+          <left
+              xsi:type="twitterRESTAPI:User"
+              value="phcollin1"/>
+        </right>
+        <left
+            xsi:type="twitterRESTAPI:Or"
+            isNot="true">
+          <right
+              xsi:type="twitterRESTAPI:Hashtag"
+              isNot="true"
+              value="kribouille"/>
+          <left
+              xsi:type="twitterRESTAPI:Hashtag"
+              value="arkhasium"/>
+        </left>
+      </left>
+    </instruction>
+  </deck>
+</twitterRESTAPI:WebPage>

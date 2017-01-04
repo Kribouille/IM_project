@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<twitterRESTAPI:WebPage
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:twitterRESTAPI="http://www.example.org/twitterRESTAPI"
+    xsi:schemaLocation="http://www.example.org/twitterRESTAPI ../twitterRESTAPI.ecore">
+  <deck name="testMultipleOr">
+    <instruction
+        xsi:type="twitterRESTAPI:Or">
+      <right
+          xsi:type="twitterRESTAPI:Or">
+        <right
+            xsi:type="twitterRESTAPI:User"
+            value="SaintePelle"/>
+        <left
+            xsi:type="twitterRESTAPI:Hashtag"
+            value="#redpanda"/>
+      </right>
+      <left
+          xsi:type="twitterRESTAPI:Or">
+        <right
+            xsi:type="twitterRESTAPI:Date"
+            value="0030-11-06T00:00:00.000+0100"/>
+        <left
+            xsi:type="twitterRESTAPI:User"
+            value="phcollin1"/>
+      </left>
+    </instruction>
+  </deck>
+</twitterRESTAPI:WebPage>

@@ -6,36 +6,42 @@
     operationReflection="true" importOrganizing="true">
   <foreignModel>twitterRESTAPI.ecore</foreignModel>
   <genPackages prefix="TwitterRESTAPI" disposableProviderFactory="true" ecorePackage="twitterRESTAPI.ecore#/">
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//User"/>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//Hashtag"/>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//Date"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//User">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//User/value"/>
+    </genClasses>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Hashtag">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//Hashtag/value"/>
+    </genClasses>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Date">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//Date/value"/>
+    </genClasses>
     <genClasses ecoreClass="twitterRESTAPI.ecore#//Deck">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//Deck/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Deck/expression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Deck/instruction"/>
     </genClasses>
     <genClasses ecoreClass="twitterRESTAPI.ecore#//And"/>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//Expression"/>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//Place"/>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//ExprBinaire">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//ExprBinaire/exp1"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//ExprBinaire/exp2"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Instruction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//Instruction/isNot"/>
+    </genClasses>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Place">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//Place/value"/>
+    </genClasses>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//BinOp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//BinOp/right"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//BinOp/left"/>
     </genClasses>
     <genClasses ecoreClass="twitterRESTAPI.ecore#//Or"/>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//Not">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Not/exp"/>
-    </genClasses>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//Equals"/>
     <genClasses ecoreClass="twitterRESTAPI.ecore#//LessThan"/>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//ExprSimple">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//ExprSimple/value"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//ExprSimple/type"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//ExprSimple/operation"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Element">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Element/op"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="twitterRESTAPI.ecore#//Type"/>
-    <genClasses image="false" ecoreClass="twitterRESTAPI.ecore#//Operation"/>
+    <genClasses image="false" ecoreClass="twitterRESTAPI.ecore#//UnOp"/>
     <genClasses ecoreClass="twitterRESTAPI.ecore#//UpperThan"/>
     <genClasses ecoreClass="twitterRESTAPI.ecore#//WebPage">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//WebPage/deck"/>
+    </genClasses>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Retweet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//Retweet/value"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

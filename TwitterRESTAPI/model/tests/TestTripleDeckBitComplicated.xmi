@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<twitterRESTAPI:WebPage
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:twitterRESTAPI="http://www.example.org/twitterRESTAPI"
+    xsi:schemaLocation="http://www.example.org/twitterRESTAPI ../twitterRESTAPI.ecore">
+  <deck name="testTripleDeckBitComplicated">
+    <instruction
+        xsi:type="twitterRESTAPI:And">
+      <right
+          xsi:type="twitterRESTAPI:User"
+          value="SaintePelle"/>
+      <left
+          xsi:type="twitterRESTAPI:User"
+          value="kaysoroSteven"/>
+    </instruction>
+  </deck>
+  <deck name="testTripleDeckBitComplicated2">
+    <instruction
+        xsi:type="twitterRESTAPI:Or">
+      <right
+          xsi:type="twitterRESTAPI:User"
+          value="kaysoroSteven"/>
+      <left
+          xsi:type="twitterRESTAPI:User"
+          value="SaintePelle"/>
+    </instruction>
+  </deck>
+  <deck name="testTripleDeckBitComplicated3">
+    <instruction
+        xsi:type="twitterRESTAPI:And">
+      <right
+          xsi:type="twitterRESTAPI:User"
+          value="SaintePelle"/>
+      <left
+          xsi:type="twitterRESTAPI:Hashtag"
+          value="pelle"/>
+    </instruction>
+  </deck>
+</twitterRESTAPI:WebPage>

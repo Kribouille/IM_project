@@ -3,6 +3,14 @@
   <semanticResources>twitterRESTAPI.ecore</semanticResources>
   <semanticResources>twitterRESTAPI.genmodel</semanticResources>
   <semanticResources>tests/TestNotAnd.xmi</semanticResources>
+  <semanticResources>tests/TestDoubleDeckSimple.xmi</semanticResources>
+  <semanticResources>tests/TestMultipleAnd.xmi</semanticResources>
+  <semanticResources>tests/TestMultipleOr.xmi</semanticResources>
+  <semanticResources>tests/TestNotMultipleAnd.xmi</semanticResources>
+  <semanticResources>tests/TestNotMultipleOr.xmi</semanticResources>
+  <semanticResources>tests/TestDoubleDeckBitComplicated.xmi</semanticResources>
+  <semanticResources>tests/TestTripleDeckBitComplicated.xmi</semanticResources>
+  <semanticResources>tests/TestTripleDeckSimple.xmi</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_C8pBwKvfEeaEMev4rzklrA">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
     <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_C-ajYKvfEeaEMev4rzklrA" name="twitterRESTAPI">

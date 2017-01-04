@@ -5,16 +5,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:twitterRESTAPI="http://www.example.org/twitterRESTAPI"
     xsi:schemaLocation="http://www.example.org/twitterRESTAPI ../twitterRESTAPI.ecore">
-  <deck name="testNotAnd">
+  <deck name="testDoubleDeckSimple">
     <instruction
-        xsi:type="twitterRESTAPI:And"
-        isNot="true">
-      <right
-          xsi:type="twitterRESTAPI:Hashtag"
-          value="cat"/>
-      <left
-          xsi:type="twitterRESTAPI:User"
-          value="SaintePelle"/>
-    </instruction>
+        xsi:type="twitterRESTAPI:User"
+        value="SaintePelle"/>
+  </deck>
+  <deck name="testDoubleDeckSimple2">
+    <instruction
+        xsi:type="twitterRESTAPI:User"
+        value="kaysoroSteven"/>
   </deck>
 </twitterRESTAPI:WebPage>

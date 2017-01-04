@@ -4,7 +4,7 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:twitterRESTAPI="http://www.example.org/twitterRESTAPI"
-    xsi:schemaLocation="http://www.example.org/twitterRESTAPI twitterRESTAPI.ecore">
+    xsi:schemaLocation="http://www.example.org/twitterRESTAPI ../twitterRESTAPI.ecore">
   <deck name="testDate">
     <instruction
         xsi:type="twitterRESTAPI:Date"

@@ -15,6 +15,11 @@
   <semanticResources>TestNotDateInf.xmi</semanticResources>
   <semanticResources>TestNotDateSup.xmi</semanticResources>
   <semanticResources>TestRetweet.xmi</semanticResources>
+  <semanticResources>TestNotRetweet.xmi</semanticResources>
+  <semanticResources>TestNotRetweetInf.xmi</semanticResources>
+  <semanticResources>TestNotRetweetSup.xmi</semanticResources>
+  <semanticResources>TestRetweetInf.xmi</semanticResources>
+  <semanticResources>TestRetweetSup.xmi</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_C8pBwKvfEeaEMev4rzklrA">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
     <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_C-ajYKvfEeaEMev4rzklrA" name="twitterRESTAPI">

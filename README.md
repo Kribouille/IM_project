@@ -1,3 +1,15 @@
+#IMA_project
+
+Nous avons décidé de réaliser un éditeur graphique avec Sirius. Il permettrait aux utilisateurs de concevoir intuitivement leurs decks. 
+Le métamodèle a été repensé pour correspondre à nos besoins. Des tests sous forme d'arborescence ont été créés pour vérifier la corrélation entre les éléments du MM et les éléments graphiques de l'éditeur.
+
+Principe : Lorsque l'utilisateur a terminé son dessin, une première passe est effectuée sur son graphe pour récupérer l'ensemble des requêtes de chaque deck. Cette passe va simplifier les requêtes pour retourner une seule requête (qui peut être importante) pour chaque deck. Le générateur s'occupe ensuite de générer un fichier JSON contenant l'intégralité des decks et la query a faire auprès de l'API Twitter. Enfin, une appli Node.js toute prête s'occupe de lire ce fichier JSON et d'afficher les différents decks sur le navigateur. Cette appli effectuera les requêtes sur l'API Twitter via une autre API "surcouche" simplifiée : https://github.com/ttezel/twit. Les principales possibilités du champ "query" sont décrites dans le wiki.
+
+TODO : 
+- Sirius 
+- Le générateur 
+- L'appli Node.js
+
 # IM_project
 
 ## Préambule
@@ -43,14 +55,4 @@ Cela corrige les erreurs produites par Xtext
 - Coder le générateur avec Xtend
 - Faire un appel REST avec angularjs
 
-#IMA_project
 
-Nous avons décidé de réaliser un éditeur graphique avec Sirius. Il permettrait aux utilisateurs de concevoir intuitivement leurs decks. 
-Le métamodèle a été repensé pour correspondre à nos besoins. Des tests sous forme d'arborescence ont été créés pour vérifier la corrélation entre les éléments du MM et les éléments graphiques de l'éditeur.
-
-Principe : Lorsque l'utilisateur a terminé son dessin, une première passe est effectuée sur son graphe pour récupérer l'ensemble des requêtes de chaque deck. Cette passe va simplifier les requêtes pour retourner une seule requête (qui peut être importante) pour chaque deck. Le générateur s'occupe ensuite de générer un fichier JSON contenant l'intégralité des decks et la query a faire auprès de l'API Twitter. Enfin, une appli Node.js toute prête s'occupe de lire ce fichier JSON et d'afficher les différents decks sur le navigateur. Cette appli effectuera les requêtes sur l'API Twitter via une autre API "surcouche" simplifiée : https://github.com/ttezel/twit
-
-TODO : 
-- Sirius 
-- Le générateur 
-- L'appli Node.js 

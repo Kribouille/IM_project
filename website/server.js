@@ -43,6 +43,10 @@ var io = require('socket.io').listen(server);
 io.sockets.on('connection', function(socket) {
   // Lancer le thread REST API pour télécharger les tweets désirés
 
+  // TODO : calculer le nombre de decks dans le JSON
+  var deckNumber = 5;
+  socket.emit('deckNumber', deckNumber);
+
   socket.on('click', function(deck) {
     //TODO appliquer les bons filtres sur l'API rest => changer la query avec les filtres du deck en paramètre
     T.get('search/tweets', { q: 'banana since:2011-07-11'}, function(err, data, response) {

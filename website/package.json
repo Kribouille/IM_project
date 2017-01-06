@@ -1,14 +1,14 @@
 { "name" : "IMProject"
-, "version" : "1.0.0"
-, "description" : "Deck for Twitter status"
-, "main" : "server/server.js"
-, "dependencies": {
+  , "version" : "1.0.0"
+  , "description" : "Deck for Twitter status"
+  , "main" : "server/server.js"
+  , "dependencies": {
     "socket.io": "latest"
     ,"ejs": "latest"
     ,"express": "latest"
     ,"loglevel": "latest"
-	,"node-twitter-api":"latest"
+    ,"twit":"latest"
   }
-, "author": "Steven Pescheteau"
-, "license": "ISC"
+  , "author": "Steven Pescheteau"
+  , "license": "ISC"
 }

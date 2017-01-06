@@ -1,5 +1,6 @@
 var socket = io();
-
-socket.on('', function() {
-	//TODO
+socket.emit('click', 'test');
+socket.on('tweets', function(tweets) {
+	console.log(tweets);
+  // TODO : prettyprint tweets
 });

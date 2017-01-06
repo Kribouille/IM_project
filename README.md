@@ -9,6 +9,9 @@ TODO :
 - Sirius 
 - Le générateur 
 - L'appli Node.js
+- Editeur graphique (est-ce que c'est la même chose que Sirius ?)
+- outils de refactoring
+- outils de validation ou analyse
 
 # IM_project
 
@@ -51,8 +54,5 @@ Cela corrige les erreurs produites par Xtext
 ##Process
   
   ![process](https://github.com/Kribouille/IM_project/blob/master/process.jpg)
-##### A faire :
-- Coder le générateur avec Xtend
-- Faire un appel REST avec angularjs
 
 

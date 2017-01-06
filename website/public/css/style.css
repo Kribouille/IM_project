@@ -1,0 +1,32 @@
+.blue {
+   background : #3B5998;
+}
+
+.deck {
+    margin-left: -20px;
+   
+}
+
+.deck > .sidebar-nav > .nav > li > a {
+ color: #333;;
+}
+
+.page-header {
+    padding-top : 20px;
+}
+
+.border-left {
+    border-left: 1px solid #e7e7e7;
+}
+
+.border-right {
+    border-right: 1px solid #e7e7e7;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.twitter {
+  border-radius: 2px;
+}

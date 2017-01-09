@@ -49,7 +49,7 @@ io.sockets.on('connection', function(socket) {
 
   socket.on('click', function(deck) {
     //TODO appliquer les bons filtres sur l'API rest => changer la query avec les filtres du deck en paramètre
-    T.get('search/tweets', { q: 'banana since:2011-07-11'}, function(err, data, response) {
+    T.get('search/tweets', { q: 'lol'}, function(err, data, response) {
       if(err){
         console.log(err);
       }
@@ -58,6 +58,15 @@ io.sockets.on('connection', function(socket) {
       }
     });
   });
+
+// pour streamer. Voir https://dev.twitter.com/streaming/overview/request-parameters#track
+  socket.on('streamOn', function(deck){
+    var stream = T.stream('statuses/filter', { track: 'cat,lol' })
+
+    stream.on('tweet', function (tweet) {
+      socket.emit('newTweet', tweet);
+    })
+  })
 });
 
 server.listen(port);

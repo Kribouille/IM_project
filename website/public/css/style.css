@@ -4,7 +4,7 @@
 
 .deck {
     margin-left: -20px;
-   
+
 }
 
 .deck > .sidebar-nav > .nav > li > a {
@@ -29,4 +29,25 @@
 
 .twitter {
   border-radius: 2px;
+}
+
+#tweets #imgDiv {
+  float: left;
+}
+
+#tweets div {
+  height: 100px;
+}
+
+#tweets #author {
+  font-weight: bold;
+}
+
+#tweets #tweetText {
+  position:relative;
+  font:Arial, sans-serif;
+  color: black;
+  font-style: normal;
+  background-color:transparent;
+  text-decoration: none;
 }

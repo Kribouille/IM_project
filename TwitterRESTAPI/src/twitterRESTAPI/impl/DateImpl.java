@@ -4,8 +4,6 @@ package twitterRESTAPI.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import twitterRESTAPI.Date;
 import twitterRESTAPI.TwitterRESTAPIPackage;
 
@@ -13,10 +11,16 @@ import twitterRESTAPI.TwitterRESTAPIPackage;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Date</b></em>'.
  * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link twitterRESTAPI.impl.DateImpl#getValue <em>Value</em>}</li>
+ * </ul>
  *
  * @generated
  */
-public class DateImpl extends MinimalEObjectImpl.Container implements Date {
+public class DateImpl extends ElementImpl implements Date {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34,6 +38,24 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 	@Override
 	protected EClass eStaticClass() {
 		return TwitterRESTAPIPackage.Literals.DATE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public java.util.Date getValue() {
+		return (java.util.Date)eGet(TwitterRESTAPIPackage.Literals.DATE__VALUE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setValue(java.util.Date newValue) {
+		eSet(TwitterRESTAPIPackage.Literals.DATE__VALUE, newValue);
 	}
 
 } //DateImpl

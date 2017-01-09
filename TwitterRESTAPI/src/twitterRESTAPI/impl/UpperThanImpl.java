@@ -4,23 +4,23 @@ package twitterRESTAPI.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
-import twitterRESTAPI.Or;
 import twitterRESTAPI.TwitterRESTAPIPackage;
+import twitterRESTAPI.UpperThan;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Or</b></em>'.
+ * An implementation of the model object '<em><b>Upper Than</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class OrImpl extends BinOpImpl implements Or {
+public class UpperThanImpl extends UnOpImpl implements UpperThan {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected OrImpl() {
+	protected UpperThanImpl() {
 		super();
 	}
 
@@ -31,7 +31,7 @@ public class OrImpl extends BinOpImpl implements Or {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return TwitterRESTAPIPackage.Literals.OR;
+		return TwitterRESTAPIPackage.Literals.UPPER_THAN;
 	}
 
-} //OrImpl
+} //UpperThanImpl

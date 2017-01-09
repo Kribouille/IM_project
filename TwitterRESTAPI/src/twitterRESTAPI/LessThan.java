@@ -13,5 +13,5 @@ package twitterRESTAPI;
  * @model
  * @generated
  */
-public interface LessThan extends Operation {
+public interface LessThan extends UnOp {
 } // LessThan

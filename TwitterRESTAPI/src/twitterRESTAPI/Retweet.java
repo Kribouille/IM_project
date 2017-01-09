@@ -5,21 +5,21 @@ package twitterRESTAPI;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>User</b></em>'.
+ * A representation of the model object '<em><b>Retweet</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link twitterRESTAPI.User#getValue <em>Value</em>}</li>
+ *   <li>{@link twitterRESTAPI.Retweet#getValue <em>Value</em>}</li>
  * </ul>
  *
- * @see twitterRESTAPI.TwitterRESTAPIPackage#getUser()
+ * @see twitterRESTAPI.TwitterRESTAPIPackage#getRetweet()
  * @model
  * @generated
  */
-public interface User extends Element {
+public interface Retweet extends Element {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -29,21 +29,21 @@ public interface User extends Element {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
-	 * @see #setValue(String)
-	 * @see twitterRESTAPI.TwitterRESTAPIPackage#getUser_Value()
+	 * @see #setValue(int)
+	 * @see twitterRESTAPI.TwitterRESTAPIPackage#getRetweet_Value()
 	 * @model required="true"
 	 * @generated
 	 */
-	String getValue();
+	int getValue();
 
 	/**
-	 * Sets the value of the '{@link twitterRESTAPI.User#getValue <em>Value</em>}' attribute.
+	 * Sets the value of the '{@link twitterRESTAPI.Retweet#getValue <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Value</em>' attribute.
 	 * @see #getValue()
 	 * @generated
 	 */
-	void setValue(String value);
+	void setValue(int value);
 
-} // User
+} // Retweet

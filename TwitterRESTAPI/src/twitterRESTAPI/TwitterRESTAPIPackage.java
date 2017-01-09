@@ -57,32 +57,87 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	TwitterRESTAPIPackage eINSTANCE = twitterRESTAPI.impl.TwitterRESTAPIPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link twitterRESTAPI.Type <em>Type</em>}' class.
+	 * The meta object id for the '{@link twitterRESTAPI.impl.InstructionImpl <em>Instruction</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see twitterRESTAPI.Type
-	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getType()
+	 * @see twitterRESTAPI.impl.InstructionImpl
+	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getInstruction()
 	 * @generated
 	 */
-	int TYPE = 13;
+	int INSTRUCTION = 5;
 
 	/**
-	 * The number of structural features of the '<em>Type</em>' class.
+	 * The feature id for the '<em><b>Is Not</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TYPE_FEATURE_COUNT = 0;
+	int INSTRUCTION__IS_NOT = 0;
 
 	/**
-	 * The number of operations of the '<em>Type</em>' class.
+	 * The number of structural features of the '<em>Instruction</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TYPE_OPERATION_COUNT = 0;
+	int INSTRUCTION_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Instruction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTION_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link twitterRESTAPI.impl.ElementImpl <em>Element</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see twitterRESTAPI.impl.ElementImpl
+	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getElement()
+	 * @generated
+	 */
+	int ELEMENT = 10;
+
+	/**
+	 * The feature id for the '<em><b>Is Not</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT__IS_NOT = INSTRUCTION__IS_NOT;
+
+	/**
+	 * The feature id for the '<em><b>Op</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT__OP = INSTRUCTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT_FEATURE_COUNT = INSTRUCTION_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT_OPERATION_COUNT = INSTRUCTION_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link twitterRESTAPI.impl.UserImpl <em>User</em>}' class.
@@ -95,13 +150,40 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int USER = 0;
 
 	/**
+	 * The feature id for the '<em><b>Is Not</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER__IS_NOT = ELEMENT__IS_NOT;
+
+	/**
+	 * The feature id for the '<em><b>Op</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER__OP = ELEMENT__OP;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER__VALUE = ELEMENT_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>User</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_FEATURE_COUNT = TYPE_FEATURE_COUNT + 0;
+	int USER_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>User</em>' class.
@@ -110,7 +192,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_OPERATION_COUNT = TYPE_OPERATION_COUNT + 0;
+	int USER_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link twitterRESTAPI.impl.HashtagImpl <em>Hashtag</em>}' class.
@@ -123,13 +205,40 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int HASHTAG = 1;
 
 	/**
+	 * The feature id for the '<em><b>Is Not</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HASHTAG__IS_NOT = ELEMENT__IS_NOT;
+
+	/**
+	 * The feature id for the '<em><b>Op</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HASHTAG__OP = ELEMENT__OP;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HASHTAG__VALUE = ELEMENT_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Hashtag</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HASHTAG_FEATURE_COUNT = TYPE_FEATURE_COUNT + 0;
+	int HASHTAG_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Hashtag</em>' class.
@@ -138,7 +247,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HASHTAG_OPERATION_COUNT = TYPE_OPERATION_COUNT + 0;
+	int HASHTAG_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link twitterRESTAPI.impl.DateImpl <em>Date</em>}' class.
@@ -151,13 +260,40 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int DATE = 2;
 
 	/**
+	 * The feature id for the '<em><b>Is Not</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE__IS_NOT = ELEMENT__IS_NOT;
+
+	/**
+	 * The feature id for the '<em><b>Op</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE__OP = ELEMENT__OP;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE__VALUE = ELEMENT_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Date</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATE_FEATURE_COUNT = TYPE_FEATURE_COUNT + 0;
+	int DATE_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Date</em>' class.
@@ -166,7 +302,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATE_OPERATION_COUNT = TYPE_OPERATION_COUNT + 0;
+	int DATE_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link twitterRESTAPI.impl.DeckImpl <em>Deck</em>}' class.
@@ -188,13 +324,13 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int DECK__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Expression</b></em>' containment reference.
+	 * The feature id for the '<em><b>Instruction</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DECK__EXPRESSION = 1;
+	int DECK__INSTRUCTION = 1;
 
 	/**
 	 * The number of structural features of the '<em>Deck</em>' class.
@@ -215,78 +351,59 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int DECK_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link twitterRESTAPI.Expression <em>Expression</em>}' class.
+	 * The meta object id for the '{@link twitterRESTAPI.impl.BinOpImpl <em>Bin Op</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see twitterRESTAPI.Expression
-	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getExpression()
+	 * @see twitterRESTAPI.impl.BinOpImpl
+	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getBinOp()
 	 * @generated
 	 */
-	int EXPRESSION = 5;
+	int BIN_OP = 7;
 
 	/**
-	 * The number of structural features of the '<em>Expression</em>' class.
+	 * The feature id for the '<em><b>Is Not</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXPRESSION_FEATURE_COUNT = 0;
+	int BIN_OP__IS_NOT = INSTRUCTION__IS_NOT;
 
 	/**
-	 * The number of operations of the '<em>Expression</em>' class.
+	 * The feature id for the '<em><b>Right</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXPRESSION_OPERATION_COUNT = 0;
+	int BIN_OP__RIGHT = INSTRUCTION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link twitterRESTAPI.impl.ExprBinaireImpl <em>Expr Binaire</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see twitterRESTAPI.impl.ExprBinaireImpl
-	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getExprBinaire()
-	 * @generated
-	 */
-	int EXPR_BINAIRE = 7;
-
-	/**
-	 * The feature id for the '<em><b>Exp1</b></em>' containment reference.
+	 * The feature id for the '<em><b>Left</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXPR_BINAIRE__EXP1 = EXPRESSION_FEATURE_COUNT + 0;
+	int BIN_OP__LEFT = INSTRUCTION_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Exp2</b></em>' containment reference.
+	 * The number of structural features of the '<em>Bin Op</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXPR_BINAIRE__EXP2 = EXPRESSION_FEATURE_COUNT + 1;
+	int BIN_OP_FEATURE_COUNT = INSTRUCTION_FEATURE_COUNT + 2;
 
 	/**
-	 * The number of structural features of the '<em>Expr Binaire</em>' class.
+	 * The number of operations of the '<em>Bin Op</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXPR_BINAIRE_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>Expr Binaire</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPR_BINAIRE_OPERATION_COUNT = EXPRESSION_OPERATION_COUNT + 0;
+	int BIN_OP_OPERATION_COUNT = INSTRUCTION_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link twitterRESTAPI.impl.AndImpl <em>And</em>}' class.
@@ -299,22 +416,31 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int AND = 4;
 
 	/**
-	 * The feature id for the '<em><b>Exp1</b></em>' containment reference.
+	 * The feature id for the '<em><b>Is Not</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AND__EXP1 = EXPR_BINAIRE__EXP1;
+	int AND__IS_NOT = BIN_OP__IS_NOT;
 
 	/**
-	 * The feature id for the '<em><b>Exp2</b></em>' containment reference.
+	 * The feature id for the '<em><b>Right</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AND__EXP2 = EXPR_BINAIRE__EXP2;
+	int AND__RIGHT = BIN_OP__RIGHT;
+
+	/**
+	 * The feature id for the '<em><b>Left</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AND__LEFT = BIN_OP__LEFT;
 
 	/**
 	 * The number of structural features of the '<em>And</em>' class.
@@ -323,7 +449,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AND_FEATURE_COUNT = EXPR_BINAIRE_FEATURE_COUNT + 0;
+	int AND_FEATURE_COUNT = BIN_OP_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>And</em>' class.
@@ -332,7 +458,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AND_OPERATION_COUNT = EXPR_BINAIRE_OPERATION_COUNT + 0;
+	int AND_OPERATION_COUNT = BIN_OP_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link twitterRESTAPI.impl.PlaceImpl <em>Place</em>}' class.
@@ -345,13 +471,40 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int PLACE = 6;
 
 	/**
+	 * The feature id for the '<em><b>Is Not</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLACE__IS_NOT = ELEMENT__IS_NOT;
+
+	/**
+	 * The feature id for the '<em><b>Op</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLACE__OP = ELEMENT__OP;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLACE__VALUE = ELEMENT_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Place</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE_FEATURE_COUNT = TYPE_FEATURE_COUNT + 0;
+	int PLACE_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Place</em>' class.
@@ -360,7 +513,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE_OPERATION_COUNT = TYPE_OPERATION_COUNT + 0;
+	int PLACE_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link twitterRESTAPI.impl.OrImpl <em>Or</em>}' class.
@@ -373,22 +526,31 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int OR = 8;
 
 	/**
-	 * The feature id for the '<em><b>Exp1</b></em>' containment reference.
+	 * The feature id for the '<em><b>Is Not</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int OR__EXP1 = EXPR_BINAIRE__EXP1;
+	int OR__IS_NOT = BIN_OP__IS_NOT;
 
 	/**
-	 * The feature id for the '<em><b>Exp2</b></em>' containment reference.
+	 * The feature id for the '<em><b>Right</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int OR__EXP2 = EXPR_BINAIRE__EXP2;
+	int OR__RIGHT = BIN_OP__RIGHT;
+
+	/**
+	 * The feature id for the '<em><b>Left</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OR__LEFT = BIN_OP__LEFT;
 
 	/**
 	 * The number of structural features of the '<em>Or</em>' class.
@@ -397,7 +559,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OR_FEATURE_COUNT = EXPR_BINAIRE_FEATURE_COUNT + 0;
+	int OR_FEATURE_COUNT = BIN_OP_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Or</em>' class.
@@ -406,100 +568,35 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OR_OPERATION_COUNT = EXPR_BINAIRE_OPERATION_COUNT + 0;
+	int OR_OPERATION_COUNT = BIN_OP_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link twitterRESTAPI.impl.NotImpl <em>Not</em>}' class.
+	 * The meta object id for the '{@link twitterRESTAPI.impl.UnOpImpl <em>Un Op</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see twitterRESTAPI.impl.NotImpl
-	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getNot()
+	 * @see twitterRESTAPI.impl.UnOpImpl
+	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getUnOp()
 	 * @generated
 	 */
-	int NOT = 9;
+	int UN_OP = 11;
 
 	/**
-	 * The feature id for the '<em><b>Exp</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOT__EXP = EXPRESSION_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Not</em>' class.
+	 * The number of structural features of the '<em>Un Op</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NOT_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 1;
+	int UN_OP_FEATURE_COUNT = 0;
 
 	/**
-	 * The number of operations of the '<em>Not</em>' class.
+	 * The number of operations of the '<em>Un Op</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NOT_OPERATION_COUNT = EXPRESSION_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link twitterRESTAPI.Operation <em>Operation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see twitterRESTAPI.Operation
-	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getOperation()
-	 * @generated
-	 */
-	int OPERATION = 14;
-
-	/**
-	 * The number of structural features of the '<em>Operation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OPERATION_FEATURE_COUNT = 0;
-
-	/**
-	 * The number of operations of the '<em>Operation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OPERATION_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link twitterRESTAPI.impl.EqualsImpl <em>Equals</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see twitterRESTAPI.impl.EqualsImpl
-	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getEquals()
-	 * @generated
-	 */
-	int EQUALS = 10;
-
-	/**
-	 * The number of structural features of the '<em>Equals</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EQUALS_FEATURE_COUNT = OPERATION_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of operations of the '<em>Equals</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EQUALS_OPERATION_COUNT = OPERATION_OPERATION_COUNT + 0;
+	int UN_OP_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link twitterRESTAPI.impl.LessThanImpl <em>Less Than</em>}' class.
@@ -509,7 +606,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getLessThan()
 	 * @generated
 	 */
-	int LESS_THAN = 11;
+	int LESS_THAN = 9;
 
 	/**
 	 * The number of structural features of the '<em>Less Than</em>' class.
@@ -518,7 +615,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LESS_THAN_FEATURE_COUNT = OPERATION_FEATURE_COUNT + 0;
+	int LESS_THAN_FEATURE_COUNT = UN_OP_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Less Than</em>' class.
@@ -527,62 +624,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LESS_THAN_OPERATION_COUNT = OPERATION_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link twitterRESTAPI.impl.ExprSimpleImpl <em>Expr Simple</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see twitterRESTAPI.impl.ExprSimpleImpl
-	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getExprSimple()
-	 * @generated
-	 */
-	int EXPR_SIMPLE = 12;
-
-	/**
-	 * The feature id for the '<em><b>Value</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPR_SIMPLE__VALUE = EXPRESSION_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPR_SIMPLE__TYPE = EXPRESSION_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Operation</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPR_SIMPLE__OPERATION = EXPRESSION_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of structural features of the '<em>Expr Simple</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPR_SIMPLE_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of operations of the '<em>Expr Simple</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPR_SIMPLE_OPERATION_COUNT = EXPRESSION_OPERATION_COUNT + 0;
+	int LESS_THAN_OPERATION_COUNT = UN_OP_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link twitterRESTAPI.impl.UpperThanImpl <em>Upper Than</em>}' class.
@@ -592,7 +634,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getUpperThan()
 	 * @generated
 	 */
-	int UPPER_THAN = 15;
+	int UPPER_THAN = 12;
 
 	/**
 	 * The number of structural features of the '<em>Upper Than</em>' class.
@@ -601,7 +643,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPPER_THAN_FEATURE_COUNT = OPERATION_FEATURE_COUNT + 0;
+	int UPPER_THAN_FEATURE_COUNT = UN_OP_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Upper Than</em>' class.
@@ -610,7 +652,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPPER_THAN_OPERATION_COUNT = OPERATION_OPERATION_COUNT + 0;
+	int UPPER_THAN_OPERATION_COUNT = UN_OP_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link twitterRESTAPI.impl.WebPageImpl <em>Web Page</em>}' class.
@@ -620,7 +662,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getWebPage()
 	 * @generated
 	 */
-	int WEB_PAGE = 16;
+	int WEB_PAGE = 13;
 
 	/**
 	 * The feature id for the '<em><b>Deck</b></em>' containment reference list.
@@ -649,6 +691,61 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 */
 	int WEB_PAGE_OPERATION_COUNT = 0;
 
+	/**
+	 * The meta object id for the '{@link twitterRESTAPI.impl.RetweetImpl <em>Retweet</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see twitterRESTAPI.impl.RetweetImpl
+	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getRetweet()
+	 * @generated
+	 */
+	int RETWEET = 14;
+
+	/**
+	 * The feature id for the '<em><b>Is Not</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RETWEET__IS_NOT = ELEMENT__IS_NOT;
+
+	/**
+	 * The feature id for the '<em><b>Op</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RETWEET__OP = ELEMENT__OP;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RETWEET__VALUE = ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Retweet</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RETWEET_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Retweet</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RETWEET_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
+
 
 	/**
 	 * Returns the meta object for class '{@link twitterRESTAPI.User <em>User</em>}'.
@@ -661,6 +758,17 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	EClass getUser();
 
 	/**
+	 * Returns the meta object for the attribute '{@link twitterRESTAPI.User#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see twitterRESTAPI.User#getValue()
+	 * @see #getUser()
+	 * @generated
+	 */
+	EAttribute getUser_Value();
+
+	/**
 	 * Returns the meta object for class '{@link twitterRESTAPI.Hashtag <em>Hashtag</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -671,6 +779,17 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	EClass getHashtag();
 
 	/**
+	 * Returns the meta object for the attribute '{@link twitterRESTAPI.Hashtag#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see twitterRESTAPI.Hashtag#getValue()
+	 * @see #getHashtag()
+	 * @generated
+	 */
+	EAttribute getHashtag_Value();
+
+	/**
 	 * Returns the meta object for class '{@link twitterRESTAPI.Date <em>Date</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -679,6 +798,17 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getDate();
+
+	/**
+	 * Returns the meta object for the attribute '{@link twitterRESTAPI.Date#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see twitterRESTAPI.Date#getValue()
+	 * @see #getDate()
+	 * @generated
+	 */
+	EAttribute getDate_Value();
 
 	/**
 	 * Returns the meta object for class '{@link twitterRESTAPI.Deck <em>Deck</em>}'.
@@ -702,15 +832,15 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	EAttribute getDeck_Name();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link twitterRESTAPI.Deck#getExpression <em>Expression</em>}'.
+	 * Returns the meta object for the containment reference '{@link twitterRESTAPI.Deck#getInstruction <em>Instruction</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Expression</em>'.
-	 * @see twitterRESTAPI.Deck#getExpression()
+	 * @return the meta object for the containment reference '<em>Instruction</em>'.
+	 * @see twitterRESTAPI.Deck#getInstruction()
 	 * @see #getDeck()
 	 * @generated
 	 */
-	EReference getDeck_Expression();
+	EReference getDeck_Instruction();
 
 	/**
 	 * Returns the meta object for class '{@link twitterRESTAPI.And <em>And</em>}'.
@@ -723,14 +853,25 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	EClass getAnd();
 
 	/**
-	 * Returns the meta object for class '{@link twitterRESTAPI.Expression <em>Expression</em>}'.
+	 * Returns the meta object for class '{@link twitterRESTAPI.Instruction <em>Instruction</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Expression</em>'.
-	 * @see twitterRESTAPI.Expression
+	 * @return the meta object for class '<em>Instruction</em>'.
+	 * @see twitterRESTAPI.Instruction
 	 * @generated
 	 */
-	EClass getExpression();
+	EClass getInstruction();
+
+	/**
+	 * Returns the meta object for the attribute '{@link twitterRESTAPI.Instruction#getIsNot <em>Is Not</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Not</em>'.
+	 * @see twitterRESTAPI.Instruction#getIsNot()
+	 * @see #getInstruction()
+	 * @generated
+	 */
+	EAttribute getInstruction_IsNot();
 
 	/**
 	 * Returns the meta object for class '{@link twitterRESTAPI.Place <em>Place</em>}'.
@@ -743,36 +884,47 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	EClass getPlace();
 
 	/**
-	 * Returns the meta object for class '{@link twitterRESTAPI.ExprBinaire <em>Expr Binaire</em>}'.
+	 * Returns the meta object for the attribute '{@link twitterRESTAPI.Place#getValue <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Expr Binaire</em>'.
-	 * @see twitterRESTAPI.ExprBinaire
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see twitterRESTAPI.Place#getValue()
+	 * @see #getPlace()
 	 * @generated
 	 */
-	EClass getExprBinaire();
+	EAttribute getPlace_Value();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link twitterRESTAPI.ExprBinaire#getExp1 <em>Exp1</em>}'.
+	 * Returns the meta object for class '{@link twitterRESTAPI.BinOp <em>Bin Op</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Exp1</em>'.
-	 * @see twitterRESTAPI.ExprBinaire#getExp1()
-	 * @see #getExprBinaire()
+	 * @return the meta object for class '<em>Bin Op</em>'.
+	 * @see twitterRESTAPI.BinOp
 	 * @generated
 	 */
-	EReference getExprBinaire_Exp1();
+	EClass getBinOp();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link twitterRESTAPI.ExprBinaire#getExp2 <em>Exp2</em>}'.
+	 * Returns the meta object for the containment reference '{@link twitterRESTAPI.BinOp#getRight <em>Right</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Exp2</em>'.
-	 * @see twitterRESTAPI.ExprBinaire#getExp2()
-	 * @see #getExprBinaire()
+	 * @return the meta object for the containment reference '<em>Right</em>'.
+	 * @see twitterRESTAPI.BinOp#getRight()
+	 * @see #getBinOp()
 	 * @generated
 	 */
-	EReference getExprBinaire_Exp2();
+	EReference getBinOp_Right();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link twitterRESTAPI.BinOp#getLeft <em>Left</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Left</em>'.
+	 * @see twitterRESTAPI.BinOp#getLeft()
+	 * @see #getBinOp()
+	 * @generated
+	 */
+	EReference getBinOp_Left();
 
 	/**
 	 * Returns the meta object for class '{@link twitterRESTAPI.Or <em>Or</em>}'.
@@ -785,37 +937,6 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	EClass getOr();
 
 	/**
-	 * Returns the meta object for class '{@link twitterRESTAPI.Not <em>Not</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Not</em>'.
-	 * @see twitterRESTAPI.Not
-	 * @generated
-	 */
-	EClass getNot();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link twitterRESTAPI.Not#getExp <em>Exp</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Exp</em>'.
-	 * @see twitterRESTAPI.Not#getExp()
-	 * @see #getNot()
-	 * @generated
-	 */
-	EReference getNot_Exp();
-
-	/**
-	 * Returns the meta object for class '{@link twitterRESTAPI.Equals <em>Equals</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Equals</em>'.
-	 * @see twitterRESTAPI.Equals
-	 * @generated
-	 */
-	EClass getEquals();
-
-	/**
 	 * Returns the meta object for class '{@link twitterRESTAPI.LessThan <em>Less Than</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -826,67 +947,35 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	EClass getLessThan();
 
 	/**
-	 * Returns the meta object for class '{@link twitterRESTAPI.ExprSimple <em>Expr Simple</em>}'.
+	 * Returns the meta object for class '{@link twitterRESTAPI.Element <em>Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Expr Simple</em>'.
-	 * @see twitterRESTAPI.ExprSimple
+	 * @return the meta object for class '<em>Element</em>'.
+	 * @see twitterRESTAPI.Element
 	 * @generated
 	 */
-	EClass getExprSimple();
+	EClass getElement();
 
 	/**
-	 * Returns the meta object for the attribute '{@link twitterRESTAPI.ExprSimple#getValue <em>Value</em>}'.
+	 * Returns the meta object for the containment reference '{@link twitterRESTAPI.Element#getOp <em>Op</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Value</em>'.
-	 * @see twitterRESTAPI.ExprSimple#getValue()
-	 * @see #getExprSimple()
+	 * @return the meta object for the containment reference '<em>Op</em>'.
+	 * @see twitterRESTAPI.Element#getOp()
+	 * @see #getElement()
 	 * @generated
 	 */
-	EAttribute getExprSimple_Value();
+	EReference getElement_Op();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link twitterRESTAPI.ExprSimple#getType <em>Type</em>}'.
+	 * Returns the meta object for class '{@link twitterRESTAPI.UnOp <em>Un Op</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Type</em>'.
-	 * @see twitterRESTAPI.ExprSimple#getType()
-	 * @see #getExprSimple()
+	 * @return the meta object for class '<em>Un Op</em>'.
+	 * @see twitterRESTAPI.UnOp
 	 * @generated
 	 */
-	EReference getExprSimple_Type();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link twitterRESTAPI.ExprSimple#getOperation <em>Operation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Operation</em>'.
-	 * @see twitterRESTAPI.ExprSimple#getOperation()
-	 * @see #getExprSimple()
-	 * @generated
-	 */
-	EReference getExprSimple_Operation();
-
-	/**
-	 * Returns the meta object for class '{@link twitterRESTAPI.Type <em>Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Type</em>'.
-	 * @see twitterRESTAPI.Type
-	 * @generated
-	 */
-	EClass getType();
-
-	/**
-	 * Returns the meta object for class '{@link twitterRESTAPI.Operation <em>Operation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Operation</em>'.
-	 * @see twitterRESTAPI.Operation
-	 * @generated
-	 */
-	EClass getOperation();
+	EClass getUnOp();
 
 	/**
 	 * Returns the meta object for class '{@link twitterRESTAPI.UpperThan <em>Upper Than</em>}'.
@@ -918,6 +1007,27 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getWebPage_Deck();
+
+	/**
+	 * Returns the meta object for class '{@link twitterRESTAPI.Retweet <em>Retweet</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Retweet</em>'.
+	 * @see twitterRESTAPI.Retweet
+	 * @generated
+	 */
+	EClass getRetweet();
+
+	/**
+	 * Returns the meta object for the attribute '{@link twitterRESTAPI.Retweet#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see twitterRESTAPI.Retweet#getValue()
+	 * @see #getRetweet()
+	 * @generated
+	 */
+	EAttribute getRetweet_Value();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -953,6 +1063,14 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		EClass USER = eINSTANCE.getUser();
 
 		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER__VALUE = eINSTANCE.getUser_Value();
+
+		/**
 		 * The meta object literal for the '{@link twitterRESTAPI.impl.HashtagImpl <em>Hashtag</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -963,6 +1081,14 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		EClass HASHTAG = eINSTANCE.getHashtag();
 
 		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute HASHTAG__VALUE = eINSTANCE.getHashtag_Value();
+
+		/**
 		 * The meta object literal for the '{@link twitterRESTAPI.impl.DateImpl <em>Date</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -971,6 +1097,14 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		 * @generated
 		 */
 		EClass DATE = eINSTANCE.getDate();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATE__VALUE = eINSTANCE.getDate_Value();
 
 		/**
 		 * The meta object literal for the '{@link twitterRESTAPI.impl.DeckImpl <em>Deck</em>}' class.
@@ -991,12 +1125,12 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		EAttribute DECK__NAME = eINSTANCE.getDeck_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Expression</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Instruction</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DECK__EXPRESSION = eINSTANCE.getDeck_Expression();
+		EReference DECK__INSTRUCTION = eINSTANCE.getDeck_Instruction();
 
 		/**
 		 * The meta object literal for the '{@link twitterRESTAPI.impl.AndImpl <em>And</em>}' class.
@@ -1009,14 +1143,22 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		EClass AND = eINSTANCE.getAnd();
 
 		/**
-		 * The meta object literal for the '{@link twitterRESTAPI.Expression <em>Expression</em>}' class.
+		 * The meta object literal for the '{@link twitterRESTAPI.impl.InstructionImpl <em>Instruction</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see twitterRESTAPI.Expression
-		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getExpression()
+		 * @see twitterRESTAPI.impl.InstructionImpl
+		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getInstruction()
 		 * @generated
 		 */
-		EClass EXPRESSION = eINSTANCE.getExpression();
+		EClass INSTRUCTION = eINSTANCE.getInstruction();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Not</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTRUCTION__IS_NOT = eINSTANCE.getInstruction_IsNot();
 
 		/**
 		 * The meta object literal for the '{@link twitterRESTAPI.impl.PlaceImpl <em>Place</em>}' class.
@@ -1029,30 +1171,38 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		EClass PLACE = eINSTANCE.getPlace();
 
 		/**
-		 * The meta object literal for the '{@link twitterRESTAPI.impl.ExprBinaireImpl <em>Expr Binaire</em>}' class.
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see twitterRESTAPI.impl.ExprBinaireImpl
-		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getExprBinaire()
 		 * @generated
 		 */
-		EClass EXPR_BINAIRE = eINSTANCE.getExprBinaire();
+		EAttribute PLACE__VALUE = eINSTANCE.getPlace_Value();
 
 		/**
-		 * The meta object literal for the '<em><b>Exp1</b></em>' containment reference feature.
+		 * The meta object literal for the '{@link twitterRESTAPI.impl.BinOpImpl <em>Bin Op</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see twitterRESTAPI.impl.BinOpImpl
+		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getBinOp()
 		 * @generated
 		 */
-		EReference EXPR_BINAIRE__EXP1 = eINSTANCE.getExprBinaire_Exp1();
+		EClass BIN_OP = eINSTANCE.getBinOp();
 
 		/**
-		 * The meta object literal for the '<em><b>Exp2</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Right</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference EXPR_BINAIRE__EXP2 = eINSTANCE.getExprBinaire_Exp2();
+		EReference BIN_OP__RIGHT = eINSTANCE.getBinOp_Right();
+
+		/**
+		 * The meta object literal for the '<em><b>Left</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BIN_OP__LEFT = eINSTANCE.getBinOp_Left();
 
 		/**
 		 * The meta object literal for the '{@link twitterRESTAPI.impl.OrImpl <em>Or</em>}' class.
@@ -1065,34 +1215,6 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		EClass OR = eINSTANCE.getOr();
 
 		/**
-		 * The meta object literal for the '{@link twitterRESTAPI.impl.NotImpl <em>Not</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see twitterRESTAPI.impl.NotImpl
-		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getNot()
-		 * @generated
-		 */
-		EClass NOT = eINSTANCE.getNot();
-
-		/**
-		 * The meta object literal for the '<em><b>Exp</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference NOT__EXP = eINSTANCE.getNot_Exp();
-
-		/**
-		 * The meta object literal for the '{@link twitterRESTAPI.impl.EqualsImpl <em>Equals</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see twitterRESTAPI.impl.EqualsImpl
-		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getEquals()
-		 * @generated
-		 */
-		EClass EQUALS = eINSTANCE.getEquals();
-
-		/**
 		 * The meta object literal for the '{@link twitterRESTAPI.impl.LessThanImpl <em>Less Than</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1103,58 +1225,32 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		EClass LESS_THAN = eINSTANCE.getLessThan();
 
 		/**
-		 * The meta object literal for the '{@link twitterRESTAPI.impl.ExprSimpleImpl <em>Expr Simple</em>}' class.
+		 * The meta object literal for the '{@link twitterRESTAPI.impl.ElementImpl <em>Element</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see twitterRESTAPI.impl.ExprSimpleImpl
-		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getExprSimple()
+		 * @see twitterRESTAPI.impl.ElementImpl
+		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getElement()
 		 * @generated
 		 */
-		EClass EXPR_SIMPLE = eINSTANCE.getExprSimple();
+		EClass ELEMENT = eINSTANCE.getElement();
 
 		/**
-		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Op</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute EXPR_SIMPLE__VALUE = eINSTANCE.getExprSimple_Value();
+		EReference ELEMENT__OP = eINSTANCE.getElement_Op();
 
 		/**
-		 * The meta object literal for the '<em><b>Type</b></em>' containment reference feature.
+		 * The meta object literal for the '{@link twitterRESTAPI.impl.UnOpImpl <em>Un Op</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see twitterRESTAPI.impl.UnOpImpl
+		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getUnOp()
 		 * @generated
 		 */
-		EReference EXPR_SIMPLE__TYPE = eINSTANCE.getExprSimple_Type();
-
-		/**
-		 * The meta object literal for the '<em><b>Operation</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference EXPR_SIMPLE__OPERATION = eINSTANCE.getExprSimple_Operation();
-
-		/**
-		 * The meta object literal for the '{@link twitterRESTAPI.Type <em>Type</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see twitterRESTAPI.Type
-		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getType()
-		 * @generated
-		 */
-		EClass TYPE = eINSTANCE.getType();
-
-		/**
-		 * The meta object literal for the '{@link twitterRESTAPI.Operation <em>Operation</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see twitterRESTAPI.Operation
-		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getOperation()
-		 * @generated
-		 */
-		EClass OPERATION = eINSTANCE.getOperation();
+		EClass UN_OP = eINSTANCE.getUnOp();
 
 		/**
 		 * The meta object literal for the '{@link twitterRESTAPI.impl.UpperThanImpl <em>Upper Than</em>}' class.
@@ -1183,6 +1279,24 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		 * @generated
 		 */
 		EReference WEB_PAGE__DECK = eINSTANCE.getWebPage_Deck();
+
+		/**
+		 * The meta object literal for the '{@link twitterRESTAPI.impl.RetweetImpl <em>Retweet</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see twitterRESTAPI.impl.RetweetImpl
+		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getRetweet()
+		 * @generated
+		 */
+		EClass RETWEET = eINSTANCE.getRetweet();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RETWEET__VALUE = eINSTANCE.getRetweet_Value();
 
 	}
 

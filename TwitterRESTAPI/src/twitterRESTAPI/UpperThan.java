@@ -13,5 +13,5 @@ package twitterRESTAPI;
  * @model
  * @generated
  */
-public interface UpperThan extends Operation {
+public interface UpperThan extends UnOp {
 } // UpperThan

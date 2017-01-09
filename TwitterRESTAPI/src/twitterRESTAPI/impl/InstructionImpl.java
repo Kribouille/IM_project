@@ -2,35 +2,33 @@
  */
 package twitterRESTAPI.impl;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
+
 import org.eclipse.emf.internal.cdo.CDOObjectImpl;
 
-import twitterRESTAPI.Deck;
+import twitterRESTAPI.Instruction;
 import twitterRESTAPI.TwitterRESTAPIPackage;
-import twitterRESTAPI.WebPage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Web Page</b></em>'.
+ * An implementation of the model object '<em><b>Instruction</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link twitterRESTAPI.impl.WebPageImpl#getDeck <em>Deck</em>}</li>
+ *   <li>{@link twitterRESTAPI.impl.InstructionImpl#getIsNot <em>Is Not</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class WebPageImpl extends CDOObjectImpl implements WebPage {
+public abstract class InstructionImpl extends CDOObjectImpl implements Instruction {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected WebPageImpl() {
+	protected InstructionImpl() {
 		super();
 	}
 
@@ -41,7 +39,7 @@ public class WebPageImpl extends CDOObjectImpl implements WebPage {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return TwitterRESTAPIPackage.Literals.WEB_PAGE;
+		return TwitterRESTAPIPackage.Literals.INSTRUCTION;
 	}
 
 	/**
@@ -59,9 +57,17 @@ public class WebPageImpl extends CDOObjectImpl implements WebPage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
-	public EList<Deck> getDeck() {
-		return (EList<Deck>)eGet(TwitterRESTAPIPackage.Literals.WEB_PAGE__DECK, true);
+	public Boolean getIsNot() {
+		return (Boolean)eGet(TwitterRESTAPIPackage.Literals.INSTRUCTION__IS_NOT, true);
 	}
 
-} //WebPageImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setIsNot(Boolean newIsNot) {
+		eSet(TwitterRESTAPIPackage.Literals.INSTRUCTION__IS_NOT, newIsNot);
+	}
+
+} //InstructionImpl

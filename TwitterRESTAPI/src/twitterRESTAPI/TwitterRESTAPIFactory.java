@@ -85,24 +85,6 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	Or createOr();
 
 	/**
-	 * Returns a new object of class '<em>Not</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Not</em>'.
-	 * @generated
-	 */
-	Not createNot();
-
-	/**
-	 * Returns a new object of class '<em>Equals</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Equals</em>'.
-	 * @generated
-	 */
-	Equals createEquals();
-
-	/**
 	 * Returns a new object of class '<em>Less Than</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -112,13 +94,13 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	LessThan createLessThan();
 
 	/**
-	 * Returns a new object of class '<em>Expr Simple</em>'.
+	 * Returns a new object of class '<em>Element</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Expr Simple</em>'.
+	 * @return a new object of class '<em>Element</em>'.
 	 * @generated
 	 */
-	ExprSimple createExprSimple();
+	Element createElement();
 
 	/**
 	 * Returns a new object of class '<em>Upper Than</em>'.
@@ -137,6 +119,15 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	 * @generated
 	 */
 	WebPage createWebPage();
+
+	/**
+	 * Returns a new object of class '<em>Retweet</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Retweet</em>'.
+	 * @generated
+	 */
+	Retweet createRetweet();
 
 	/**
 	 * Returns the package supported by this factory.

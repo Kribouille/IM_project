@@ -3,30 +3,30 @@
 package twitterRESTAPI.impl;
 
 import org.eclipse.emf.ecore.EClass;
-
+import twitterRESTAPI.Element;
 import twitterRESTAPI.TwitterRESTAPIPackage;
-import twitterRESTAPI.User;
+import twitterRESTAPI.UnOp;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>User</b></em>'.
+ * An implementation of the model object '<em><b>Element</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link twitterRESTAPI.impl.UserImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link twitterRESTAPI.impl.ElementImpl#getOp <em>Op</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class UserImpl extends ElementImpl implements User {
+public class ElementImpl extends InstructionImpl implements Element {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected UserImpl() {
+	protected ElementImpl() {
 		super();
 	}
 
@@ -37,7 +37,7 @@ public class UserImpl extends ElementImpl implements User {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return TwitterRESTAPIPackage.Literals.USER;
+		return TwitterRESTAPIPackage.Literals.ELEMENT;
 	}
 
 	/**
@@ -45,8 +45,8 @@ public class UserImpl extends ElementImpl implements User {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getValue() {
-		return (String)eGet(TwitterRESTAPIPackage.Literals.USER__VALUE, true);
+	public UnOp getOp() {
+		return (UnOp)eGet(TwitterRESTAPIPackage.Literals.ELEMENT__OP, true);
 	}
 
 	/**
@@ -54,8 +54,8 @@ public class UserImpl extends ElementImpl implements User {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(String newValue) {
-		eSet(TwitterRESTAPIPackage.Literals.USER__VALUE, newValue);
+	public void setOp(UnOp newOp) {
+		eSet(TwitterRESTAPIPackage.Literals.ELEMENT__OP, newOp);
 	}
 
-} //UserImpl
+} //ElementImpl

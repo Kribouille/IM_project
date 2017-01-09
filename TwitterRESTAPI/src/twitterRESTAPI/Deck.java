@@ -2,7 +2,7 @@
  */
 package twitterRESTAPI;
 
-import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.cdo.CDOObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -14,14 +14,15 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link twitterRESTAPI.Deck#getName <em>Name</em>}</li>
- *   <li>{@link twitterRESTAPI.Deck#getExpression <em>Expression</em>}</li>
+ *   <li>{@link twitterRESTAPI.Deck#getInstruction <em>Instruction</em>}</li>
  * </ul>
  *
  * @see twitterRESTAPI.TwitterRESTAPIPackage#getDeck()
  * @model
+ * @extends CDOObject
  * @generated
  */
-public interface Deck extends EObject {
+public interface Deck extends CDOObject {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -49,29 +50,29 @@ public interface Deck extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Expression</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Instruction</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Expression</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Instruction</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Expression</em>' containment reference.
-	 * @see #setExpression(Expression)
-	 * @see twitterRESTAPI.TwitterRESTAPIPackage#getDeck_Expression()
+	 * @return the value of the '<em>Instruction</em>' containment reference.
+	 * @see #setInstruction(Instruction)
+	 * @see twitterRESTAPI.TwitterRESTAPIPackage#getDeck_Instruction()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	Expression getExpression();
+	Instruction getInstruction();
 
 	/**
-	 * Sets the value of the '{@link twitterRESTAPI.Deck#getExpression <em>Expression</em>}' containment reference.
+	 * Sets the value of the '{@link twitterRESTAPI.Deck#getInstruction <em>Instruction</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Expression</em>' containment reference.
-	 * @see #getExpression()
+	 * @param value the new value of the '<em>Instruction</em>' containment reference.
+	 * @see #getInstruction()
 	 * @generated
 	 */
-	void setExpression(Expression value);
+	void setInstruction(Instruction value);
 
 } // Deck

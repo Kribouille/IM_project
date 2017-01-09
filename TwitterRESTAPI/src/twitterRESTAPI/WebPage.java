@@ -2,9 +2,9 @@
  */
 package twitterRESTAPI;
 
-import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.cdo.CDOObject;
 
-import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,9 +20,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see twitterRESTAPI.TwitterRESTAPIPackage#getWebPage()
  * @model
+ * @extends CDOObject
  * @generated
  */
-public interface WebPage extends EObject {
+public interface WebPage extends CDOObject {
 	/**
 	 * Returns the value of the '<em><b>Deck</b></em>' containment reference list.
 	 * The list contents are of type {@link twitterRESTAPI.Deck}.

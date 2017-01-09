@@ -14,7 +14,7 @@ import twitterRESTAPI.TwitterRESTAPIPackage;
  *
  * @generated
  */
-public class AndImpl extends ExprBinaireImpl implements And {
+public class AndImpl extends BinOpImpl implements And {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

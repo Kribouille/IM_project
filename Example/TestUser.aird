@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:twitterRESTAPI="http://www.example.org/twitterRESTAPI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style http://www.example.org/twitterRESTAPI platform:/resource/TwitterRESTAPI/model/twitterRESTAPI.ecore">
+  <viewpoint:DAnalysis xmi:id="_owqYANZaEealovgmmfJJTA" selectedViews="_pNIRkNZaEealovgmmfJJTA" version="11.1.0.201608251200">
+    <semanticResources>platform:/resource/TwitterRESTAPI/model/tests/TestUser.xmi</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_pNIRkNZaEealovgmmfJJTA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='SiriusTwitterRESTAPI']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_pN_NMNZaEealovgmmfJJTA" name="Webpage" representation="_pN_NMdZaEealovgmmfJJTA">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']"/>
+        <target xmi:type="twitterRESTAPI:WebPage" href="platform:/resource/TwitterRESTAPI/model/tests/TestUser.xmi#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_pN_NMdZaEealovgmmfJJTA" name="Webpage">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_pN_NMtZaEealovgmmfJJTA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_pN_NM9ZaEealovgmmfJJTA"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_pN_0QNZaEealovgmmfJJTA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_pN_0QdZaEealovgmmfJJTA" type="Sirius" element="_pN_NMdZaEealovgmmfJJTA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_9ETQUNZaEealovgmmfJJTA" type="2001" element="_9ENwwNZaEealovgmmfJJTA">
+          <children xmi:type="notation:Node" xmi:id="_9ET3YNZaEealovgmmfJJTA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_9ET3YdZaEealovgmmfJJTA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_9EUectZaEealovgmmfJJTA" type="3016" element="_9ENwwdZaEealovgmmfJJTA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_9EUec9ZaEealovgmmfJJTA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9EUedNZaEealovgmmfJJTA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_9ETQUdZaEealovgmmfJJTA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9ETQUtZaEealovgmmfJJTA" x="545" y="65" width="121" height="111"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Zs5RUNZvEealovgmmfJJTA" type="2001" element="_Zs0_4NZvEealovgmmfJJTA">
+          <children xmi:type="notation:Node" xmi:id="_Zs54YNZvEealovgmmfJJTA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Zs54YdZvEealovgmmfJJTA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_y7pxENZ1EealovgmmfJJTA" type="3003" element="_y7mtwNZ1EealovgmmfJJTA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_y7pxEdZ1EealovgmmfJJTA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y7pxEtZ1EealovgmmfJJTA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Zs5RUdZvEealovgmmfJJTA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zs5RUtZvEealovgmmfJJTA" x="300" y="63" width="131" height="116"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_pN_0QtZaEealovgmmfJJTA"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_9ENwwNZaEealovgmmfJJTA" name="testUser" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="twitterRESTAPI:Deck" href="platform:/resource/TwitterRESTAPI/model/tests/TestUser.xmi#//@deck.0"/>
+      <semanticElements xmi:type="twitterRESTAPI:Deck" href="platform:/resource/TwitterRESTAPI/model/tests/TestUser.xmi#//@deck.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_9ENwwdZaEealovgmmfJJTA" labelPosition="node" color="138,226,52">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']/@defaultLayer/@nodeMappings[name='Deck']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']/@defaultLayer/@nodeMappings[name='Deck']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_Zs0_4NZvEealovgmmfJJTA" name="SaintePelle" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="twitterRESTAPI:User" href="platform:/resource/TwitterRESTAPI/model/tests/TestUser.xmi#//@deck.0/@instruction"/>
+      <semanticElements xmi:type="twitterRESTAPI:User" href="platform:/resource/TwitterRESTAPI/model/tests/TestUser.xmi#//@deck.0/@instruction"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_y7mtwNZ1EealovgmmfJJTA" labelPosition="node" color="156,12,12">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']/@defaultLayer/@nodeMappings[name='User']/@conditionnalStyles.0/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']/@defaultLayer/@nodeMappings[name='User']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_pN_NNNZaEealovgmmfJJTA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']/@defaultLayer"/>
+    <target xmi:type="twitterRESTAPI:WebPage" href="platform:/resource/TwitterRESTAPI/model/tests/TestUser.xmi#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

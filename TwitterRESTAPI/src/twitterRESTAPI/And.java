@@ -13,5 +13,5 @@ package twitterRESTAPI;
  * @model
  * @generated
  */
-public interface And extends ExprBinaire {
+public interface And extends BinOp {
 } // And

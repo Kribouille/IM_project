@@ -56,19 +56,18 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case TwitterRESTAPIPackage.USER: return createUser();
-			case TwitterRESTAPIPackage.HASHTAG: return createHashtag();
-			case TwitterRESTAPIPackage.DATE: return createDate();
-			case TwitterRESTAPIPackage.DECK: return createDeck();
-			case TwitterRESTAPIPackage.AND: return createAnd();
-			case TwitterRESTAPIPackage.PLACE: return createPlace();
-			case TwitterRESTAPIPackage.OR: return createOr();
-			case TwitterRESTAPIPackage.NOT: return createNot();
-			case TwitterRESTAPIPackage.EQUALS: return createEquals();
-			case TwitterRESTAPIPackage.LESS_THAN: return createLessThan();
-			case TwitterRESTAPIPackage.EXPR_SIMPLE: return createExprSimple();
-			case TwitterRESTAPIPackage.UPPER_THAN: return createUpperThan();
-			case TwitterRESTAPIPackage.WEB_PAGE: return createWebPage();
+			case TwitterRESTAPIPackage.USER: return (EObject)createUser();
+			case TwitterRESTAPIPackage.HASHTAG: return (EObject)createHashtag();
+			case TwitterRESTAPIPackage.DATE: return (EObject)createDate();
+			case TwitterRESTAPIPackage.DECK: return (EObject)createDeck();
+			case TwitterRESTAPIPackage.AND: return (EObject)createAnd();
+			case TwitterRESTAPIPackage.PLACE: return (EObject)createPlace();
+			case TwitterRESTAPIPackage.OR: return (EObject)createOr();
+			case TwitterRESTAPIPackage.LESS_THAN: return (EObject)createLessThan();
+			case TwitterRESTAPIPackage.ELEMENT: return (EObject)createElement();
+			case TwitterRESTAPIPackage.UPPER_THAN: return (EObject)createUpperThan();
+			case TwitterRESTAPIPackage.WEB_PAGE: return (EObject)createWebPage();
+			case TwitterRESTAPIPackage.RETWEET: return (EObject)createRetweet();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -149,26 +148,6 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Not createNot() {
-		NotImpl not = new NotImpl();
-		return not;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Equals createEquals() {
-		EqualsImpl equals = new EqualsImpl();
-		return equals;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public LessThan createLessThan() {
 		LessThanImpl lessThan = new LessThanImpl();
 		return lessThan;
@@ -179,9 +158,9 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExprSimple createExprSimple() {
-		ExprSimpleImpl exprSimple = new ExprSimpleImpl();
-		return exprSimple;
+	public Element createElement() {
+		ElementImpl element = new ElementImpl();
+		return element;
 	}
 
 	/**
@@ -202,6 +181,16 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 	public WebPage createWebPage() {
 		WebPageImpl webPage = new WebPageImpl();
 		return webPage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Retweet createRetweet() {
+		RetweetImpl retweet = new RetweetImpl();
+		return retweet;
 	}
 
 	/**

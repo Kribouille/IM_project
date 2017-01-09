@@ -4,23 +4,23 @@ package twitterRESTAPI.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
-import twitterRESTAPI.Or;
+import twitterRESTAPI.LessThan;
 import twitterRESTAPI.TwitterRESTAPIPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Or</b></em>'.
+ * An implementation of the model object '<em><b>Less Than</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class OrImpl extends BinOpImpl implements Or {
+public class LessThanImpl extends UnOpImpl implements LessThan {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected OrImpl() {
+	protected LessThanImpl() {
 		super();
 	}
 
@@ -31,7 +31,7 @@ public class OrImpl extends BinOpImpl implements Or {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return TwitterRESTAPIPackage.Literals.OR;
+		return TwitterRESTAPIPackage.Literals.LESS_THAN;
 	}
 
-} //OrImpl
+} //LessThanImpl

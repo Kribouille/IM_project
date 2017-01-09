@@ -88,44 +88,32 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 				return createAndAdapter();
 			}
 			@Override
-			public Adapter caseExpression(Expression object) {
-				return createExpressionAdapter();
+			public Adapter caseInstruction(Instruction object) {
+				return createInstructionAdapter();
 			}
 			@Override
 			public Adapter casePlace(Place object) {
 				return createPlaceAdapter();
 			}
 			@Override
-			public Adapter caseExprBinaire(ExprBinaire object) {
-				return createExprBinaireAdapter();
+			public Adapter caseBinOp(BinOp object) {
+				return createBinOpAdapter();
 			}
 			@Override
 			public Adapter caseOr(Or object) {
 				return createOrAdapter();
 			}
 			@Override
-			public Adapter caseNot(Not object) {
-				return createNotAdapter();
-			}
-			@Override
-			public Adapter caseEquals(Equals object) {
-				return createEqualsAdapter();
-			}
-			@Override
 			public Adapter caseLessThan(LessThan object) {
 				return createLessThanAdapter();
 			}
 			@Override
-			public Adapter caseExprSimple(ExprSimple object) {
-				return createExprSimpleAdapter();
+			public Adapter caseElement(Element object) {
+				return createElementAdapter();
 			}
 			@Override
-			public Adapter caseType(Type object) {
-				return createTypeAdapter();
-			}
-			@Override
-			public Adapter caseOperation(Operation object) {
-				return createOperationAdapter();
+			public Adapter caseUnOp(UnOp object) {
+				return createUnOpAdapter();
 			}
 			@Override
 			public Adapter caseUpperThan(UpperThan object) {
@@ -134,6 +122,10 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseWebPage(WebPage object) {
 				return createWebPageAdapter();
+			}
+			@Override
+			public Adapter caseRetweet(Retweet object) {
+				return createRetweetAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -226,16 +218,16 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Expression <em>Expression</em>}'.
+	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Instruction <em>Instruction</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see twitterRESTAPI.Expression
+	 * @see twitterRESTAPI.Instruction
 	 * @generated
 	 */
-	public Adapter createExpressionAdapter() {
+	public Adapter createInstructionAdapter() {
 		return null;
 	}
 
@@ -254,16 +246,16 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.ExprBinaire <em>Expr Binaire</em>}'.
+	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.BinOp <em>Bin Op</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see twitterRESTAPI.ExprBinaire
+	 * @see twitterRESTAPI.BinOp
 	 * @generated
 	 */
-	public Adapter createExprBinaireAdapter() {
+	public Adapter createBinOpAdapter() {
 		return null;
 	}
 
@@ -282,34 +274,6 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Not <em>Not</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see twitterRESTAPI.Not
-	 * @generated
-	 */
-	public Adapter createNotAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Equals <em>Equals</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see twitterRESTAPI.Equals
-	 * @generated
-	 */
-	public Adapter createEqualsAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.LessThan <em>Less Than</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -324,44 +288,30 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.ExprSimple <em>Expr Simple</em>}'.
+	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Element <em>Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see twitterRESTAPI.ExprSimple
+	 * @see twitterRESTAPI.Element
 	 * @generated
 	 */
-	public Adapter createExprSimpleAdapter() {
+	public Adapter createElementAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Type <em>Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.UnOp <em>Un Op</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see twitterRESTAPI.Type
+	 * @see twitterRESTAPI.UnOp
 	 * @generated
 	 */
-	public Adapter createTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Operation <em>Operation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see twitterRESTAPI.Operation
-	 * @generated
-	 */
-	public Adapter createOperationAdapter() {
+	public Adapter createUnOpAdapter() {
 		return null;
 	}
 
@@ -390,6 +340,20 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createWebPageAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Retweet <em>Retweet</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see twitterRESTAPI.Retweet
+	 * @generated
+	 */
+	public Adapter createRetweetAdapter() {
 		return null;
 	}
 

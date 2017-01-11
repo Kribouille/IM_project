@@ -25,19 +25,19 @@
             </style>
           </conditionnalStyles>
         </nodeMappings>
-        <toolSections>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create User">
-            <variable name="container"/>
+        <toolSections name="creation">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="CreateUser" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']/@defaultLayer/@nodeMappings[name='User']">
+            <variable name="container: ecore.EObject"/>
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="twitterRESTAPI.User" referenceName="users">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="aql:'user'+container.users->filter(SiriusTwitterRESTAPI::User)->size()"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="aql:'deck'+container.users->filter(SiriusTwitterRESTAPI::User)->size()"/>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create Deck">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create Deck" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']/@defaultLayer/@nodeMappings[name='Deck']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>

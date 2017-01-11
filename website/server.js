@@ -2,14 +2,18 @@ var log = require('loglevel');
 var express = require('express');
 var app = express();
 var path = require('path');
-
 var Twit = require('twit');
+var fs = require('fs');
 
+var obj = JSON.parse(fs.readFileSync('keys_tokens.json', 'utf8'));
+/*
+* chargement des tokens et keys
+*/
 var T = new Twit({
-  consumer_key:         'VWZdNer7vHtUoqd7eoyan0kcK',
-  consumer_secret:      'fUlaXMRw1n7Wld8QOR2SiYWbGy5B6KfS7eAv93Ny2pMnCOycCH',
-  access_token:         '2865989501-A2ZArINKPOMDIrKW9OouiR94bKN8ojXqX8qMngO',
-  access_token_secret:  'ixGmCJMaqIhH7GOnJvES3H3NxfiBoAzAYWV21TfehxKdE',
+  consumer_key:         obj.consumer_key,
+  consumer_secret:      obj.consumer_secret,
+  access_token:         obj.access_token,
+  access_token_secret:  obj.access_token_secret,
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
 });
 
@@ -41,15 +45,15 @@ var io = require('socket.io').listen(server);
 
 // Player websocket handling
 io.sockets.on('connection', function(socket) {
-  // Lancer le thread REST API pour télécharger les tweets désirés
-
+  var tweetsSend = []; // to avoid double sending
+  var isStreamOn = false;
   // TODO : calculer le nombre de decks dans le JSON
   var deckNumber = 5;
   socket.emit('deckNumber', deckNumber);
 
   socket.on('click', function(deck) {
     //TODO appliquer les bons filtres sur l'API rest => changer la query avec les filtres du deck en paramètre
-    T.get('search/tweets', { q: 'lol'}, function(err, data, response) {
+    T.get('search/tweets', { q: '#WaferTheDog'}, function(err, data, response) {
       if(err){
         console.log(err);
       }
@@ -59,14 +63,21 @@ io.sockets.on('connection', function(socket) {
     });
   });
 
-// pour streamer. Voir https://dev.twitter.com/streaming/overview/request-parameters#track
+// to stream. See https://dev.twitter.com/streaming/overview/request-parameters#track
   socket.on('streamOn', function(deck){
-    var stream = T.stream('statuses/filter', { track: 'cat,lol' })
-
-    stream.on('tweet', function (tweet) {
-      socket.emit('newTweet', tweet);
-    })
+    isStreamOn = true;
+  });
+  socket.on('streamOff', function(){
+    isStreamOn = false;
   })
+  // TODO : streamer sur le deck reçu
+  var stream = T.stream('statuses/filter', { track: 'mdr' });
+  stream.on('tweet', function (tweet) {
+    if(isStreamOn && (tweetsSend.indexOf(tweet.id) == -1)){
+      tweetsSend.push(tweet.id);
+      socket.emit('newTweet', tweet);
+    }
+  });
 });
 
 server.listen(port);

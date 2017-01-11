@@ -4,7 +4,7 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Webpage" initialisation="true" domainClass="twitterRESTAPI.WebPage" enablePopupBars="true">
       <metamodel href="../../TwitterRESTAPI/model/twitterRESTAPI.ecore#/"/>
       <defaultLayer name="default">
-        <nodeMappings name="Deck" label="Deck" semanticCandidatesExpression="feature:deck" domainClass="twitterRESTAPI.Deck">
+        <nodeMappings name="Deck" label="Deck" domainClass="twitterRESTAPI.Deck">
           <style xsi:type="style:EllipseNodeDescription" labelSize="24" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -12,7 +12,7 @@
           </style>
         </nodeMappings>
         <nodeMappings name="User" domainClass="twitterRESTAPI.User">
-          <style xsi:type="style:SquareDescription" labelExpression="feature:value" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="18" labelExpression="feature:value" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
@@ -26,13 +26,13 @@
           </conditionnalStyles>
         </nodeMappings>
         <toolSections name="creation">
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="CreateUser" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']/@defaultLayer/@nodeMappings[name='User']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create User" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']/@defaultLayer/@nodeMappings[name='User']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="twitterRESTAPI.User" referenceName="user">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="test"/>
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="twitterRESTAPI.User" referenceName="deck">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="aql:'User '+container.deck->filter(twitterRESTAPI::User)->size()"/>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>

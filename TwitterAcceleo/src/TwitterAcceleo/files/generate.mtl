@@ -1,0 +1,20 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.example.org/twitterRESTAPI')]
+
+
+[template public generateElement(aWebPage : WebPage)]
+[comment @main /]
+[file ('twitter.json', false, 'UTF-8')]
+{
+[for (d: Deck | aWebPage.deck) separator('\n')]
+"deck" : "[d.name/]"
+{
+[for (i: Instruction | d.instruction)]
+
+[i.toString()/]
+[/for]
+}
+[/for]
+}
+[/file]
+[/template]

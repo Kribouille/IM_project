@@ -5,14 +5,14 @@
       <metamodel href="../../TwitterRESTAPI/model/twitterRESTAPI.ecore#/"/>
       <defaultLayer name="default">
         <nodeMappings name="Deck" label="Deck" domainClass="twitterRESTAPI.Deck">
-          <style xsi:type="style:EllipseNodeDescription" labelSize="24" resizeKind="NSEW">
+          <style xsi:type="style:EllipseNodeDescription" labelSize="14" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="User" domainClass="twitterRESTAPI.User">
-          <style xsi:type="style:SquareDescription" labelSize="18" labelExpression="feature:value" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="14" labelExpression="feature:value" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
@@ -24,6 +24,34 @@
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
             </style>
           </conditionnalStyles>
+        </nodeMappings>
+        <nodeMappings name="Hashtag" domainClass="twitterRESTAPI.Hashtag">
+          <style xsi:type="style:SquareDescription" labelSize="14" labelExpression="feature:value" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Retweet" domainClass="twitterRESTAPI.Retweet">
+          <style xsi:type="style:SquareDescription" labelSize="14" labelExpression="feature:value" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Place" domainClass="twitterRESTAPI.Place">
+          <style xsi:type="style:SquareDescription" labelSize="14" labelExpression="feature:value" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_chocolate']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Date" domainClass="twitterRESTAPI.Date">
+          <style xsi:type="style:SquareDescription" labelSize="14" labelExpression="feature:value" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
+          </style>
         </nodeMappings>
         <toolSections name="creation">
           <ownedTools xsi:type="tool:NodeCreationDescription" name="Create User" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']/@defaultLayer/@nodeMappings[name='User']">
@@ -44,6 +72,50 @@
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="twitterRESTAPI.Deck" referenceName="deck">
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Deck '+container.deck->filter(twitterRESTAPI::Deck)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create Retweet" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']/@defaultLayer/@nodeMappings[name='Retweet']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="twitterRESTAPI.Retweet" referenceName="deck">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="1"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create Place" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']/@defaultLayer/@nodeMappings[name='Place']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="twitterRESTAPI.Place" referenceName="deck">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="Brest"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create Hashtag" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']/@defaultLayer/@nodeMappings[name='Hashtag']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="twitterRESTAPI.Hashtag" referenceName="deck">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="cat"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Create Date" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='SiriusTwitterRESTAPI']/@ownedRepresentations[name='Webpage']/@defaultLayer/@nodeMappings[name='Date']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="twitterRESTAPI.Date" referenceName="deck">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="0006-07-10T00:00:00.000+0100"/>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>

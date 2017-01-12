@@ -9,12 +9,8 @@ import org.eclipse.xtext.util.CancelIndicator
 import org.eclipse.xtext.validation.Check
 import org.eclipse.xtext.validation.CheckMode
 import org.eclipse.xtext.validation.IResourceValidator
-import twitterRESTAPI.Date
-import twitterRESTAPI.ExprSimple
 import twitterRESTAPI.TwitterRESTAPIPackage
-import org.eclipse.emf.ecore.EStructuralFeature
 import java.util.regex.Pattern
-import java.util.regex.Matcher
 
 /**
  * This class contains custom validation rules.

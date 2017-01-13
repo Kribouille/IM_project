@@ -7,10 +7,11 @@
 [file ('twitter.json', false, 'UTF-8')]
 {
 [for (d: Deck | aWebPage.deck) separator('\n')]
-"deck" : "[d.name/]"
+"deck" : "[d.name/]",
+"child" :
 {
 [for (i: Instruction | d.instruction)]
-
+"???" : "[i.isNot/]",
 [i.toString()/]
 [/for]
 }

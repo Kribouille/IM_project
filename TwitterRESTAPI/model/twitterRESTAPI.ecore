@@ -2,13 +2,13 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="twitterRESTAPI" nsURI="http://www.example.org/twitterRESTAPI"
     nsPrefix="twitterRESTAPI">
-  <eClassifiers xsi:type="ecore:EClass" name="User" eSuperTypes="#//Instruction">
+  <eClassifiers xsi:type="ecore:EClass" name="User" eSuperTypes="#//Element">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Hashtag" eSuperTypes="#//Instruction">
+  <eClassifiers xsi:type="ecore:EClass" name="Hashtag" eSuperTypes="#//Element">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Date" eSuperTypes="#//Instruction">
+  <eClassifiers xsi:type="ecore:EClass" name="Date" eSuperTypes="#//Element">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Deck">
@@ -16,23 +16,32 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="instruction" lowerBound="1"
         eType="#//Instruction" containment="true"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="And" eSuperTypes="#//BinOp"/>
   <eClassifiers xsi:type="ecore:EClass" name="Instruction" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isNot" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"
         defaultValueLiteral="false"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="op" eType="#//UnOp" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="next" upperBound="-1" eType="#//Instruction"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Place" eSuperTypes="#//Instruction">
+  <eClassifiers xsi:type="ecore:EClass" name="Place" eSuperTypes="#//Element">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BinOp" abstract="true" eSuperTypes="#//Instruction">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="right" lowerBound="1" eType="#//Instruction"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="left" lowerBound="1" eType="#//Instruction"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Or" eSuperTypes="#//BinOp"/>
   <eClassifiers xsi:type="ecore:EClass" name="LessThan" eSuperTypes="#//UnOp"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Element" eSuperTypes="#//Instruction">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="op" eType="#//UnOp" containment="true"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="UnOp" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="UpperThan" eSuperTypes="#//UnOp"/>
   <eClassifiers xsi:type="ecore:EClass" name="WebPage">
     <eStructuralFeatures xsi:type="ecore:EReference" name="deck" lowerBound="1" upperBound="-1"
         eType="#//Deck" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Retweet" eSuperTypes="#//Instruction">
+  <eClassifiers xsi:type="ecore:EClass" name="Retweet" eSuperTypes="#//Element">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
 </ecore:EPackage>

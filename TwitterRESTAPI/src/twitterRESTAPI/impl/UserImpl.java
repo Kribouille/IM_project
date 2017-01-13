@@ -20,7 +20,7 @@ import twitterRESTAPI.User;
  *
  * @generated
  */
-public class UserImpl extends ElementImpl implements User {
+public class UserImpl extends InstructionImpl implements User {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

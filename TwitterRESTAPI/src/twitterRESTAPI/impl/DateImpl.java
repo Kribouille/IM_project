@@ -20,7 +20,7 @@ import twitterRESTAPI.TwitterRESTAPIPackage;
  *
  * @generated
  */
-public class DateImpl extends ElementImpl implements Date {
+public class DateImpl extends InstructionImpl implements Date {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -84,10 +84,6 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 				return createDeckAdapter();
 			}
 			@Override
-			public Adapter caseAnd(And object) {
-				return createAndAdapter();
-			}
-			@Override
 			public Adapter caseInstruction(Instruction object) {
 				return createInstructionAdapter();
 			}
@@ -96,20 +92,8 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 				return createPlaceAdapter();
 			}
 			@Override
-			public Adapter caseBinOp(BinOp object) {
-				return createBinOpAdapter();
-			}
-			@Override
-			public Adapter caseOr(Or object) {
-				return createOrAdapter();
-			}
-			@Override
 			public Adapter caseLessThan(LessThan object) {
 				return createLessThanAdapter();
-			}
-			@Override
-			public Adapter caseElement(Element object) {
-				return createElementAdapter();
 			}
 			@Override
 			public Adapter caseUnOp(UnOp object) {
@@ -204,20 +188,6 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.And <em>And</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see twitterRESTAPI.And
-	 * @generated
-	 */
-	public Adapter createAndAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Instruction <em>Instruction</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -246,34 +216,6 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.BinOp <em>Bin Op</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see twitterRESTAPI.BinOp
-	 * @generated
-	 */
-	public Adapter createBinOpAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Or <em>Or</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see twitterRESTAPI.Or
-	 * @generated
-	 */
-	public Adapter createOrAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.LessThan <em>Less Than</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -284,20 +226,6 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createLessThanAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Element <em>Element</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see twitterRESTAPI.Element
-	 * @generated
-	 */
-	public Adapter createElementAdapter() {
 		return null;
 	}
 

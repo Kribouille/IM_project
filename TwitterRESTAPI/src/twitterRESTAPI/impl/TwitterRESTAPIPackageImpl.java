@@ -9,15 +9,11 @@ import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import twitterRESTAPI.And;
-import twitterRESTAPI.BinOp;
 import twitterRESTAPI.Date;
 import twitterRESTAPI.Deck;
-import twitterRESTAPI.Element;
 import twitterRESTAPI.Hashtag;
 import twitterRESTAPI.Instruction;
 import twitterRESTAPI.LessThan;
-import twitterRESTAPI.Or;
 import twitterRESTAPI.Place;
 import twitterRESTAPI.Retweet;
 import twitterRESTAPI.TwitterRESTAPIFactory;
@@ -67,13 +63,6 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass andEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass instructionEClass = null;
 
 	/**
@@ -88,28 +77,7 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass binOpEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass orEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass lessThanEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass elementEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -286,15 +254,6 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getAnd() {
-		return andEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getInstruction() {
 		return instructionEClass;
 	}
@@ -306,6 +265,24 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 */
 	public EAttribute getInstruction_IsNot() {
 		return (EAttribute)instructionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getInstruction_Op() {
+		return (EReference)instructionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getInstruction_Next() {
+		return (EReference)instructionEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -331,62 +308,8 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getBinOp() {
-		return binOpEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getBinOp_Right() {
-		return (EReference)binOpEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getBinOp_Left() {
-		return (EReference)binOpEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getOr() {
-		return orEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getLessThan() {
 		return lessThanEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getElement() {
-		return elementEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getElement_Op() {
-		return (EReference)elementEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -484,24 +407,15 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 		createEAttribute(deckEClass, DECK__NAME);
 		createEReference(deckEClass, DECK__INSTRUCTION);
 
-		andEClass = createEClass(AND);
-
 		instructionEClass = createEClass(INSTRUCTION);
 		createEAttribute(instructionEClass, INSTRUCTION__IS_NOT);
+		createEReference(instructionEClass, INSTRUCTION__OP);
+		createEReference(instructionEClass, INSTRUCTION__NEXT);
 
 		placeEClass = createEClass(PLACE);
 		createEAttribute(placeEClass, PLACE__VALUE);
 
-		binOpEClass = createEClass(BIN_OP);
-		createEReference(binOpEClass, BIN_OP__RIGHT);
-		createEReference(binOpEClass, BIN_OP__LEFT);
-
-		orEClass = createEClass(OR);
-
 		lessThanEClass = createEClass(LESS_THAN);
-
-		elementEClass = createEClass(ELEMENT);
-		createEReference(elementEClass, ELEMENT__OP);
 
 		unOpEClass = createEClass(UN_OP);
 
@@ -542,17 +456,13 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		userEClass.getESuperTypes().add(this.getElement());
-		hashtagEClass.getESuperTypes().add(this.getElement());
-		dateEClass.getESuperTypes().add(this.getElement());
-		andEClass.getESuperTypes().add(this.getBinOp());
-		placeEClass.getESuperTypes().add(this.getElement());
-		binOpEClass.getESuperTypes().add(this.getInstruction());
-		orEClass.getESuperTypes().add(this.getBinOp());
+		userEClass.getESuperTypes().add(this.getInstruction());
+		hashtagEClass.getESuperTypes().add(this.getInstruction());
+		dateEClass.getESuperTypes().add(this.getInstruction());
+		placeEClass.getESuperTypes().add(this.getInstruction());
 		lessThanEClass.getESuperTypes().add(this.getUnOp());
-		elementEClass.getESuperTypes().add(this.getInstruction());
 		upperThanEClass.getESuperTypes().add(this.getUnOp());
-		retweetEClass.getESuperTypes().add(this.getElement());
+		retweetEClass.getESuperTypes().add(this.getInstruction());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(userEClass, User.class, "User", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -568,24 +478,15 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 		initEAttribute(getDeck_Name(), ecorePackage.getEString(), "name", null, 1, 1, Deck.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDeck_Instruction(), this.getInstruction(), null, "instruction", null, 1, 1, Deck.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(andEClass, And.class, "And", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
 		initEClass(instructionEClass, Instruction.class, "Instruction", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getInstruction_IsNot(), ecorePackage.getEBooleanObject(), "isNot", "false", 1, 1, Instruction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getInstruction_Op(), this.getUnOp(), null, "op", null, 0, 1, Instruction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getInstruction_Next(), this.getInstruction(), null, "next", null, 0, -1, Instruction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(placeEClass, Place.class, "Place", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPlace_Value(), ecorePackage.getEString(), "value", null, 1, 1, Place.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(binOpEClass, BinOp.class, "BinOp", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBinOp_Right(), this.getInstruction(), null, "right", null, 1, 1, BinOp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getBinOp_Left(), this.getInstruction(), null, "left", null, 1, 1, BinOp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(orEClass, Or.class, "Or", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
 		initEClass(lessThanEClass, LessThan.class, "LessThan", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(elementEClass, Element.class, "Element", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getElement_Op(), this.getUnOp(), null, "op", null, 0, 1, Element.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(unOpEClass, UnOp.class, "UnOp", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

@@ -19,7 +19,7 @@ package twitterRESTAPI;
  * @model
  * @generated
  */
-public interface Date extends Element {
+public interface Date extends Instruction {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->

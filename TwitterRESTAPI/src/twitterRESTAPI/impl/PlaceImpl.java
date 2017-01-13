@@ -20,7 +20,7 @@ import twitterRESTAPI.TwitterRESTAPIPackage;
  *
  * @generated
  */
-public class PlaceImpl extends ElementImpl implements Place {
+public class PlaceImpl extends InstructionImpl implements Place {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

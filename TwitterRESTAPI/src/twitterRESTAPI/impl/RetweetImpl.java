@@ -20,7 +20,7 @@ import twitterRESTAPI.TwitterRESTAPIPackage;
  *
  * @generated
  */
-public class RetweetImpl extends ElementImpl implements Retweet {
+public class RetweetImpl extends InstructionImpl implements Retweet {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

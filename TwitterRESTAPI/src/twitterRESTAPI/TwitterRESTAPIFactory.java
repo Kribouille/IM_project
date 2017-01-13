@@ -58,15 +58,6 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	Deck createDeck();
 
 	/**
-	 * Returns a new object of class '<em>And</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>And</em>'.
-	 * @generated
-	 */
-	And createAnd();
-
-	/**
 	 * Returns a new object of class '<em>Place</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -76,15 +67,6 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	Place createPlace();
 
 	/**
-	 * Returns a new object of class '<em>Or</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Or</em>'.
-	 * @generated
-	 */
-	Or createOr();
-
-	/**
 	 * Returns a new object of class '<em>Less Than</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -92,15 +74,6 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	 * @generated
 	 */
 	LessThan createLessThan();
-
-	/**
-	 * Returns a new object of class '<em>Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Element</em>'.
-	 * @generated
-	 */
-	Element createElement();
 
 	/**
 	 * Returns a new object of class '<em>Upper Than</em>'.

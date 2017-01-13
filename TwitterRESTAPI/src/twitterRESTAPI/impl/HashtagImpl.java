@@ -20,7 +20,7 @@ import twitterRESTAPI.TwitterRESTAPIPackage;
  *
  * @generated
  */
-public class HashtagImpl extends ElementImpl implements Hashtag {
+public class HashtagImpl extends InstructionImpl implements Hashtag {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

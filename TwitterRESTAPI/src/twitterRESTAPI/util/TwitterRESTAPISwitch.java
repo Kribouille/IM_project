@@ -69,7 +69,6 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 			case TwitterRESTAPIPackage.USER: {
 				User user = (User)theEObject;
 				T result = caseUser(user);
-				if (result == null) result = caseElement(user);
 				if (result == null) result = caseInstruction(user);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -77,7 +76,6 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 			case TwitterRESTAPIPackage.HASHTAG: {
 				Hashtag hashtag = (Hashtag)theEObject;
 				T result = caseHashtag(hashtag);
-				if (result == null) result = caseElement(hashtag);
 				if (result == null) result = caseInstruction(hashtag);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -85,7 +83,6 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 			case TwitterRESTAPIPackage.DATE: {
 				Date date = (Date)theEObject;
 				T result = caseDate(date);
-				if (result == null) result = caseElement(date);
 				if (result == null) result = caseInstruction(date);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -93,14 +90,6 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 			case TwitterRESTAPIPackage.DECK: {
 				Deck deck = (Deck)theEObject;
 				T result = caseDeck(deck);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TwitterRESTAPIPackage.AND: {
-				And and = (And)theEObject;
-				T result = caseAnd(and);
-				if (result == null) result = caseBinOp(and);
-				if (result == null) result = caseInstruction(and);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -113,23 +102,7 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 			case TwitterRESTAPIPackage.PLACE: {
 				Place place = (Place)theEObject;
 				T result = casePlace(place);
-				if (result == null) result = caseElement(place);
 				if (result == null) result = caseInstruction(place);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TwitterRESTAPIPackage.BIN_OP: {
-				BinOp binOp = (BinOp)theEObject;
-				T result = caseBinOp(binOp);
-				if (result == null) result = caseInstruction(binOp);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TwitterRESTAPIPackage.OR: {
-				Or or = (Or)theEObject;
-				T result = caseOr(or);
-				if (result == null) result = caseBinOp(or);
-				if (result == null) result = caseInstruction(or);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -137,13 +110,6 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 				LessThan lessThan = (LessThan)theEObject;
 				T result = caseLessThan(lessThan);
 				if (result == null) result = caseUnOp(lessThan);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TwitterRESTAPIPackage.ELEMENT: {
-				Element element = (Element)theEObject;
-				T result = caseElement(element);
-				if (result == null) result = caseInstruction(element);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -169,7 +135,6 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 			case TwitterRESTAPIPackage.RETWEET: {
 				Retweet retweet = (Retweet)theEObject;
 				T result = caseRetweet(retweet);
-				if (result == null) result = caseElement(retweet);
 				if (result == null) result = caseInstruction(retweet);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -239,21 +204,6 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>And</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>And</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAnd(And object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Instruction</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -284,36 +234,6 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Bin Op</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Bin Op</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseBinOp(BinOp object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Or</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Or</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseOr(Or object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Less Than</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -325,21 +245,6 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseLessThan(LessThan object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Element</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseElement(Element object) {
 		return null;
 	}
 

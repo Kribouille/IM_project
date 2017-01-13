@@ -60,11 +60,8 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 			case TwitterRESTAPIPackage.HASHTAG: return (EObject)createHashtag();
 			case TwitterRESTAPIPackage.DATE: return (EObject)createDate();
 			case TwitterRESTAPIPackage.DECK: return (EObject)createDeck();
-			case TwitterRESTAPIPackage.AND: return (EObject)createAnd();
 			case TwitterRESTAPIPackage.PLACE: return (EObject)createPlace();
-			case TwitterRESTAPIPackage.OR: return (EObject)createOr();
 			case TwitterRESTAPIPackage.LESS_THAN: return (EObject)createLessThan();
-			case TwitterRESTAPIPackage.ELEMENT: return (EObject)createElement();
 			case TwitterRESTAPIPackage.UPPER_THAN: return (EObject)createUpperThan();
 			case TwitterRESTAPIPackage.WEB_PAGE: return (EObject)createWebPage();
 			case TwitterRESTAPIPackage.RETWEET: return (EObject)createRetweet();
@@ -118,16 +115,6 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public And createAnd() {
-		AndImpl and = new AndImpl();
-		return and;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Place createPlace() {
 		PlaceImpl place = new PlaceImpl();
 		return place;
@@ -138,29 +125,9 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Or createOr() {
-		OrImpl or = new OrImpl();
-		return or;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public LessThan createLessThan() {
 		LessThanImpl lessThan = new LessThanImpl();
 		return lessThan;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Element createElement() {
-		ElementImpl element = new ElementImpl();
-		return element;
 	}
 
 	/**

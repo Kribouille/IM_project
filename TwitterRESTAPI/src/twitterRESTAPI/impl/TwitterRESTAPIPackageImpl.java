@@ -272,7 +272,7 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInstruction_Op() {
+	public EReference getInstruction_Next() {
 		return (EReference)instructionEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -281,7 +281,7 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInstruction_Next() {
+	public EReference getInstruction_Op() {
 		return (EReference)instructionEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -409,8 +409,8 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 
 		instructionEClass = createEClass(INSTRUCTION);
 		createEAttribute(instructionEClass, INSTRUCTION__IS_NOT);
-		createEReference(instructionEClass, INSTRUCTION__OP);
 		createEReference(instructionEClass, INSTRUCTION__NEXT);
+		createEReference(instructionEClass, INSTRUCTION__OP);
 
 		placeEClass = createEClass(PLACE);
 		createEAttribute(placeEClass, PLACE__VALUE);
@@ -480,8 +480,8 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 
 		initEClass(instructionEClass, Instruction.class, "Instruction", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getInstruction_IsNot(), ecorePackage.getEBooleanObject(), "isNot", "false", 1, 1, Instruction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getInstruction_Next(), this.getInstruction(), null, "next", null, 0, -1, Instruction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInstruction_Op(), this.getUnOp(), null, "op", null, 0, 1, Instruction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getInstruction_Next(), this.getInstruction(), null, "next", null, 0, -1, Instruction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(placeEClass, Place.class, "Place", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPlace_Value(), ecorePackage.getEString(), "value", null, 1, 1, Place.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -16,8 +16,8 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  * <ul>
  *   <li>{@link twitterRESTAPI.Instruction#getIsNot <em>Is Not</em>}</li>
- *   <li>{@link twitterRESTAPI.Instruction#getOp <em>Op</em>}</li>
  *   <li>{@link twitterRESTAPI.Instruction#getNext <em>Next</em>}</li>
+ *   <li>{@link twitterRESTAPI.Instruction#getOp <em>Op</em>}</li>
  * </ul>
  *
  * @see twitterRESTAPI.TwitterRESTAPIPackage#getInstruction()
@@ -54,6 +54,22 @@ public interface Instruction extends CDOObject {
 	void setIsNot(Boolean value);
 
 	/**
+	 * Returns the value of the '<em><b>Next</b></em>' containment reference list.
+	 * The list contents are of type {@link twitterRESTAPI.Instruction}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Next</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Next</em>' containment reference list.
+	 * @see twitterRESTAPI.TwitterRESTAPIPackage#getInstruction_Next()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Instruction> getNext();
+
+	/**
 	 * Returns the value of the '<em><b>Op</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -78,21 +94,5 @@ public interface Instruction extends CDOObject {
 	 * @generated
 	 */
 	void setOp(UnOp value);
-
-	/**
-	 * Returns the value of the '<em><b>Next</b></em>' reference list.
-	 * The list contents are of type {@link twitterRESTAPI.Instruction}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Next</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Next</em>' reference list.
-	 * @see twitterRESTAPI.TwitterRESTAPIPackage#getInstruction_Next()
-	 * @model
-	 * @generated
-	 */
-	EList<Instruction> getNext();
 
 } // Instruction

@@ -21,8 +21,8 @@ import twitterRESTAPI.UnOp;
  * </p>
  * <ul>
  *   <li>{@link twitterRESTAPI.impl.InstructionImpl#getIsNot <em>Is Not</em>}</li>
- *   <li>{@link twitterRESTAPI.impl.InstructionImpl#getOp <em>Op</em>}</li>
  *   <li>{@link twitterRESTAPI.impl.InstructionImpl#getNext <em>Next</em>}</li>
+ *   <li>{@link twitterRESTAPI.impl.InstructionImpl#getOp <em>Op</em>}</li>
  * </ul>
  *
  * @generated
@@ -80,6 +80,16 @@ public abstract class InstructionImpl extends CDOObjectImpl implements Instructi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	public EList<Instruction> getNext() {
+		return (EList<Instruction>)eGet(TwitterRESTAPIPackage.Literals.INSTRUCTION__NEXT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public UnOp getOp() {
 		return (UnOp)eGet(TwitterRESTAPIPackage.Literals.INSTRUCTION__OP, true);
 	}
@@ -91,16 +101,6 @@ public abstract class InstructionImpl extends CDOObjectImpl implements Instructi
 	 */
 	public void setOp(UnOp newOp) {
 		eSet(TwitterRESTAPIPackage.Literals.INSTRUCTION__OP, newOp);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public EList<Instruction> getNext() {
-		return (EList<Instruction>)eGet(TwitterRESTAPIPackage.Literals.INSTRUCTION__NEXT, true);
 	}
 
 } //InstructionImpl

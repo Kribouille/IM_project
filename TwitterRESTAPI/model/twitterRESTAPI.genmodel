@@ -24,8 +24,8 @@
     </genClasses>
     <genClasses image="false" ecoreClass="twitterRESTAPI.ecore#//Instruction">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//Instruction/isNot"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Instruction/op"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Instruction/next"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Instruction/next"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Instruction/op"/>
     </genClasses>
     <genClasses ecoreClass="twitterRESTAPI.ecore#//Place">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//Place/value"/>

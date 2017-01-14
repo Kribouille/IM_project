@@ -76,22 +76,22 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int INSTRUCTION__IS_NOT = 0;
 
 	/**
+	 * The feature id for the '<em><b>Next</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTRUCTION__NEXT = 1;
+
+	/**
 	 * The feature id for the '<em><b>Op</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INSTRUCTION__OP = 1;
-
-	/**
-	 * The feature id for the '<em><b>Next</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INSTRUCTION__NEXT = 2;
+	int INSTRUCTION__OP = 2;
 
 	/**
 	 * The number of structural features of the '<em>Instruction</em>' class.
@@ -131,6 +131,15 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int USER__IS_NOT = INSTRUCTION__IS_NOT;
 
 	/**
+	 * The feature id for the '<em><b>Next</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER__NEXT = INSTRUCTION__NEXT;
+
+	/**
 	 * The feature id for the '<em><b>Op</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -138,15 +147,6 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @ordered
 	 */
 	int USER__OP = INSTRUCTION__OP;
-
-	/**
-	 * The feature id for the '<em><b>Next</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER__NEXT = INSTRUCTION__NEXT;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -195,6 +195,15 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int HASHTAG__IS_NOT = INSTRUCTION__IS_NOT;
 
 	/**
+	 * The feature id for the '<em><b>Next</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HASHTAG__NEXT = INSTRUCTION__NEXT;
+
+	/**
 	 * The feature id for the '<em><b>Op</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -202,15 +211,6 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @ordered
 	 */
 	int HASHTAG__OP = INSTRUCTION__OP;
-
-	/**
-	 * The feature id for the '<em><b>Next</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HASHTAG__NEXT = INSTRUCTION__NEXT;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -259,6 +259,15 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int DATE__IS_NOT = INSTRUCTION__IS_NOT;
 
 	/**
+	 * The feature id for the '<em><b>Next</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE__NEXT = INSTRUCTION__NEXT;
+
+	/**
 	 * The feature id for the '<em><b>Op</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -266,15 +275,6 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @ordered
 	 */
 	int DATE__OP = INSTRUCTION__OP;
-
-	/**
-	 * The feature id for the '<em><b>Next</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATE__NEXT = INSTRUCTION__NEXT;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -369,6 +369,15 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int PLACE__IS_NOT = INSTRUCTION__IS_NOT;
 
 	/**
+	 * The feature id for the '<em><b>Next</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLACE__NEXT = INSTRUCTION__NEXT;
+
+	/**
 	 * The feature id for the '<em><b>Op</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -376,15 +385,6 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @ordered
 	 */
 	int PLACE__OP = INSTRUCTION__OP;
-
-	/**
-	 * The feature id for the '<em><b>Next</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PLACE__NEXT = INSTRUCTION__NEXT;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -554,6 +554,15 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int RETWEET__IS_NOT = INSTRUCTION__IS_NOT;
 
 	/**
+	 * The feature id for the '<em><b>Next</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RETWEET__NEXT = INSTRUCTION__NEXT;
+
+	/**
 	 * The feature id for the '<em><b>Op</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -561,15 +570,6 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @ordered
 	 */
 	int RETWEET__OP = INSTRUCTION__OP;
-
-	/**
-	 * The feature id for the '<em><b>Next</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RETWEET__NEXT = INSTRUCTION__NEXT;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -716,6 +716,17 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	EAttribute getInstruction_IsNot();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link twitterRESTAPI.Instruction#getNext <em>Next</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Next</em>'.
+	 * @see twitterRESTAPI.Instruction#getNext()
+	 * @see #getInstruction()
+	 * @generated
+	 */
+	EReference getInstruction_Next();
+
+	/**
 	 * Returns the meta object for the containment reference '{@link twitterRESTAPI.Instruction#getOp <em>Op</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -725,17 +736,6 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getInstruction_Op();
-
-	/**
-	 * Returns the meta object for the reference list '{@link twitterRESTAPI.Instruction#getNext <em>Next</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Next</em>'.
-	 * @see twitterRESTAPI.Instruction#getNext()
-	 * @see #getInstruction()
-	 * @generated
-	 */
-	EReference getInstruction_Next();
 
 	/**
 	 * Returns the meta object for class '{@link twitterRESTAPI.Place <em>Place</em>}'.
@@ -952,20 +952,20 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		EAttribute INSTRUCTION__IS_NOT = eINSTANCE.getInstruction_IsNot();
 
 		/**
+		 * The meta object literal for the '<em><b>Next</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INSTRUCTION__NEXT = eINSTANCE.getInstruction_Next();
+
+		/**
 		 * The meta object literal for the '<em><b>Op</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference INSTRUCTION__OP = eINSTANCE.getInstruction_Op();
-
-		/**
-		 * The meta object literal for the '<em><b>Next</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference INSTRUCTION__NEXT = eINSTANCE.getInstruction_Next();
 
 		/**
 		 * The meta object literal for the '{@link twitterRESTAPI.impl.PlaceImpl <em>Place</em>}' class.

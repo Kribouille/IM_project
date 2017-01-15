@@ -323,7 +323,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int DECK__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Instruction</b></em>' containment reference.
+	 * The feature id for the '<em><b>Instruction</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -684,10 +684,10 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	EAttribute getDeck_Name();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link twitterRESTAPI.Deck#getInstruction <em>Instruction</em>}'.
+	 * Returns the meta object for the containment reference list '{@link twitterRESTAPI.Deck#getInstruction <em>Instruction</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Instruction</em>'.
+	 * @return the meta object for the containment reference list '<em>Instruction</em>'.
 	 * @see twitterRESTAPI.Deck#getInstruction()
 	 * @see #getDeck()
 	 * @generated
@@ -926,7 +926,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		EAttribute DECK__NAME = eINSTANCE.getDeck_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Instruction</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Instruction</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

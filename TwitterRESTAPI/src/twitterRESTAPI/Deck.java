@@ -4,6 +4,8 @@ package twitterRESTAPI;
 
 import org.eclipse.emf.cdo.CDOObject;
 
+import org.eclipse.emf.common.util.EList;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Deck</b></em>'.
@@ -50,29 +52,19 @@ public interface Deck extends CDOObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Instruction</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Instruction</b></em>' containment reference list.
+	 * The list contents are of type {@link twitterRESTAPI.Instruction}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Instruction</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Instruction</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Instruction</em>' containment reference.
-	 * @see #setInstruction(Instruction)
+	 * @return the value of the '<em>Instruction</em>' containment reference list.
 	 * @see twitterRESTAPI.TwitterRESTAPIPackage#getDeck_Instruction()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 * @generated
 	 */
-	Instruction getInstruction();
-
-	/**
-	 * Sets the value of the '{@link twitterRESTAPI.Deck#getInstruction <em>Instruction</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Instruction</em>' containment reference.
-	 * @see #getInstruction()
-	 * @generated
-	 */
-	void setInstruction(Instruction value);
+	EList<Instruction> getInstruction();
 
 } // Deck

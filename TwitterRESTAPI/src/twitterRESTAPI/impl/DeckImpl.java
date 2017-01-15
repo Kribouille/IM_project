@@ -2,6 +2,8 @@
  */
 package twitterRESTAPI.impl;
 
+import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.internal.cdo.CDOObjectImpl;
@@ -77,17 +79,9 @@ public class DeckImpl extends CDOObjectImpl implements Deck {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Instruction getInstruction() {
-		return (Instruction)eGet(TwitterRESTAPIPackage.Literals.DECK__INSTRUCTION, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setInstruction(Instruction newInstruction) {
-		eSet(TwitterRESTAPIPackage.Literals.DECK__INSTRUCTION, newInstruction);
+	@SuppressWarnings("unchecked")
+	public EList<Instruction> getInstruction() {
+		return (EList<Instruction>)eGet(TwitterRESTAPIPackage.Literals.DECK__INSTRUCTION, true);
 	}
 
 } //DeckImpl

@@ -5,47 +5,55 @@
       <metamodel href="../../TwitterRESTAPI/model/twitterRESTAPI.ecore#/"/>
       <defaultLayer name="Default">
         <nodeMappings name="Deck" domainClass="Deck">
-          <style xsi:type="style:EllipseNodeDescription" labelSize="14" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:EllipseNodeDescription" labelSize="14" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="20" verticalDiameterComputationExpression="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="Date" domainClass="Date">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="Hashtag" domainClass="Hashtag">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="Place" domainClass="Place">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="Retweet" domainClass="Retweet">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="User" domainClass="User">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
           </style>
         </nodeMappings>
+        <edgeMappings name="Filter" sourceMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Deck'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Date'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Hashtag'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Place'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Retweet'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='User']" targetMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Date'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Hashtag'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Place'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Retweet'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='User']">
+          <style sizeComputationExpression="5">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
         <toolSections>
           <ownedTools xsi:type="tool:NodeCreationDescription" name="Deck" nodeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Deck']">
             <variable name="container"/>
@@ -110,6 +118,17 @@
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="twitterRESTAPI.User" referenceName="deck">
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="aql:'User'+container.deck->filter(twitterRESTAPI::User)->size()"/>
                 </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Filter" edgeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@edgeMappings[name='Filter']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="twitterRESTAPI.Instruction" referenceName="deck"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>

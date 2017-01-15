@@ -3,6 +3,4 @@
   <deck name="MyDeck">
     <instruction xsi:type="twitterRESTAPI:User" value="SaintePelle"/>
   </deck>
-  <deck/>
-  <deck/>
 </twitterRESTAPI:WebPage>

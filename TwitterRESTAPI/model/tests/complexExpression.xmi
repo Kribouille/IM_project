@@ -18,8 +18,4 @@
       </next>
     </instruction>
   </deck>
-  <deck xsi:type="twitterRESTAPI:User" value="User1"/>
-  <deck xsi:type="twitterRESTAPI:Retweet"/>
-  <deck xsi:type="twitterRESTAPI:Place" value="Place1"/>
-  <deck xsi:type="twitterRESTAPI:Hashtag" value="Hashtag1"/>
 </twitterRESTAPI:WebPage>

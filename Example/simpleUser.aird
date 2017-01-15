@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:twitterRESTAPI="http://www.example.org/twitterRESTAPI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style http://www.example.org/twitterRESTAPI platform:/resource/TwitterRESTAPI/model/twitterRESTAPI.ecore">
+  <viewpoint:DAnalysis xmi:id="_ayB_UNtPEeaQFZypu55u_g" selectedViews="_bVeqoNtPEeaQFZypu55u_g" version="11.1.0.201608251200">
+    <semanticResources>platform:/resource/TwitterRESTAPI/model/tests/simpleUser.xmi</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_bVeqoNtPEeaQFZypu55u_g">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_bVhG4NtPEeaQFZypu55u_g" name="WebPage" representation="_bVhG4dtPEeaQFZypu55u_g">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']"/>
+        <target xmi:type="twitterRESTAPI:WebPage" href="platform:/resource/TwitterRESTAPI/model/tests/simpleUser.xmi#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_bVhG4dtPEeaQFZypu55u_g" name="WebPage">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_bVhG4ttPEeaQFZypu55u_g" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_bVhG49tPEeaQFZypu55u_g"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_bViVANtPEeaQFZypu55u_g" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_bViVAdtPEeaQFZypu55u_g" type="Sirius" element="_bVhG4dtPEeaQFZypu55u_g" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_bViVA9tPEeaQFZypu55u_g" type="2001" element="_bVhG5NtPEeaQFZypu55u_g">
+          <children xmi:type="notation:Node" xmi:id="_bVjjINtPEeaQFZypu55u_g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_bVjjIdtPEeaQFZypu55u_g" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_bVlYUttPEeaQFZypu55u_g" type="3016" element="_bVhG5dtPEeaQFZypu55u_g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_bVlYU9tPEeaQFZypu55u_g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bVlYVNtPEeaQFZypu55u_g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_bViVBNtPEeaQFZypu55u_g" fontName="Segoe UI" fontHeight="14"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bViVBdtPEeaQFZypu55u_g" x="75" y="115" width="200" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_bVkxQttPEeaQFZypu55u_g" type="2001" element="_bVhG6ttPEeaQFZypu55u_g">
+          <children xmi:type="notation:Node" xmi:id="_bVlYUNtPEeaQFZypu55u_g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_bVlYUdtPEeaQFZypu55u_g" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_bVnNgNtPEeaQFZypu55u_g" type="3003" element="_bVhG69tPEeaQFZypu55u_g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_bVnNgdtPEeaQFZypu55u_g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bVnNgttPEeaQFZypu55u_g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_bVkxQ9tPEeaQFZypu55u_g" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bVkxRNtPEeaQFZypu55u_g" x="340" y="75" width="150" height="150"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_bViVAttPEeaQFZypu55u_g"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_bVhG5NtPEeaQFZypu55u_g" name="MyDeck" width="20" height="5" resizeKind="NSEW">
+      <target xmi:type="twitterRESTAPI:Deck" href="platform:/resource/TwitterRESTAPI/model/tests/simpleUser.xmi#//@deck.0"/>
+      <semanticElements xmi:type="twitterRESTAPI:Deck" href="platform:/resource/TwitterRESTAPI/model/tests/simpleUser.xmi#//@deck.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_bVhG5dtPEeaQFZypu55u_g" labelSize="14" labelPosition="node" horizontalDiameter="20" verticalDiameter="5">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Deck']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Deck']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_bVhG6ttPEeaQFZypu55u_g" name="SaintePelle" width="15" height="15" resizeKind="NSEW">
+      <target xmi:type="twitterRESTAPI:User" href="platform:/resource/TwitterRESTAPI/model/tests/simpleUser.xmi#//@deck.0/@instruction.0"/>
+      <semanticElements xmi:type="twitterRESTAPI:User" href="platform:/resource/TwitterRESTAPI/model/tests/simpleUser.xmi#//@deck.0/@instruction.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_bVhG69tPEeaQFZypu55u_g" labelSize="12" labelPosition="node" color="252,175,62">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='User']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='User']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_bVhG7NtPEeaQFZypu55u_g"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer"/>
+    <target xmi:type="twitterRESTAPI:WebPage" href="platform:/resource/TwitterRESTAPI/model/tests/simpleUser.xmi#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

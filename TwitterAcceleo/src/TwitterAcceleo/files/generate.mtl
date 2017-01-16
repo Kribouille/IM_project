@@ -6,16 +6,37 @@
 [comment @main /]
 [file ('twitter.json', false, 'UTF-8')]
 {
-[for (d: Deck | aWebPage.deck) separator('\n')]
-"deck" : "[d.name/]",
-"child" :
-{
-[for (i: Instruction | d.instruction)]
-"???" : "[i.isNot/]",
-[i.toString()/]
-[/for]
+	"decks" : [ '[' /]
+[for (d: Deck | aWebPage.deck)]
+[generateDeck(d)/][/for]
+	[ ']' /]
 }
-[/for]
-}
-[/file]
+[/file]	
+[/template]
+
+[template public generateDeck(d : Deck)]
+		{ "name" : "[d.name/]", "filter" : "[for (i: Instruction | d.instruction)]
+ ( [generateInstruction(i)/] )[/for]" }[if d.followingSiblings()->size()>0]
+,[/if]
+[/template]
+
+[template public generateInstruction(i: Instruction)]
+[if (i.isNot)]
+-[/if]
+([if i.eClass().name = 'User']
+from:[i.current(User).value/][/if]
+[if i.eClass().name = 'Hashtag']
+#[i.current(Hashtag).value/][/if]
+[if (i.eClass().name = 'Date')][if (i.op.eClass().name = 'LessThan')]
+until:[i.current(Date).value/][elseif (i.op.eClass().name = 'UpperThan')]
+since:[i.current(Date).value/][else]
+until:[i.current(Date).value/] since:[i.current(Date).value/][/if][/if]
+[if i.eClass().name = 'Retweet']
+filter:retweets[/if]
+)[for (j: Instruction | i.next)]
+[if ((j.followingSiblings()->size() > 0)._or(j.precedingSiblings()->size() > 0))]
+ ([/if]
+ [generateInstruction(j)/] [if (j.followingSiblings()->size() > 0)]
+ OR[elseif (j.precedingSiblings()->size() > 0)]
+ )[/if][/for]
 [/template]

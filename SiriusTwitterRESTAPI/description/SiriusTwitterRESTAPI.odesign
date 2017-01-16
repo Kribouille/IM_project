@@ -4,42 +4,42 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="WebPage" initialisation="true" showOnStartup="true" domainClass="WebPage" enablePopupBars="true">
       <metamodel href="../../TwitterRESTAPI/model/twitterRESTAPI.ecore#/"/>
       <defaultLayer name="Default">
-        <nodeMappings name="Deck" domainClass="Deck">
+        <nodeMappings name="Deck" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Deck">
           <style xsi:type="style:EllipseNodeDescription" labelSize="14" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="20" verticalDiameterComputationExpression="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Date" domainClass="Date">
+        <nodeMappings name="Date" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Date">
           <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Hashtag" domainClass="Hashtag">
+        <nodeMappings name="Hashtag" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Hashtag">
           <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Place" domainClass="Place">
+        <nodeMappings name="Place" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Place">
           <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Retweet" domainClass="Retweet">
+        <nodeMappings name="Retweet" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Retweet">
           <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="User" domainClass="User">
+        <nodeMappings name="User" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="User">
           <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -149,6 +149,12 @@
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="next" valueExpression="var:target"/>
               </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="editFilterValue">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="var:0"/>
             </initialOperation>
           </ownedTools>
         </toolSections>

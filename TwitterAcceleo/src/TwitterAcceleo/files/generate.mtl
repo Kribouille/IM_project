@@ -18,7 +18,6 @@
 		{ "name" : "[d.name/]", "filter" : "[for (i: Instruction | d.instruction)]
  ( [generateInstruction(i)/] )[/for]" }[if d.followingSiblings()->size()>0]
 ,[/if]
-
 [/template]
 
 [template public generateInstruction(i: Instruction)]
@@ -30,6 +29,10 @@ from:[i.current(User).value/][/if]
 #[i.current(Hashtag).value/][/if]
 [if i.eClass().name = 'Date']
 since:[i.current(Date).value/] until:[i.current(Date).value/][/if]
+[if i.op.eClass().name = 'LessThan']
+ LessThan [if/]
+[if i.op.eClass().name = 'UpperThan']
+ UpperThan [if/]
 [if i.eClass().name = 'Retweet']
 filter:retweets[/if]
 )[for (j: Instruction | i.next)]

@@ -46,8 +46,16 @@
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="Filter" sourceMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Deck'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Date'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Hashtag'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Place'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Retweet'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='User']" targetMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Date'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Hashtag'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Place'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Retweet'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='User']">
-          <style sizeComputationExpression="5">
+        <edgeMappings name="DeckToFilter" sourceMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Deck']" targetMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Date'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Hashtag'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Place'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Retweet'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='User']" targetFinderExpression="feature:instruction">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="FilterToFilter" sourceMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Date'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Hashtag'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Place'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Retweet'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='User']" targetMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Date'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Hashtag'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Place'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Retweet'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='User']" targetFinderExpression="feature:next">
+          <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -121,14 +129,25 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Filter" edgeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@edgeMappings[name='Filter']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Deck to Filter" edgeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@edgeMappings[name='DeckToFilter']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
             <targetViewVariable name="targetView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="twitterRESTAPI.Instruction" referenceName="deck"/>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="instruction" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Filter to Filter" edgeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@edgeMappings[name='FilterToFilter']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="next" valueExpression="var:target"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>

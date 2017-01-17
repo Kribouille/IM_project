@@ -4,6 +4,7 @@ package twitterRESTAPI.impl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -11,17 +12,15 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import twitterRESTAPI.Date;
 import twitterRESTAPI.Deck;
+import twitterRESTAPI.DeckSet;
 import twitterRESTAPI.Hashtag;
 import twitterRESTAPI.Instruction;
-import twitterRESTAPI.LessThan;
 import twitterRESTAPI.Place;
 import twitterRESTAPI.Retweet;
 import twitterRESTAPI.TwitterRESTAPIFactory;
 import twitterRESTAPI.TwitterRESTAPIPackage;
 import twitterRESTAPI.UnOp;
-import twitterRESTAPI.UpperThan;
 import twitterRESTAPI.User;
-import twitterRESTAPI.WebPage;
 
 /**
  * <!-- begin-user-doc -->
@@ -77,28 +76,7 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass lessThanEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass unOpEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass upperThanEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass webPageEClass = null;
+	private EClass deckSetEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -106,6 +84,13 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * @generated
 	 */
 	private EClass retweetEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum unOpEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -245,8 +230,17 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDeck_Instruction() {
+	public EReference getDeck_Instructions() {
 		return (EReference)deckEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDeck_InitFilters() {
+		return (EReference)deckEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -281,8 +275,8 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInstruction_Op() {
-		return (EReference)instructionEClass.getEStructuralFeatures().get(2);
+	public EAttribute getInstruction_UnOp() {
+		return (EAttribute)instructionEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -308,8 +302,8 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getLessThan() {
-		return lessThanEClass;
+	public EClass getDeckSet() {
+		return deckSetEClass;
 	}
 
 	/**
@@ -317,35 +311,8 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getUnOp() {
-		return unOpEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getUpperThan() {
-		return upperThanEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getWebPage() {
-		return webPageEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getWebPage_Deck() {
-		return (EReference)webPageEClass.getEStructuralFeatures().get(0);
+	public EReference getDeckSet_Deck() {
+		return (EReference)deckSetEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -364,6 +331,15 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 */
 	public EAttribute getRetweet_Value() {
 		return (EAttribute)retweetEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getUnOp() {
+		return unOpEEnum;
 	}
 
 	/**
@@ -405,27 +381,25 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 
 		deckEClass = createEClass(DECK);
 		createEAttribute(deckEClass, DECK__NAME);
-		createEReference(deckEClass, DECK__INSTRUCTION);
+		createEReference(deckEClass, DECK__INSTRUCTIONS);
+		createEReference(deckEClass, DECK__INIT_FILTERS);
 
 		instructionEClass = createEClass(INSTRUCTION);
 		createEAttribute(instructionEClass, INSTRUCTION__IS_NOT);
 		createEReference(instructionEClass, INSTRUCTION__NEXT);
-		createEReference(instructionEClass, INSTRUCTION__OP);
+		createEAttribute(instructionEClass, INSTRUCTION__UN_OP);
 
 		placeEClass = createEClass(PLACE);
 		createEAttribute(placeEClass, PLACE__VALUE);
 
-		lessThanEClass = createEClass(LESS_THAN);
-
-		unOpEClass = createEClass(UN_OP);
-
-		upperThanEClass = createEClass(UPPER_THAN);
-
-		webPageEClass = createEClass(WEB_PAGE);
-		createEReference(webPageEClass, WEB_PAGE__DECK);
+		deckSetEClass = createEClass(DECK_SET);
+		createEReference(deckSetEClass, DECK_SET__DECK);
 
 		retweetEClass = createEClass(RETWEET);
 		createEAttribute(retweetEClass, RETWEET__VALUE);
+
+		// Create enums
+		unOpEEnum = createEEnum(UN_OP);
 	}
 
 	/**
@@ -460,8 +434,6 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 		hashtagEClass.getESuperTypes().add(this.getInstruction());
 		dateEClass.getESuperTypes().add(this.getInstruction());
 		placeEClass.getESuperTypes().add(this.getInstruction());
-		lessThanEClass.getESuperTypes().add(this.getUnOp());
-		upperThanEClass.getESuperTypes().add(this.getUnOp());
 		retweetEClass.getESuperTypes().add(this.getInstruction());
 
 		// Initialize classes, features, and operations; add parameters
@@ -476,27 +448,28 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 
 		initEClass(deckEClass, Deck.class, "Deck", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDeck_Name(), ecorePackage.getEString(), "name", null, 1, 1, Deck.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDeck_Instruction(), this.getInstruction(), null, "instruction", null, 0, -1, Deck.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDeck_Instructions(), this.getInstruction(), null, "instructions", null, 0, -1, Deck.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDeck_InitFilters(), this.getInstruction(), null, "initFilters", null, 0, -1, Deck.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(instructionEClass, Instruction.class, "Instruction", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getInstruction_IsNot(), ecorePackage.getEBooleanObject(), "isNot", "false", 1, 1, Instruction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInstruction_Next(), this.getInstruction(), null, "next", null, 0, -1, Instruction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getInstruction_Op(), this.getUnOp(), null, "op", null, 0, 1, Instruction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInstruction_UnOp(), this.getUnOp(), "unOp", null, 0, 1, Instruction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(placeEClass, Place.class, "Place", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPlace_Value(), ecorePackage.getEString(), "value", null, 1, 1, Place.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(lessThanEClass, LessThan.class, "LessThan", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(unOpEClass, UnOp.class, "UnOp", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(upperThanEClass, UpperThan.class, "UpperThan", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(webPageEClass, WebPage.class, "WebPage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getWebPage_Deck(), this.getDeck(), null, "deck", null, 1, -1, WebPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(deckSetEClass, DeckSet.class, "DeckSet", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getDeckSet_Deck(), this.getDeck(), null, "deck", null, 1, -1, DeckSet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(retweetEClass, Retweet.class, "Retweet", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRetweet_Value(), ecorePackage.getEInt(), "value", null, 1, 1, Retweet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Initialize enums and add enum literals
+		initEEnum(unOpEEnum, UnOp.class, "UnOp");
+		addEEnumLiteral(unOpEEnum, UnOp.EQUALS);
+		addEEnumLiteral(unOpEEnum, UnOp.LESS_THAN);
+		addEEnumLiteral(unOpEEnum, UnOp.UPPER_THAN);
 
 		// Create resource
 		createResource(eNS_URI);

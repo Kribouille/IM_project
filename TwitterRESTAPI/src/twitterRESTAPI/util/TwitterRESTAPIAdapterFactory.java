@@ -92,20 +92,8 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 				return createPlaceAdapter();
 			}
 			@Override
-			public Adapter caseLessThan(LessThan object) {
-				return createLessThanAdapter();
-			}
-			@Override
-			public Adapter caseUnOp(UnOp object) {
-				return createUnOpAdapter();
-			}
-			@Override
-			public Adapter caseUpperThan(UpperThan object) {
-				return createUpperThanAdapter();
-			}
-			@Override
-			public Adapter caseWebPage(WebPage object) {
-				return createWebPageAdapter();
+			public Adapter caseDeckSet(DeckSet object) {
+				return createDeckSetAdapter();
 			}
 			@Override
 			public Adapter caseRetweet(Retweet object) {
@@ -216,58 +204,16 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.LessThan <em>Less Than</em>}'.
+	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.DeckSet <em>Deck Set</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see twitterRESTAPI.LessThan
+	 * @see twitterRESTAPI.DeckSet
 	 * @generated
 	 */
-	public Adapter createLessThanAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.UnOp <em>Un Op</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see twitterRESTAPI.UnOp
-	 * @generated
-	 */
-	public Adapter createUnOpAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.UpperThan <em>Upper Than</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see twitterRESTAPI.UpperThan
-	 * @generated
-	 */
-	public Adapter createUpperThanAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.WebPage <em>Web Page</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see twitterRESTAPI.WebPage
-	 * @generated
-	 */
-	public Adapter createWebPageAdapter() {
+	public Adapter createDeckSetAdapter() {
 		return null;
 	}
 

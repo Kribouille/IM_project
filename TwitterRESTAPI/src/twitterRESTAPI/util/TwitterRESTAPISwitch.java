@@ -106,29 +106,9 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case TwitterRESTAPIPackage.LESS_THAN: {
-				LessThan lessThan = (LessThan)theEObject;
-				T result = caseLessThan(lessThan);
-				if (result == null) result = caseUnOp(lessThan);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TwitterRESTAPIPackage.UN_OP: {
-				UnOp unOp = (UnOp)theEObject;
-				T result = caseUnOp(unOp);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TwitterRESTAPIPackage.UPPER_THAN: {
-				UpperThan upperThan = (UpperThan)theEObject;
-				T result = caseUpperThan(upperThan);
-				if (result == null) result = caseUnOp(upperThan);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case TwitterRESTAPIPackage.WEB_PAGE: {
-				WebPage webPage = (WebPage)theEObject;
-				T result = caseWebPage(webPage);
+			case TwitterRESTAPIPackage.DECK_SET: {
+				DeckSet deckSet = (DeckSet)theEObject;
+				T result = caseDeckSet(deckSet);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -234,62 +214,17 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Less Than</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Deck Set</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Less Than</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Deck Set</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLessThan(LessThan object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Un Op</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Un Op</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseUnOp(UnOp object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Upper Than</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Upper Than</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseUpperThan(UpperThan object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Web Page</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Web Page</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseWebPage(WebPage object) {
+	public T caseDeckSet(DeckSet object) {
 		return null;
 	}
 

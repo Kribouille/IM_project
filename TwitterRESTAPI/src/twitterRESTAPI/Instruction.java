@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  * <ul>
  *   <li>{@link twitterRESTAPI.Instruction#getIsNot <em>Is Not</em>}</li>
  *   <li>{@link twitterRESTAPI.Instruction#getNext <em>Next</em>}</li>
- *   <li>{@link twitterRESTAPI.Instruction#getOp <em>Op</em>}</li>
+ *   <li>{@link twitterRESTAPI.Instruction#getUnOp <em>Un Op</em>}</li>
  * </ul>
  *
  * @see twitterRESTAPI.TwitterRESTAPIPackage#getInstruction()
@@ -70,29 +70,32 @@ public interface Instruction extends CDOObject {
 	EList<Instruction> getNext();
 
 	/**
-	 * Returns the value of the '<em><b>Op</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Un Op</b></em>' attribute.
+	 * The literals are from the enumeration {@link twitterRESTAPI.UnOp}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Op</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Un Op</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Op</em>' containment reference.
-	 * @see #setOp(UnOp)
-	 * @see twitterRESTAPI.TwitterRESTAPIPackage#getInstruction_Op()
-	 * @model containment="true"
+	 * @return the value of the '<em>Un Op</em>' attribute.
+	 * @see twitterRESTAPI.UnOp
+	 * @see #setUnOp(UnOp)
+	 * @see twitterRESTAPI.TwitterRESTAPIPackage#getInstruction_UnOp()
+	 * @model
 	 * @generated
 	 */
-	UnOp getOp();
+	UnOp getUnOp();
 
 	/**
-	 * Sets the value of the '{@link twitterRESTAPI.Instruction#getOp <em>Op</em>}' containment reference.
+	 * Sets the value of the '{@link twitterRESTAPI.Instruction#getUnOp <em>Un Op</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Op</em>' containment reference.
-	 * @see #getOp()
+	 * @param value the new value of the '<em>Un Op</em>' attribute.
+	 * @see twitterRESTAPI.UnOp
+	 * @see #getUnOp()
 	 * @generated
 	 */
-	void setOp(UnOp value);
+	void setUnOp(UnOp value);
 
 } // Instruction

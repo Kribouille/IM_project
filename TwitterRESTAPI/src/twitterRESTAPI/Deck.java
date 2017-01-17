@@ -16,7 +16,8 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  * <ul>
  *   <li>{@link twitterRESTAPI.Deck#getName <em>Name</em>}</li>
- *   <li>{@link twitterRESTAPI.Deck#getInstruction <em>Instruction</em>}</li>
+ *   <li>{@link twitterRESTAPI.Deck#getInstructions <em>Instructions</em>}</li>
+ *   <li>{@link twitterRESTAPI.Deck#getInitFilters <em>Init Filters</em>}</li>
  * </ul>
  *
  * @see twitterRESTAPI.TwitterRESTAPIPackage#getDeck()
@@ -52,19 +53,35 @@ public interface Deck extends CDOObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Instruction</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Instructions</b></em>' containment reference list.
 	 * The list contents are of type {@link twitterRESTAPI.Instruction}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Instruction</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Instructions</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Instruction</em>' containment reference list.
-	 * @see twitterRESTAPI.TwitterRESTAPIPackage#getDeck_Instruction()
+	 * @return the value of the '<em>Instructions</em>' containment reference list.
+	 * @see twitterRESTAPI.TwitterRESTAPIPackage#getDeck_Instructions()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Instruction> getInstruction();
+	EList<Instruction> getInstructions();
+
+	/**
+	 * Returns the value of the '<em><b>Init Filters</b></em>' reference list.
+	 * The list contents are of type {@link twitterRESTAPI.Instruction}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Init Filters</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Init Filters</em>' reference list.
+	 * @see twitterRESTAPI.TwitterRESTAPIPackage#getDeck_InitFilters()
+	 * @model
+	 * @generated
+	 */
+	EList<Instruction> getInitFilters();
 
 } // Deck

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<twitterRESTAPI:WebPage
+<twitterRESTAPI:DeckSet
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:twitterRESTAPI="http://www.example.org/twitterRESTAPI"
     xsi:schemaLocation="http://www.example.org/twitterRESTAPI ../twitterRESTAPI.ecore">
-  <deck name="MyDeck">
-    <instruction
-        xsi:type="twitterRESTAPI:Place"
+  <deck name="myDeck"
+      initFilters="//@deck.0/@instructions.0">
+    <instructions
+        xsi:type="twitterRESTAPI:Retweet"
         isNot="true"
-        value="Brest"/>
+        value="5"/>
   </deck>
-</twitterRESTAPI:WebPage>
+</twitterRESTAPI:DeckSet>

@@ -6,7 +6,7 @@
     xmlns:twitterRESTAPI="http://www.example.org/twitterRESTAPI"
     xsi:schemaLocation="http://www.example.org/twitterRESTAPI ../twitterRESTAPI.ecore">
   <deck name="myName"
-      initFilters="//@deck.0/@instructions.0">
+      initFilters="//@deck.0/@instructions.0 //@deck.0/@instructions.1 //@deck.0/@instructions.2">
     <instructions
         xsi:type="twitterRESTAPI:User"
         unOp="&lt;"
@@ -15,5 +15,11 @@
           xsi:type="twitterRESTAPI:Date"
           value="1993-05-25T00:00:00.000+0200"/>
     </instructions>
+    <instructions
+        xsi:type="twitterRESTAPI:Hashtag"
+        value="cat"/>
+    <instructions
+        xsi:type="twitterRESTAPI:Date"
+        value="1996-12-09T00:00:00.000+0100"/>
   </deck>
 </twitterRESTAPI:DeckSet>

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<twitterRESTAPI:WebPage
+<twitterRESTAPI:DeckSet
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:twitterRESTAPI="http://www.example.org/twitterRESTAPI"
     xsi:schemaLocation="http://www.example.org/twitterRESTAPI ../twitterRESTAPI.ecore">
-  <deck name="MyDeck">
-    <instruction
-        xsi:type="twitterRESTAPI:Date"
-        isNot="true"
-        value="2017-10-14T01:00:00.000+0200">
-      <op xsi:type="twitterRESTAPI:UpperThan"/>
-    </instruction>
+  <deck name="myDeck"
+      initFilters="//@deck.0/@instructions.0">
+    <instructions
+        xsi:type="twitterRESTAPI:Retweet"
+        unOp="&lt;"
+        value="5"/>
   </deck>
-</twitterRESTAPI:WebPage>
+</twitterRESTAPI:DeckSet>

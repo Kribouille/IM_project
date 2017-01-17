@@ -18,8 +18,16 @@ var T = new Twit({
 });
 
 var currentDeck = undefined;
+var decks = "";
 
 // TODO charger deck JSON
+fs.readFile('../TwitterAcceleo/src-gen/twitter.json', 'utf8', function (err,data) {
+  if (err) {
+    return console.log(err);
+  }
+  console.log(data);
+  decks = JSON.parse(data).decks;
+});
 
 var port = 8080;
 
@@ -42,18 +50,18 @@ app.use(function(req, res, next) {
 // Socket.io loading
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
-
+var stream = T.stream('statuses/filter', { track: '#cat' });
 // Player websocket handling
 io.sockets.on('connection', function(socket) {
+
   var tweetsSend = []; // to avoid double sending
   var isStreamOn = false;
-  // TODO : calculer le nombre de decks dans le JSON
-  var deckNumber = 5;
-  socket.emit('deckNumber', deckNumber);
+
+  socket.emit('decksToInit', decks);
 
   socket.on('click', function(deck) {
-    //TODO appliquer les bons filtres sur l'API rest => changer la query avec les filtres du deck en paramètre
-    T.get('search/tweets', { q: '#WaferTheDog'}, function(err, data, response) {
+
+    T.get('search/tweets', { q: decks[deck].filter}, function(err, data, response) {
       if(err){
         console.log(err);
       }
@@ -66,13 +74,16 @@ io.sockets.on('connection', function(socket) {
 // to stream. See https://dev.twitter.com/streaming/overview/request-parameters#track
   socket.on('streamOn', function(deck){
     isStreamOn = true;
+    stream = T.stream('statuses/filter', { track: decks[deck].filter });
   });
   socket.on('streamOff', function(){
     isStreamOn = false;
+    stream = T.stream('statuses/filter', { track: 'untrackquinexistepas' });
+    tweetsSend = [];
   })
-  // TODO : streamer sur le deck reçu
-  var stream = T.stream('statuses/filter', { track: 'mdr' });
+
   stream.on('tweet', function (tweet) {
+    console.log(tweet);
     if(isStreamOn && (tweetsSend.indexOf(tweet.id) == -1)){
       tweetsSend.push(tweet.id);
       socket.emit('newTweet', tweet);

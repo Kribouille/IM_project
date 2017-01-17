@@ -1,14 +1,15 @@
 var socket = io();
 var currentDeck = "";
 var isStreamOn = false;
-
+var decks = "";
 /*
 * Récéption du nombre de decks pour générer les boutons dans le menu
 */
-socket.on('deckNumber', function(n){
+socket.on('decksToInit', function(decksToInit){
+  decks = decksToInit;
   $('#side-menu').empty();
-  for(var i = 1; i < n+1; i++){
-    $('#side-menu').append("<li><a href='#' onclick='clickDeck(" + i + ")'  ><img src='http://lorempixel.com/32/32/?t=a'> Deck " + i + "</a></li>");
+  for(var i = 0; i < decks.length; i++){
+    $('#side-menu').append("<li><a href='#' onclick='clickDeck(" + i + ")'><img src='http://lorempixel.com/32/32/?t=a'/> Deck " + decks[i].name + "</a></li>");
   }
 });
 
@@ -17,7 +18,7 @@ socket.on('deckNumber', function(n){
 */
 function clickDeck(deck){
   currentDeck = deck;
-  $("#dashboard").text("Dashboard - Deck " + deck);
+  $("#dashboard").text("Dashboard - " + decks[deck].name);
   socket.emit('click', deck);
   socket.on('tweets', function(tweets) {
     $("#tweets").empty();

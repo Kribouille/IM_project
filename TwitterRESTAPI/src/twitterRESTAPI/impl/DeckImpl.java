@@ -21,7 +21,8 @@ import twitterRESTAPI.TwitterRESTAPIPackage;
  * </p>
  * <ul>
  *   <li>{@link twitterRESTAPI.impl.DeckImpl#getName <em>Name</em>}</li>
- *   <li>{@link twitterRESTAPI.impl.DeckImpl#getInstruction <em>Instruction</em>}</li>
+ *   <li>{@link twitterRESTAPI.impl.DeckImpl#getInstructions <em>Instructions</em>}</li>
+ *   <li>{@link twitterRESTAPI.impl.DeckImpl#getInitFilters <em>Init Filters</em>}</li>
  * </ul>
  *
  * @generated
@@ -80,8 +81,18 @@ public class DeckImpl extends CDOObjectImpl implements Deck {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public EList<Instruction> getInstruction() {
-		return (EList<Instruction>)eGet(TwitterRESTAPIPackage.Literals.DECK__INSTRUCTION, true);
+	public EList<Instruction> getInstructions() {
+		return (EList<Instruction>)eGet(TwitterRESTAPIPackage.Literals.DECK__INSTRUCTIONS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public EList<Instruction> getInitFilters() {
+		return (EList<Instruction>)eGet(TwitterRESTAPIPackage.Literals.DECK__INIT_FILTERS, true);
 	}
 
 } //DeckImpl

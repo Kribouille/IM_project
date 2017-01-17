@@ -58,40 +58,22 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	Deck createDeck();
 
 	/**
-	 * Returns a new object of class '<em>Place</em>'.
+	 * Returns a new object of class '<em>Word</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Place</em>'.
+	 * @return a new object of class '<em>Word</em>'.
 	 * @generated
 	 */
-	Place createPlace();
+	Word createWord();
 
 	/**
-	 * Returns a new object of class '<em>Less Than</em>'.
+	 * Returns a new object of class '<em>Deck Set</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Less Than</em>'.
+	 * @return a new object of class '<em>Deck Set</em>'.
 	 * @generated
 	 */
-	LessThan createLessThan();
-
-	/**
-	 * Returns a new object of class '<em>Upper Than</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Upper Than</em>'.
-	 * @generated
-	 */
-	UpperThan createUpperThan();
-
-	/**
-	 * Returns a new object of class '<em>Web Page</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Web Page</em>'.
-	 * @generated
-	 */
-	WebPage createWebPage();
+	DeckSet createDeckSet();
 
 	/**
 	 * Returns a new object of class '<em>Retweet</em>'.

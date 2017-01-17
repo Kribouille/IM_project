@@ -4,29 +4,29 @@ package twitterRESTAPI.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
-import twitterRESTAPI.Date;
 import twitterRESTAPI.TwitterRESTAPIPackage;
+import twitterRESTAPI.Word;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Date</b></em>'.
+ * An implementation of the model object '<em><b>Word</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link twitterRESTAPI.impl.DateImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link twitterRESTAPI.impl.WordImpl#getValue <em>Value</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class DateImpl extends InstructionImpl implements Date {
+public class WordImpl extends InstructionImpl implements Word {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DateImpl() {
+	protected WordImpl() {
 		super();
 	}
 
@@ -37,7 +37,7 @@ public class DateImpl extends InstructionImpl implements Date {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return TwitterRESTAPIPackage.Literals.DATE;
+		return TwitterRESTAPIPackage.Literals.WORD;
 	}
 
 	/**
@@ -45,8 +45,8 @@ public class DateImpl extends InstructionImpl implements Date {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public java.util.Date getValue() {
-		return (java.util.Date)eGet(TwitterRESTAPIPackage.Literals.DATE__VALUE, true);
+	public String getValue() {
+		return (String)eGet(TwitterRESTAPIPackage.Literals.WORD__VALUE, true);
 	}
 
 	/**
@@ -54,8 +54,8 @@ public class DateImpl extends InstructionImpl implements Date {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(java.util.Date newValue) {
-		eSet(TwitterRESTAPIPackage.Literals.DATE__VALUE, newValue);
+	public void setValue(String newValue) {
+		eSet(TwitterRESTAPIPackage.Literals.WORD__VALUE, newValue);
 	}
 
-} //DateImpl
+} //WordImpl

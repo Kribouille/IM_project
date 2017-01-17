@@ -22,7 +22,7 @@ import twitterRESTAPI.UnOp;
  * <ul>
  *   <li>{@link twitterRESTAPI.impl.InstructionImpl#getIsNot <em>Is Not</em>}</li>
  *   <li>{@link twitterRESTAPI.impl.InstructionImpl#getNext <em>Next</em>}</li>
- *   <li>{@link twitterRESTAPI.impl.InstructionImpl#getOp <em>Op</em>}</li>
+ *   <li>{@link twitterRESTAPI.impl.InstructionImpl#getUnOp <em>Un Op</em>}</li>
  * </ul>
  *
  * @generated
@@ -90,8 +90,8 @@ public abstract class InstructionImpl extends CDOObjectImpl implements Instructi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnOp getOp() {
-		return (UnOp)eGet(TwitterRESTAPIPackage.Literals.INSTRUCTION__OP, true);
+	public UnOp getUnOp() {
+		return (UnOp)eGet(TwitterRESTAPIPackage.Literals.INSTRUCTION__UN_OP, true);
 	}
 
 	/**
@@ -99,8 +99,8 @@ public abstract class InstructionImpl extends CDOObjectImpl implements Instructi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setOp(UnOp newOp) {
-		eSet(TwitterRESTAPIPackage.Literals.INSTRUCTION__OP, newOp);
+	public void setUnOp(UnOp newUnOp) {
+		eSet(TwitterRESTAPIPackage.Literals.INSTRUCTION__UN_OP, newUnOp);
 	}
 
 } //InstructionImpl

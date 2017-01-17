@@ -37,6 +37,7 @@
     <semanticResources>tests/simpleOr.xmi</semanticResources>
     <semanticResources>tests/complexExpression.xmi</semanticResources>
     <semanticResources>tests/twoDecks.xmi</semanticResources>
+    <semanticResources>tests/DeckSet.xmi</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_C8pBwKvfEeaEMev4rzklrA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_tSixgNQaEeaqNYzvY6qeXA" name="twitterRESTAPI" representation="_C-ajYKvfEeaEMev4rzklrA">

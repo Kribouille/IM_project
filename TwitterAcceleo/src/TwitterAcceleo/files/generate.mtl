@@ -1,6 +1,11 @@
 [comment encoding = UTF-8 /]
 [module generate('http://www.example.org/twitterRESTAPI')]
 
+[query public convertDate(d: String) : String = invoke(
+	'org.eclipse.acceleo.module.sample.DateFormatter',
+	'formatDate(java.lang.String)',
+	Sequence{d})
+/]
 
 [template public generateElement(aWebPage : WebPage)]
 [comment @main /]
@@ -28,9 +33,9 @@ from:[i.current(User).value/][/if]
 [if i.eClass().name = 'Hashtag']
 #[i.current(Hashtag).value/][/if]
 [if (i.eClass().name = 'Date')][if (i.op.eClass().name = 'LessThan')]
-until:[i.current(Date).value/][elseif (i.op.eClass().name = 'UpperThan')]
-since:[i.current(Date).value/][else]
-until:[i.current(Date).value/] since:[i.current(Date).value/][/if][/if]
+until:[convertDate(i.current(Date).value.toString())/][elseif (i.op.eClass().name = 'UpperThan')]
+since:[convertDate(i.current(Date).value.toString())/][else]
+until:[convertDate(i.current(Date).value.toString())/] since:[convertDate(i.current(Date).value.toString())/][/if][/if]
 [if i.eClass().name = 'Retweet']
 filter:retweets[/if]
 )[for (j: Instruction | i.next)]

@@ -360,14 +360,14 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	int DECK_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link twitterRESTAPI.impl.PlaceImpl <em>Place</em>}' class.
+	 * The meta object id for the '{@link twitterRESTAPI.impl.WordImpl <em>Word</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see twitterRESTAPI.impl.PlaceImpl
-	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getPlace()
+	 * @see twitterRESTAPI.impl.WordImpl
+	 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getWord()
 	 * @generated
 	 */
-	int PLACE = 5;
+	int WORD = 5;
 
 	/**
 	 * The feature id for the '<em><b>Is Not</b></em>' attribute.
@@ -376,7 +376,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE__IS_NOT = INSTRUCTION__IS_NOT;
+	int WORD__IS_NOT = INSTRUCTION__IS_NOT;
 
 	/**
 	 * The feature id for the '<em><b>Next</b></em>' containment reference list.
@@ -385,7 +385,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE__NEXT = INSTRUCTION__NEXT;
+	int WORD__NEXT = INSTRUCTION__NEXT;
 
 	/**
 	 * The feature id for the '<em><b>Un Op</b></em>' attribute.
@@ -394,7 +394,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE__UN_OP = INSTRUCTION__UN_OP;
+	int WORD__UN_OP = INSTRUCTION__UN_OP;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -403,25 +403,25 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE__VALUE = INSTRUCTION_FEATURE_COUNT + 0;
+	int WORD__VALUE = INSTRUCTION_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Place</em>' class.
+	 * The number of structural features of the '<em>Word</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE_FEATURE_COUNT = INSTRUCTION_FEATURE_COUNT + 1;
+	int WORD_FEATURE_COUNT = INSTRUCTION_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Place</em>' class.
+	 * The number of operations of the '<em>Word</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE_OPERATION_COUNT = INSTRUCTION_OPERATION_COUNT + 0;
+	int WORD_OPERATION_COUNT = INSTRUCTION_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link twitterRESTAPI.impl.DeckSetImpl <em>Deck Set</em>}' class.
@@ -685,25 +685,25 @@ public interface TwitterRESTAPIPackage extends EPackage {
 	EAttribute getInstruction_UnOp();
 
 	/**
-	 * Returns the meta object for class '{@link twitterRESTAPI.Place <em>Place</em>}'.
+	 * Returns the meta object for class '{@link twitterRESTAPI.Word <em>Word</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Place</em>'.
-	 * @see twitterRESTAPI.Place
+	 * @return the meta object for class '<em>Word</em>'.
+	 * @see twitterRESTAPI.Word
 	 * @generated
 	 */
-	EClass getPlace();
+	EClass getWord();
 
 	/**
-	 * Returns the meta object for the attribute '{@link twitterRESTAPI.Place#getValue <em>Value</em>}'.
+	 * Returns the meta object for the attribute '{@link twitterRESTAPI.Word#getValue <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Value</em>'.
-	 * @see twitterRESTAPI.Place#getValue()
-	 * @see #getPlace()
+	 * @see twitterRESTAPI.Word#getValue()
+	 * @see #getWord()
 	 * @generated
 	 */
-	EAttribute getPlace_Value();
+	EAttribute getWord_Value();
 
 	/**
 	 * Returns the meta object for class '{@link twitterRESTAPI.DeckSet <em>Deck Set</em>}'.
@@ -903,14 +903,14 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		EAttribute INSTRUCTION__UN_OP = eINSTANCE.getInstruction_UnOp();
 
 		/**
-		 * The meta object literal for the '{@link twitterRESTAPI.impl.PlaceImpl <em>Place</em>}' class.
+		 * The meta object literal for the '{@link twitterRESTAPI.impl.WordImpl <em>Word</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see twitterRESTAPI.impl.PlaceImpl
-		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getPlace()
+		 * @see twitterRESTAPI.impl.WordImpl
+		 * @see twitterRESTAPI.impl.TwitterRESTAPIPackageImpl#getWord()
 		 * @generated
 		 */
-		EClass PLACE = eINSTANCE.getPlace();
+		EClass WORD = eINSTANCE.getWord();
 
 		/**
 		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
@@ -918,7 +918,7 @@ public interface TwitterRESTAPIPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute PLACE__VALUE = eINSTANCE.getPlace_Value();
+		EAttribute WORD__VALUE = eINSTANCE.getWord_Value();
 
 		/**
 		 * The meta object literal for the '{@link twitterRESTAPI.impl.DeckSetImpl <em>Deck Set</em>}' class.

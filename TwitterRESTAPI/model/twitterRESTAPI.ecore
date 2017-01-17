@@ -25,7 +25,7 @@
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="unOp" eType="#//UnOp"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Place" eSuperTypes="#//Instruction">
+  <eClassifiers xsi:type="ecore:EClass" name="Word" eSuperTypes="#//Instruction">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DeckSet">

@@ -33,8 +33,8 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//Instruction/next"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//Instruction/unOp"/>
     </genClasses>
-    <genClasses ecoreClass="twitterRESTAPI.ecore#//Place">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//Place/value"/>
+    <genClasses ecoreClass="twitterRESTAPI.ecore#//Word">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute twitterRESTAPI.ecore#//Word/value"/>
     </genClasses>
     <genClasses ecoreClass="twitterRESTAPI.ecore#//DeckSet">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference twitterRESTAPI.ecore#//DeckSet/deck"/>

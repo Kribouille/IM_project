@@ -61,7 +61,7 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 			case TwitterRESTAPIPackage.HASHTAG: return (EObject)createHashtag();
 			case TwitterRESTAPIPackage.DATE: return (EObject)createDate();
 			case TwitterRESTAPIPackage.DECK: return (EObject)createDeck();
-			case TwitterRESTAPIPackage.PLACE: return (EObject)createPlace();
+			case TwitterRESTAPIPackage.WORD: return (EObject)createWord();
 			case TwitterRESTAPIPackage.DECK_SET: return (EObject)createDeckSet();
 			case TwitterRESTAPIPackage.RETWEET: return (EObject)createRetweet();
 			default:
@@ -144,9 +144,9 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Place createPlace() {
-		PlaceImpl place = new PlaceImpl();
-		return place;
+	public Word createWord() {
+		WordImpl word = new WordImpl();
+		return word;
 	}
 
 	/**

@@ -5,21 +5,21 @@ package twitterRESTAPI;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Place</b></em>'.
+ * A representation of the model object '<em><b>Word</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link twitterRESTAPI.Place#getValue <em>Value</em>}</li>
+ *   <li>{@link twitterRESTAPI.Word#getValue <em>Value</em>}</li>
  * </ul>
  *
- * @see twitterRESTAPI.TwitterRESTAPIPackage#getPlace()
+ * @see twitterRESTAPI.TwitterRESTAPIPackage#getWord()
  * @model
  * @generated
  */
-public interface Place extends Instruction {
+public interface Word extends Instruction {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -30,14 +30,14 @@ public interface Place extends Instruction {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(String)
-	 * @see twitterRESTAPI.TwitterRESTAPIPackage#getPlace_Value()
+	 * @see twitterRESTAPI.TwitterRESTAPIPackage#getWord_Value()
 	 * @model required="true"
 	 * @generated
 	 */
 	String getValue();
 
 	/**
-	 * Sets the value of the '{@link twitterRESTAPI.Place#getValue <em>Value</em>}' attribute.
+	 * Sets the value of the '{@link twitterRESTAPI.Word#getValue <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Value</em>' attribute.
@@ -46,4 +46,4 @@ public interface Place extends Instruction {
 	 */
 	void setValue(String value);
 
-} // Place
+} // Word

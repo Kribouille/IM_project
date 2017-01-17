@@ -99,10 +99,10 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case TwitterRESTAPIPackage.PLACE: {
-				Place place = (Place)theEObject;
-				T result = casePlace(place);
-				if (result == null) result = caseInstruction(place);
+			case TwitterRESTAPIPackage.WORD: {
+				Word word = (Word)theEObject;
+				T result = caseWord(word);
+				if (result == null) result = caseInstruction(word);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -199,17 +199,17 @@ public class TwitterRESTAPISwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Place</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Word</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Place</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Word</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePlace(Place object) {
+	public T caseWord(Word object) {
 		return null;
 	}
 

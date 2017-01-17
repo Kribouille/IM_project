@@ -4,29 +4,29 @@ package twitterRESTAPI.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
-import twitterRESTAPI.Place;
 import twitterRESTAPI.TwitterRESTAPIPackage;
+import twitterRESTAPI.Word;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Place</b></em>'.
+ * An implementation of the model object '<em><b>Word</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link twitterRESTAPI.impl.PlaceImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link twitterRESTAPI.impl.WordImpl#getValue <em>Value</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class PlaceImpl extends InstructionImpl implements Place {
+public class WordImpl extends InstructionImpl implements Word {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected PlaceImpl() {
+	protected WordImpl() {
 		super();
 	}
 
@@ -37,7 +37,7 @@ public class PlaceImpl extends InstructionImpl implements Place {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return TwitterRESTAPIPackage.Literals.PLACE;
+		return TwitterRESTAPIPackage.Literals.WORD;
 	}
 
 	/**
@@ -46,7 +46,7 @@ public class PlaceImpl extends InstructionImpl implements Place {
 	 * @generated
 	 */
 	public String getValue() {
-		return (String)eGet(TwitterRESTAPIPackage.Literals.PLACE__VALUE, true);
+		return (String)eGet(TwitterRESTAPIPackage.Literals.WORD__VALUE, true);
 	}
 
 	/**
@@ -55,7 +55,7 @@ public class PlaceImpl extends InstructionImpl implements Place {
 	 * @generated
 	 */
 	public void setValue(String newValue) {
-		eSet(TwitterRESTAPIPackage.Literals.PLACE__VALUE, newValue);
+		eSet(TwitterRESTAPIPackage.Literals.WORD__VALUE, newValue);
 	}
 
-} //PlaceImpl
+} //WordImpl

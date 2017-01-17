@@ -88,8 +88,8 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 				return createInstructionAdapter();
 			}
 			@Override
-			public Adapter casePlace(Place object) {
-				return createPlaceAdapter();
+			public Adapter caseWord(Word object) {
+				return createWordAdapter();
 			}
 			@Override
 			public Adapter caseDeckSet(DeckSet object) {
@@ -190,16 +190,16 @@ public class TwitterRESTAPIAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Place <em>Place</em>}'.
+	 * Creates a new adapter for an object of class '{@link twitterRESTAPI.Word <em>Word</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see twitterRESTAPI.Place
+	 * @see twitterRESTAPI.Word
 	 * @generated
 	 */
-	public Adapter createPlaceAdapter() {
+	public Adapter createWordAdapter() {
 		return null;
 	}
 

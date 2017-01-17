@@ -58,13 +58,13 @@ public interface TwitterRESTAPIFactory extends EFactory {
 	Deck createDeck();
 
 	/**
-	 * Returns a new object of class '<em>Place</em>'.
+	 * Returns a new object of class '<em>Word</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Place</em>'.
+	 * @return a new object of class '<em>Word</em>'.
 	 * @generated
 	 */
-	Place createPlace();
+	Word createWord();
 
 	/**
 	 * Returns a new object of class '<em>Deck Set</em>'.

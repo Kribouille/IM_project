@@ -15,12 +15,12 @@ import twitterRESTAPI.Deck;
 import twitterRESTAPI.DeckSet;
 import twitterRESTAPI.Hashtag;
 import twitterRESTAPI.Instruction;
-import twitterRESTAPI.Place;
 import twitterRESTAPI.Retweet;
 import twitterRESTAPI.TwitterRESTAPIFactory;
 import twitterRESTAPI.TwitterRESTAPIPackage;
 import twitterRESTAPI.UnOp;
 import twitterRESTAPI.User;
+import twitterRESTAPI.Word;
 
 /**
  * <!-- begin-user-doc -->
@@ -69,7 +69,7 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass placeEClass = null;
+	private EClass wordEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,8 +284,8 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getPlace() {
-		return placeEClass;
+	public EClass getWord() {
+		return wordEClass;
 	}
 
 	/**
@@ -293,8 +293,8 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlace_Value() {
-		return (EAttribute)placeEClass.getEStructuralFeatures().get(0);
+	public EAttribute getWord_Value() {
+		return (EAttribute)wordEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -389,8 +389,8 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 		createEReference(instructionEClass, INSTRUCTION__NEXT);
 		createEAttribute(instructionEClass, INSTRUCTION__UN_OP);
 
-		placeEClass = createEClass(PLACE);
-		createEAttribute(placeEClass, PLACE__VALUE);
+		wordEClass = createEClass(WORD);
+		createEAttribute(wordEClass, WORD__VALUE);
 
 		deckSetEClass = createEClass(DECK_SET);
 		createEReference(deckSetEClass, DECK_SET__DECK);
@@ -433,7 +433,7 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 		userEClass.getESuperTypes().add(this.getInstruction());
 		hashtagEClass.getESuperTypes().add(this.getInstruction());
 		dateEClass.getESuperTypes().add(this.getInstruction());
-		placeEClass.getESuperTypes().add(this.getInstruction());
+		wordEClass.getESuperTypes().add(this.getInstruction());
 		retweetEClass.getESuperTypes().add(this.getInstruction());
 
 		// Initialize classes, features, and operations; add parameters
@@ -456,8 +456,8 @@ public class TwitterRESTAPIPackageImpl extends EPackageImpl implements TwitterRE
 		initEReference(getInstruction_Next(), this.getInstruction(), null, "next", null, 0, -1, Instruction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInstruction_UnOp(), this.getUnOp(), "unOp", null, 0, 1, Instruction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(placeEClass, Place.class, "Place", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getPlace_Value(), ecorePackage.getEString(), "value", null, 1, 1, Place.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(wordEClass, Word.class, "Word", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getWord_Value(), ecorePackage.getEString(), "value", null, 1, 1, Word.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(deckSetEClass, DeckSet.class, "DeckSet", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDeckSet_Deck(), this.getDeck(), null, "deck", null, 1, -1, DeckSet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

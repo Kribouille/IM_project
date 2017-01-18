@@ -4,11 +4,21 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:twitterRESTAPI="http://www.example.org/twitterRESTAPI"
-    xsi:schemaLocation="http://www.example.org/twitterRESTAPI ../twitterRESTAPI.ecore">
+    xsi:schemaLocation="http://www.example.org/twitterRESTAPI twitterRESTAPI.ecore">
   <deck name="myDeck"
       initFilters="//@deck.0/@instructions.0">
     <instructions
+        xsi:type="twitterRESTAPI:User"
+        next="//@deck.0/@instructions.1"
+        value="SaintePelle"/>
+    <instructions
+        xsi:type="twitterRESTAPI:Hashtag"
+        next="//@deck.0/@instructions.2"
+        previous="//@deck.0/@instructions.0"
+        value="cat"/>
+    <instructions
         xsi:type="twitterRESTAPI:Date"
+        previous="//@deck.0/@instructions.1"
         value="1993-05-25T00:00:00.000+0200"/>
   </deck>
 </twitterRESTAPI:DeckSet>

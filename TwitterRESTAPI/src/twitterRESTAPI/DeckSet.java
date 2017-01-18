@@ -2,9 +2,9 @@
  */
 package twitterRESTAPI;
 
-import org.eclipse.emf.cdo.CDOObject;
-
 import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,10 +20,9 @@ import org.eclipse.emf.common.util.EList;
  *
  * @see twitterRESTAPI.TwitterRESTAPIPackage#getDeckSet()
  * @model
- * @extends CDOObject
  * @generated
  */
-public interface DeckSet extends CDOObject {
+public interface DeckSet extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Deck</b></em>' containment reference list.
 	 * The list contents are of type {@link twitterRESTAPI.Deck}.

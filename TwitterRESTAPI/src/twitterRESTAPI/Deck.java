@@ -2,9 +2,9 @@
  */
 package twitterRESTAPI;
 
-import org.eclipse.emf.cdo.CDOObject;
-
 import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,10 +22,9 @@ import org.eclipse.emf.common.util.EList;
  *
  * @see twitterRESTAPI.TwitterRESTAPIPackage#getDeck()
  * @model
- * @extends CDOObject
  * @generated
  */
-public interface Deck extends CDOObject {
+public interface Deck extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

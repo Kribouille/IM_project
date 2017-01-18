@@ -57,13 +57,13 @@ public class TwitterRESTAPIFactoryImpl extends EFactoryImpl implements TwitterRE
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case TwitterRESTAPIPackage.USER: return (EObject)createUser();
-			case TwitterRESTAPIPackage.HASHTAG: return (EObject)createHashtag();
-			case TwitterRESTAPIPackage.DATE: return (EObject)createDate();
-			case TwitterRESTAPIPackage.DECK: return (EObject)createDeck();
-			case TwitterRESTAPIPackage.WORD: return (EObject)createWord();
-			case TwitterRESTAPIPackage.DECK_SET: return (EObject)createDeckSet();
-			case TwitterRESTAPIPackage.RETWEET: return (EObject)createRetweet();
+			case TwitterRESTAPIPackage.USER: return createUser();
+			case TwitterRESTAPIPackage.HASHTAG: return createHashtag();
+			case TwitterRESTAPIPackage.DATE: return createDate();
+			case TwitterRESTAPIPackage.DECK: return createDeck();
+			case TwitterRESTAPIPackage.WORD: return createWord();
+			case TwitterRESTAPIPackage.DECK_SET: return createDeckSet();
+			case TwitterRESTAPIPackage.RETWEET: return createRetweet();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}

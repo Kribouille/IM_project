@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="SiriusTwitterRESTAPI" version="11.1.1.201610211630">
-  <ownedViewpoints name="Diagram">
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="WebPage" initialisation="true" showOnStartup="true" domainClass="WebPage" enablePopupBars="true">
+  <ownedViewpoints name="Diagram" modelFileExtension="xmi">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="DeckSet" initialisation="true" showOnStartup="true" domainClass="twitterRESTAPI.DeckSet" enablePopupBars="true">
       <metamodel href="../../TwitterRESTAPI/model/twitterRESTAPI.ecore#/"/>
       <defaultLayer name="Default">
-        <nodeMappings name="Deck" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Deck">
+        <nodeMappings name="Deck" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Deck">
           <style xsi:type="style:EllipseNodeDescription" labelSize="14" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="20" verticalDiameterComputationExpression="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Date" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Date">
+        <nodeMappings name="Date" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Date">
           <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Hashtag" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Hashtag">
+        <nodeMappings name="Hashtag" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Hashtag">
           <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Place" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Place">
+        <nodeMappings name="Word" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="twitterRESTAPI.Word">
           <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Retweet" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Retweet">
+        <nodeMappings name="Retweet" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Retweet">
           <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="User" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="User">
+        <nodeMappings name="User" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="User">
           <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="DeckToFilter" deletionDescription="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='unsetInstruction']" sourceMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Deck']" targetMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Date'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Hashtag'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Place'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Retweet'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='User']" targetFinderExpression="feature:instruction">
+        <edgeMappings name="DeckToFilter" deletionDescription="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='unsetInstruction']" sourceMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Deck']" targetMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Date'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Hashtag'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Word'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Retweet'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='User']" targetFinderExpression="feature:initFilters">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <centerLabelStyleDescription>
@@ -54,7 +54,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="FilterToFilter" deletionDescription="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='unsetNext']" sourceMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Date'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Hashtag'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Place'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Retweet'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='User']" targetMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Date'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Hashtag'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Place'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Retweet'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='User']" targetFinderExpression="feature:next" reconnections="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@toolSections.0/@ownedTools[name='reconnectInstruction']">
+        <edgeMappings name="FilterToFilter" deletionDescription="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='unsetNext']" sourceMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Date'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Hashtag'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Word'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Retweet'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='User']" targetMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Date'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Hashtag'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Word'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Retweet'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='User']" targetFinderExpression="feature:next" reconnections="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='reconnectInstruction']">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -63,7 +63,7 @@
           </style>
         </edgeMappings>
         <toolSections>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="Deck" nodeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Deck']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Deck" nodeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Deck']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -74,7 +74,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="Date" nodeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Date']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Date" nodeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Date']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -85,7 +85,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="Hashtag" nodeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Hashtag']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Hashtag" nodeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Hashtag']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -96,18 +96,18 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="Place" nodeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Place']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Word" nodeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Word']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="twitterRESTAPI.Place" referenceName="deck">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="twitterRESTAPI.Word" referenceName="deck">
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="aql:'Place'+container.deck->filter(twitterRESTAPI::Place)->size()"/>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="Retweet" nodeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='Retweet']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Retweet" nodeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Retweet']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -118,7 +118,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="User" nodeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@nodeMappings[name='User']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="User" nodeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='User']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
@@ -129,18 +129,18 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Deck to Filter" edgeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@edgeMappings[name='DeckToFilter']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Deck to Filter" edgeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@edgeMappings[name='DeckToFilter']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
             <targetViewVariable name="targetView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="instruction" valueExpression="var:target"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="initFilters" valueExpression="var:target"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Filter to Filter" precondition="aql:preTarget.differs(preSource)" edgeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='WebPage']/@defaultLayer/@edgeMappings[name='FilterToFilter']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Filter to Filter" precondition="aql:preTarget.differs(preSource)" edgeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@edgeMappings[name='FilterToFilter']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -173,7 +173,7 @@
             <containerView name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
-                <subModelOperations xsi:type="tool_1:Unset" featureName="instruction"/>
+                <subModelOperations xsi:type="tool_1:Unset" featureName="initFilters"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>

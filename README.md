@@ -5,10 +5,27 @@ Le métamodèle a été repensé pour correspondre à nos besoins. Des tests sou
 
 Principe : Lorsque l'utilisateur a terminé son dessin, une première passe est effectuée sur son graphe pour récupérer l'ensemble des requêtes de chaque deck. Cette passe va simplifier les requêtes pour retourner une seule requête (qui peut être importante) pour chaque deck. Le générateur s'occupe ensuite de générer un fichier JSON contenant l'intégralité des decks et la query a faire auprès de l'API Twitter. Enfin, une appli Node.js toute prête s'occupe de lire ce fichier JSON et d'afficher les différents decks sur le navigateur. Cette appli effectuera les requêtes sur l'API Twitter via une autre API "surcouche" simplifiée : https://github.com/ttezel/twit. Les principales possibilités du champ "query" sont décrites dans le wiki.
 
-TODO : 
-- Sirius 
-- Le générateur 
-- L'appli Node.js
+### Sirius
+- Eclipse: File -> Open projects from File system -> /chemin/vers/répertoire/SiriusTwitterRESTAPI/ -> Ok -> Finish
+
+### Générateur Acceleo de requête json pour l'application Nodejs
+
+##### Configuration
+- Cliquer droit sur le projet TwitterAcceleo -> Build path -> Configure Build path -> tab Libraries -> Add library -> Plug-in dependencies -> sélectionner le jar org.eclipse.osgi...
+- Cliquer droit sur le projet TwitterAcceleo -> Configure -> Convert to Modeling nature
+
+##### Configuration pour lancement
+- Cliquer droit sur le fichier generate.mtl dans le projet TwitterAcceleo -> Run as -> Run configuration -> Double cliquer Acceleo application. Configurer comme ci-dessous :
+- -Main class : Dans la fenête Select main type : sélectionner Generate
+- -Model : Dans la fenêtre Select a model : sélectionner le fichier xmi que vous voulez tester. \*.xmi permet de chercher tous les fichiers xmi dans le projet.
+- -Target : Taper `/TwitterAcceleo/src-gen`
+
+##### Lancement
+- Cliquer droit sur le fichier generate.mtl -> Run as -> Launch Acceleo application . Répéter cette étape à chaque fois que vous modifiez le contenu du fichier xmi
+- Cela crée un fichier twitter.json dans le répertoire /src-gen/ . Ce fichier sera pris en compte automatiquement par l'application Nodejs.
+
+
+TODO
 - Editeur graphique (est-ce que c'est la même chose que Sirius ?)
 - outils de refactoring
 - outils de validation ou analyse

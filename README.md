@@ -9,14 +9,17 @@ Principe : Lorsque l'utilisateur a terminé son dessin, une première passe est 
 - Eclipse: File -> Open projects from File system -> /chemin/vers/répertoire/SiriusTwitterRESTAPI/ -> Ok -> Finish
 
 ### Générateur Acceleo de requête json pour l'application Nodejs
+
 ##### Configuration
 - Cliquer droit sur le projet TwitterAcceleo -> Build path -> Configure Build path -> tab Libraries -> Add library -> Plug-in dependencies -> sélectionner le jar org.eclipse.osgi...
 - Cliquer droit sur le projet TwitterAcceleo -> Configure -> Convert to Modeling nature
+
 ##### Configuration avant lancement
 - Cliquer droit sur le fichier generate.mtl dans le projet TwitterAcceleo -> Run as -> Run configuration -> Double cliquer Acceleo application. Configurer comme ci-dessous :
 - -Main class : Dans la fenête Select main type : sélectionner Generate
 - -Model : Dans la fenêtre Select a model : sélectionner le fichier xmi que vous voulez tester. \*.xmi permet de chercher tous les fichiers xmi dans le projet.
 - -Target : Taper `/TwitterAcceleo/src-gen`
+
 ##### Lancement
 - Cliquer droit sur le fichier generate.mtl -> Run as -> Launch Acceleo application
 - Cela crée un fichier twitter.json dans le répertoire /src-gen/ . Ce fichier sera pris en compte automatiquement par l'application Nodejs.

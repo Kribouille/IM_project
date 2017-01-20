@@ -5,7 +5,7 @@
       <metamodel href="../../TwitterRESTAPI/model/twitterRESTAPI.ecore#/"/>
       <validationSet name="FilterValidation">
         <ownedRules xsi:type="validation:SemanticValidationRule" name="NoLoop" level="ERROR" message="Boucle détecté" targetClass="twitterRESTAPI.Instruction">
-          <audits auditExpression="aql:self.next->excludes(self.previous)"/>
+          <audits auditExpression="aql:self.next->excludesAll(self->closure(e | e.previous))"/>
         </ownedRules>
       </validationSet>
       <defaultLayer name="Default">

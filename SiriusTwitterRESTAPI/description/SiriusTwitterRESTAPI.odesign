@@ -171,8 +171,8 @@
             <elementView name="elementView"/>
             <containerView name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
-                <subModelOperations xsi:type="tool_1:DeleteView"/>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[elementView.oclAsType(DEdge).sourceNode.oclAsType(DSemanticDecorator).target/]">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="next" elementExpression="[elementView.oclAsType(DEdge).targetNode.oclAsType(DSemanticDecorator).target/]"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -181,8 +181,8 @@
             <elementView name="elementView"/>
             <containerView name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
-                <subModelOperations xsi:type="tool_1:Unset" featureName="instruction"/>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[elementView.oclAsType(DEdge).sourceNode.oclAsType(DSemanticDecorator).target/]">
+                <subModelOperations xsi:type="tool_1:Unset" featureName="initFilters" elementExpression="[elementView.oclAsType(DEdge).targetNode.oclAsType(DSemanticDecorator).target/]"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>

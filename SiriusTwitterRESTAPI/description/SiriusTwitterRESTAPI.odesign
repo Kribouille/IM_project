@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="SiriusTwitterRESTAPI" version="11.1.1.201610211630">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:validation="http://www.eclipse.org/sirius/description/validation/1.1.0" name="SiriusTwitterRESTAPI" version="11.1.1.201610211630">
   <ownedViewpoints name="Diagram" modelFileExtension="xmi">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="DeckSet" initialisation="true" showOnStartup="true" domainClass="twitterRESTAPI.DeckSet" enablePopupBars="true">
       <metamodel href="../../TwitterRESTAPI/model/twitterRESTAPI.ecore#/"/>
+      <validationSet name="FilterValidation">
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="NoLoop" level="ERROR" message="Boucle détecté" targetClass="twitterRESTAPI.Instruction">
+          <audits auditExpression="aql:self.next->excludes(self.previous)"/>
+        </ownedRules>
+      </validationSet>
       <defaultLayer name="Default">
         <nodeMappings name="Deck" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Deck">
           <style xsi:type="style:EllipseNodeDescription" labelSize="14" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="20" verticalDiameterComputationExpression="5">
@@ -140,7 +145,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Filter to Filter" precondition="aql:preTarget.differs(preSource)" edgeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@edgeMappings[name='FilterToFilter']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Filter to Filter" edgeMappings="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@edgeMappings[name='FilterToFilter']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -152,9 +157,13 @@
             </initialOperation>
           </ownedTools>
           <ownedTools xsi:type="tool:DirectEditLabel" name="editFilterValue">
-            <mask mask="{0}"/>
+            <mask mask="{0} ({1}) [{2}]"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="var:0"/>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self/]">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="[arg0/]"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="unOp" valueExpression="[arg1/]"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="isNot" valueExpression="[arg2/]"/>
+              </firstModelOperations>
             </initialOperation>
           </ownedTools>
           <ownedTools xsi:type="tool:DeleteElementDescription" name="unsetNext">
@@ -163,7 +172,7 @@
             <containerView name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
-                <subModelOperations xsi:type="tool_1:Unset" featureName="next"/>
+                <subModelOperations xsi:type="tool_1:DeleteView"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -173,7 +182,7 @@
             <containerView name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
-                <subModelOperations xsi:type="tool_1:Unset" featureName="initFilters"/>
+                <subModelOperations xsi:type="tool_1:Unset" featureName="instruction"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>

@@ -50,7 +50,7 @@ app.use(function(req, res, next) {
 // Socket.io loading
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
-var stream = T.stream('statuses/filter', { track: '#cat' });
+var stream = T.stream('statuses/filter', { track: '#mdrlolololololol' });
 // Player websocket handling
 io.sockets.on('connection', function(socket) {
 
@@ -61,14 +61,20 @@ io.sockets.on('connection', function(socket) {
 
   socket.on('click', function(deck) {
 
-    T.get('search/tweets', { q: decks[deck].filter}, function(err, data, response) {
-      if(err){
-        console.log(err);
-      }
-      else{
-        socket.emit('tweets',data);
-      }
-    });
+    var filter = decks[deck].filter;
+    if(filter.indexOf("Error#589748955412365478") != -1){
+      socket.emit("errorDate", "Votre deck a une erreur : un deck ne peut pas contenir qu'une seule date. (c'est interdit par l'API Twitter). De plus, Twitter ne permet pas de récupérer les Tweets publiés il y a plus de 10 jours.");
+    }
+    else{
+      T.get('search/tweets', { q: filter}, function(err, data, response) {
+        if(err){
+          console.log(err);
+        }
+        else{
+          socket.emit('tweets',data);
+        }
+      });
+    }
   });
 
 // to stream. See https://dev.twitter.com/streaming/overview/request-parameters#track

@@ -13,6 +13,9 @@ socket.on('decksToInit', function(decksToInit){
   }
 });
 
+socket.on('errorDate', function(error){
+  $("#tweets").text(error);
+});
 /*
 * Fonction déclenchée par le click d'un deck
 */
@@ -54,7 +57,6 @@ function streamOn(){
 * Fonction de mise en forme et d'insertion d'un tweet dans la page
 */
 function addTweet(tweet){
-  console.log(tweet.text);
   $("#tweets").prepend("<div id='" +  tweet.id_str + "'>" +
   "<div id='imgDiv'>" +
   "<img src='" + tweet.user.profile_image_url + "' hspace='20'/>" +

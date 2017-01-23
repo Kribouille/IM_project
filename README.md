@@ -42,7 +42,7 @@ Une application écrite en Nodejs. Elle peut générer dynamiquement les decks q
 ```
 Main class : Dans la fenête Select main type : sélectionner Generate
 Model : Dans la fenêtre Select a model : sélectionner le fichier xmi que vous voulez tester. \*.xmi permet de chercher tous les fichiers xmi dans le projet.
-Target : Taper `/TwitterAcceleo/src-gen
+Target : Taper `/TwitterAcceleo/src-gen`
 ```
 
 ##### Générer le fichier twitter.json

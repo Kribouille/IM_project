@@ -11,11 +11,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   height="170mm"
+   viewBox="0 0 210 170"
    version="1.1"
    id="svg5243"
-   sodipodi:docname="upperThanRetweet.svg"
+   sodipodi:docname="UpperThanRetweet.svg"
    inkscape:version="0.92.0 r15299">
   <defs
      id="defs5237">
@@ -50,9 +50,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.98"
-     inkscape:cx="288.43502"
-     inkscape:cy="661.84114"
+     inkscape:zoom="0.82"
+     inkscape:cx="254.59968"
+     inkscape:cy="330.76642"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -76,7 +76,8 @@
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-127)">
     <g
        transform="matrix(0.04057019,0,0,0.04057019,62.976055,116.52459)"
        id="g5286" />
@@ -124,7 +125,7 @@
        id="g5314" />
     <g
        id="g6102"
-       transform="translate(8.2881526,-1.7001339)">
+       transform="matrix(5.5123099,0,0,5.5123099,-258.48665,-473.54873)">
       <g
          transform="translate(-44.181398,4.8290877)"
          id="g4677">

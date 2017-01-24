@@ -11,8 +11,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   height="170mm"
+   viewBox="0 0 210 170"
    version="1.1"
    id="svg7077"
    sodipodi:docname="NotEqualsHashtag.svg"
@@ -50,9 +50,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.3"
-     inkscape:cx="413.22412"
-     inkscape:cy="560"
+     inkscape:zoom="0.94"
+     inkscape:cx="445.16844"
+     inkscape:cy="311.85168"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -76,7 +76,8 @@
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-127)">
     <path
        style="opacity:1;fill:#784421;fill-opacity:1;stroke:#000000;stroke-width:0.32835266;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d=""
@@ -153,7 +154,8 @@
        transform="matrix(0.2764626,0,0,0.2764626,26.233838,45.822221)"
        id="g9924" />
     <g
-       id="g10064">
+       id="g10064"
+       transform="matrix(5.5034659,0,0,5.4921653,-474.63838,-602.06179)">
       <g
          id="g4805"
          transform="translate(12.748087,8.2616165)">

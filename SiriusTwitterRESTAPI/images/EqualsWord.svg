@@ -11,8 +11,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   height="170mm"
+   viewBox="0 0 210 170"
    version="1.1"
    id="svg10072"
    inkscape:version="0.92.0 r15299"
@@ -50,9 +50,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.55"
+     inkscape:zoom="1"
      inkscape:cx="354.22535"
-     inkscape:cy="563.64471"
+     inkscape:cy="197.8283"
      inkscape:document-units="mm"
      inkscape:current-layer="g10128"
      showgrid="false"
@@ -76,18 +76,19 @@
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-127)">
     <g
        id="g10264">
       <g
          transform="matrix(0.02739958,0,0,0.02739958,80.265993,141.07887)"
          id="g10128">
         <g
-           id="g10838">
+           id="g10838"
+           transform="matrix(5.5052071,0,0,5.5052071,1367.7738,1346.3973)">
           <g
              transform="matrix(36.49691,0,0,36.49691,-3637.2955,-5695.1663)"
-             id="g4682"
-             style="">
+             id="g4682">
             <rect
                id="rect3696-7"
                width="30.626106"

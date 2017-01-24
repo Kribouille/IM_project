@@ -11,8 +11,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   height="170mm"
+   viewBox="0 0 210 170"
    version="1.1"
    id="svg10072"
    sodipodi:docname="EqualsDate.svg"
@@ -50,9 +50,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.55"
-     inkscape:cx="354.22535"
-     inkscape:cy="563.64471"
+     inkscape:zoom="1"
+     inkscape:cx="353.05415"
+     inkscape:cy="363.44531"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -76,7 +76,8 @@
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-127)">
     <g
        id="g10130"
        transform="matrix(0.07109354,0,0,0.07109354,82.800031,127.36517)" />
@@ -123,7 +124,8 @@
        id="g10158"
        transform="matrix(0.07109354,0,0,0.07109354,82.800031,127.36517)" />
     <g
-       id="g11333">
+       id="g11333"
+       transform="matrix(5.5137722,0,0,5.5137722,-370.05673,-590.45489)">
       <g
          transform="translate(-11.164074,-16.691146)"
          id="g4682">

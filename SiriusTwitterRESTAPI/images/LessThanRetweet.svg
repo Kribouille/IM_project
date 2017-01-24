@@ -11,12 +11,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   height="170mm"
+   viewBox="0 0 210 170"
    version="1.1"
    id="svg5243"
    inkscape:version="0.92.0 r15299"
-   sodipodi:docname="lessThanRetweet.svg">
+   sodipodi:docname="LessThanRetweet.svg">
   <defs
      id="defs5237">
     <radialGradient
@@ -50,9 +50,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.98"
+     inkscape:zoom="1"
      inkscape:cx="288.43502"
-     inkscape:cy="646.49183"
+     inkscape:cy="97.833132"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -76,10 +76,11 @@
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-127)">
     <g
        id="g5966"
-       transform="translate(-4.4097222,1.2219712)">
+       transform="matrix(5.4966421,0,0,5.4966421,-321.0616,-469.26466)">
       <g
          transform="translate(25.381334,-2.1837997)"
          id="g4673">

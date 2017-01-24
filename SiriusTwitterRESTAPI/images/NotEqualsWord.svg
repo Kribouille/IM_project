@@ -11,8 +11,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   height="170mm"
+   viewBox="0 0 210 170"
    version="1.1"
    id="svg10072"
    sodipodi:docname="NotEqualsWord.svg"
@@ -50,9 +50,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.55"
+     inkscape:zoom="0.82"
      inkscape:cx="354.22535"
-     inkscape:cy="563.64471"
+     inkscape:cy="323.62541"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -76,7 +76,8 @@
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-127)">
     <g
        id="g10130"
        transform="matrix(0.07109354,0,0,0.07109354,82.800031,127.36517)" />
@@ -123,7 +124,8 @@
        id="g10158"
        transform="matrix(0.07109354,0,0,0.07109354,82.800031,127.36517)" />
     <g
-       id="g10948">
+       id="g10948"
+       transform="matrix(5.5062174,0,0,5.5062174,-359.89021,-596.85949)">
       <g
          id="g4805"
          transform="translate(-8.1544964,6.8775399)">

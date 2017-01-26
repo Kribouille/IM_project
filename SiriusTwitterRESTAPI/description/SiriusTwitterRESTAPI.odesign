@@ -24,32 +24,52 @@
           </style>
         </nodeMappings>
         <nodeMappings name="Hashtag" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Hashtag">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/EqualsHashtag.svg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
           </style>
+          <conditionnalStyles predicateExpression="feature:isNot">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/NotEqualsHashtag.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
         </nodeMappings>
         <nodeMappings name="Word" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="twitterRESTAPI.Word">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/EqualsWord.svg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
           </style>
+          <conditionnalStyles predicateExpression="feature:value">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/NotEqualsWord.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
         </nodeMappings>
         <nodeMappings name="Retweet" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Retweet">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/EqualsRetweet.svg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
           </style>
+          <conditionnalStyles>
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/NotUpperThanRetweet.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
         </nodeMappings>
         <nodeMappings name="User" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="User">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/EqualsUser.svg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
           </style>
+          <conditionnalStyles predicateExpression="feature:isNot">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/NotEqualsUser.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
         </nodeMappings>
         <edgeMappings name="DeckToFilter" deletionDescription="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='unsetInstruction']" sourceMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Deck']" targetMapping="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Date'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Hashtag'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Word'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Retweet'] //@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='User']" targetFinderExpression="feature:initFilters">
           <style sizeComputationExpression="2">

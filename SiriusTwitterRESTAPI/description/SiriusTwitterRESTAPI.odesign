@@ -10,25 +10,53 @@
       </validationSet>
       <defaultLayer name="Default">
         <nodeMappings name="Deck" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Deck">
-          <style xsi:type="style:EllipseNodeDescription" labelSize="14" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="20" verticalDiameterComputationExpression="5">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="17" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/Deck.svg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="Date" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Date">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="15" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/EqualsDate.svg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
           </style>
+          <conditionnalStyles predicateExpression="aql:(self.isNot = true) and (self.unOp = twitterRESTAPI::UnOp::equals)">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/NotEqualsDate.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:(self.isNot = false) and (self.unOp = twitterRESTAPI::UnOp::upperThan)">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/UpperThanDate.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:(self.isNot = true) and (self.unOp = twitterRESTAPI::UnOp::upperThan)">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/NotUpperThanDate.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:(self.isNot = false) and (self.unOp = twitterRESTAPI::UnOp::lessThan)">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/LessThanDate.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:(self.isNot = true) and (self.unOp = twitterRESTAPI::UnOp::lessThan)">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/NotLessThanDate.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
         </nodeMappings>
         <nodeMappings name="Hashtag" labelDirectEdit="//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@toolSections.0/@ownedTools[name='editFilterValue']" domainClass="Hashtag">
           <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/EqualsHashtag.svg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
-          <conditionnalStyles predicateExpression="feature:isNot">
+          <conditionnalStyles predicateExpression="aql:self.isNot">
             <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/NotEqualsHashtag.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -40,7 +68,7 @@
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
-          <conditionnalStyles predicateExpression="feature:value">
+          <conditionnalStyles predicateExpression="aql:self.isNot">
             <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/NotEqualsWord.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -52,8 +80,32 @@
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
-          <conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:(self.isNot = true) and (self.unOp = twitterRESTAPI::UnOp::equals)">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/NotEqualsRetweet.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:(self.isNot = false) and (self.unOp = twitterRESTAPI::UnOp::upperThan)">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/UpperThanRetweet.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:(self.isNot = true) and (self.unOp = twitterRESTAPI::UnOp::upperThan)">
             <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/NotUpperThanRetweet.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:(self.isNot = false) and (self.unOp = twitterRESTAPI::UnOp::lessThan)">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/LessThanRetweet.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:(self.isNot = true) and (self.unOp = twitterRESTAPI::UnOp::lessThan)">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/NotLessThanRetweet.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </style>
@@ -64,7 +116,7 @@
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
-          <conditionnalStyles predicateExpression="feature:isNot">
+          <conditionnalStyles predicateExpression="aql:self.isNot">
             <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:value" sizeComputationExpression="20" resizeKind="NSEW" workspacePath="/SiriusTwitterRESTAPI/images/NotEqualsUser.svg">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <twitterRESTAPI:DeckSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:twitterRESTAPI="http://www.example.org/twitterRESTAPI" xsi:schemaLocation="http://www.example.org/twitterRESTAPI twitterRESTAPI.ecore">
-  <deck name="myDeck" initFilters="//@deck.0/@instructions.0">
-    <instructions xsi:type="twitterRESTAPI:User" next="//@deck.2" previous="//@deck.1" value="SaintePelle"/>
-  </deck>
-  <deck xsi:type="twitterRESTAPI:Hashtag" next="//@deck.0/@instructions.0" previous="//@deck.2" value="Hashtag1"/>
-  <deck xsi:type="twitterRESTAPI:User" next="//@deck.1 //@deck.3" previous="//@deck.0/@instructions.0" value="User1"/>
-  <deck xsi:type="twitterRESTAPI:User" previous="//@deck.2" value="User2"/>
+  <deck xsi:type="twitterRESTAPI:Hashtag" isNot="true" next="//@deck.1 //@deck.2" value="Hashtag1"/>
+  <deck xsi:type="twitterRESTAPI:User" previous="//@deck.0" value="User1"/>
+  <deck xsi:type="twitterRESTAPI:Retweet" isNot="true" next="//@deck.5" unOp=">" previous="//@deck.0" value="3"/>
+  <deck name="Deck1" initFilters="//@deck.0"/>
+  <deck name="Deck2" initFilters="//@deck.2"/>
+  <deck xsi:type="twitterRESTAPI:Date" previous="//@deck.2" value="2017-01-16T00:00:00.000+0100"/>
 </twitterRESTAPI:DeckSet>

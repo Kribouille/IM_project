@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:twitterRESTAPI="http://www.example.org/twitterRESTAPI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style http://www.example.org/twitterRESTAPI platform:/resource/TwitterRESTAPI/model/twitterRESTAPI.ecore">
+  <viewpoint:DAnalysis xmi:id="_tWmqEOPcEeatidqiEHydzQ" selectedViews="_uvK_gOPcEeatidqiEHydzQ" version="11.1.0.201608251200">
+    <semanticResources>platform:/resource/TwitterRESTAPI/model/complexExpression.xmi</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_uvK_gOPcEeatidqiEHydzQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_uva3IOPcEeatidqiEHydzQ" name="DeckSet" representation="_uva3IePcEeatidqiEHydzQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']"/>
+        <target xmi:type="twitterRESTAPI:DeckSet" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_uva3IePcEeatidqiEHydzQ" name="DeckSet">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_uva3IuPcEeatidqiEHydzQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_uva3I-PcEeatidqiEHydzQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_uvkoIOPcEeatidqiEHydzQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_uvkoIePcEeatidqiEHydzQ" type="Sirius" element="_uva3IePcEeatidqiEHydzQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_uvmdUOPcEeatidqiEHydzQ" type="2001" element="_uva3JuPcEeatidqiEHydzQ">
+          <children xmi:type="notation:Node" xmi:id="_uvnEYOPcEeatidqiEHydzQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_uvnEYePcEeatidqiEHydzQ" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_4flwsOPcEeatidqiEHydzQ" type="3005" element="_4fhfQOPcEeatidqiEHydzQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_4flwsePcEeatidqiEHydzQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4flwsuPcEeatidqiEHydzQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_uvmdUePcEeatidqiEHydzQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uvmdUuPcEeatidqiEHydzQ" x="310" y="310" width="200" height="161"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_uvyDgOPcEeatidqiEHydzQ" type="2001" element="_uva3KuPcEeatidqiEHydzQ">
+          <children xmi:type="notation:Node" xmi:id="_uvyqkOPcEeatidqiEHydzQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_uvyqkePcEeatidqiEHydzQ" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_9hztYOPcEeatidqiEHydzQ" type="3005" element="_9hwqEOPcEeatidqiEHydzQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_9hztYePcEeatidqiEHydzQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9hztYuPcEeatidqiEHydzQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_uvyDgePcEeatidqiEHydzQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uvyDguPcEeatidqiEHydzQ" x="635" y="470" width="200" height="161"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_RV0e4OPnEeatidqiEHydzQ" type="2001" element="_RVw0gOPnEeatidqiEHydzQ">
+          <children xmi:type="notation:Node" xmi:id="_RV0e4-PnEeatidqiEHydzQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_RV0e5OPnEeatidqiEHydzQ" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Uci_QOPnEeatidqiEHydzQ" type="3005" element="_UchKEOPnEeatidqiEHydzQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Uci_QePnEeatidqiEHydzQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Uci_QuPnEeatidqiEHydzQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_RV0e4ePnEeatidqiEHydzQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RV0e4uPnEeatidqiEHydzQ" x="710" y="245" width="200" height="161"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_AmodYOPqEeatidqiEHydzQ" type="2001" element="_AmmoMOPqEeatidqiEHydzQ">
+          <children xmi:type="notation:Node" xmi:id="_AmpEcOPqEeatidqiEHydzQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_AmpEcePqEeatidqiEHydzQ" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmpEcuPqEeatidqiEHydzQ" type="3005" element="_AmmoMePqEeatidqiEHydzQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AmpEc-PqEeatidqiEHydzQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmpEdOPqEeatidqiEHydzQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_AmodYePqEeatidqiEHydzQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmodYuPqEeatidqiEHydzQ" x="60" y="301" width="170" height="170"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_FFzXYOPqEeatidqiEHydzQ" type="2001" element="_FFwUEOPqEeatidqiEHydzQ">
+          <children xmi:type="notation:Node" xmi:id="_FFzXY-PqEeatidqiEHydzQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FFz-cOPqEeatidqiEHydzQ" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_FF1zoOPqEeatidqiEHydzQ" type="3005" element="_FFwUEePqEeatidqiEHydzQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_FF1zoePqEeatidqiEHydzQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FF1zouPqEeatidqiEHydzQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_FFzXYePqEeatidqiEHydzQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FFzXYuPqEeatidqiEHydzQ" x="370" y="70" width="170" height="170"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_N2BP0OPqEeatidqiEHydzQ" type="2001" element="_N1-zkOPqEeatidqiEHydzQ">
+          <children xmi:type="notation:Node" xmi:id="_N2B24OPqEeatidqiEHydzQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_N2B24ePqEeatidqiEHydzQ" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_N2ETIOPqEeatidqiEHydzQ" type="3005" element="_N1_aoOPqEeatidqiEHydzQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_N2ETIePqEeatidqiEHydzQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_N2ETIuPqEeatidqiEHydzQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_N2BP0ePqEeatidqiEHydzQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_N2BP0uPqEeatidqiEHydzQ" x="1045" y="301" width="200" height="161"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_uvkoIuPcEeatidqiEHydzQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_CM8T4OPqEeatidqiEHydzQ" type="4001" element="_CM5QkOPqEeatidqiEHydzQ" source="_AmodYOPqEeatidqiEHydzQ" target="_uvmdUOPcEeatidqiEHydzQ">
+          <children xmi:type="notation:Node" xmi:id="_CM8T5OPqEeatidqiEHydzQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CM8T5ePqEeatidqiEHydzQ" x="-5" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_CM8T5uPqEeatidqiEHydzQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CM8T5-PqEeatidqiEHydzQ" x="-1" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_CM8T6OPqEeatidqiEHydzQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CM8T6ePqEeatidqiEHydzQ" y="1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_CM8T4ePqEeatidqiEHydzQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_CM8T4uPqEeatidqiEHydzQ" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CM8T4-PqEeatidqiEHydzQ" points="[0, 0, -80, 6]$[81, -6, 1, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CM8T6uPqEeatidqiEHydzQ" id="(1.0,0.5588235294117647)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CM8T6-PqEeatidqiEHydzQ" id="(0.0,0.4968944099378882)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_HQOAgOPqEeatidqiEHydzQ" type="4001" element="_HQMLUOPqEeatidqiEHydzQ" source="_uvmdUOPcEeatidqiEHydzQ" target="_uvyDgOPcEeatidqiEHydzQ">
+          <children xmi:type="notation:Node" xmi:id="_HQOnkOPqEeatidqiEHydzQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HQOnkePqEeatidqiEHydzQ" x="8" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HQOnkuPqEeatidqiEHydzQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HQOnk-PqEeatidqiEHydzQ" x="-12" y="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HQOnlOPqEeatidqiEHydzQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HQOnlePqEeatidqiEHydzQ" x="-13" y="6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_HQOAgePqEeatidqiEHydzQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_HQOAguPqEeatidqiEHydzQ" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HQOAg-PqEeatidqiEHydzQ" points="[0, -3, -325, -2]$[325, -1, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HQOnluPqEeatidqiEHydzQ" id="(0.625,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HQOnl-PqEeatidqiEHydzQ" id="(0.625,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_HnyL8OPqEeatidqiEHydzQ" type="4001" element="_HnvvsOPqEeatidqiEHydzQ" source="_uvmdUOPcEeatidqiEHydzQ" target="_RV0e4OPnEeatidqiEHydzQ">
+          <children xmi:type="notation:Node" xmi:id="_HnyzAOPqEeatidqiEHydzQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HnyzAePqEeatidqiEHydzQ" x="1" y="-13"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HnyzAuPqEeatidqiEHydzQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HnyzA-PqEeatidqiEHydzQ" x="-3" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HnyzBOPqEeatidqiEHydzQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HnyzBePqEeatidqiEHydzQ" x="-5" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_HnyL8ePqEeatidqiEHydzQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_HnyL8uPqEeatidqiEHydzQ" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HnyL8-PqEeatidqiEHydzQ" points="[-2, 0, -202, 20]$[200, -20, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HnyzBuPqEeatidqiEHydzQ" id="(1.0,0.2484472049689441)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HnyzB-PqEeatidqiEHydzQ" id="(0.0,0.5279503105590062)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_IFbKMOPqEeatidqiEHydzQ" type="4001" element="_IFXf0OPqEeatidqiEHydzQ" source="_FFzXYOPqEeatidqiEHydzQ" target="_RV0e4OPnEeatidqiEHydzQ">
+          <children xmi:type="notation:Node" xmi:id="_IFbKNOPqEeatidqiEHydzQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IFbKNePqEeatidqiEHydzQ" x="-8" y="-12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_IFbKNuPqEeatidqiEHydzQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IFbKN-PqEeatidqiEHydzQ" x="-1" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_IFbxQOPqEeatidqiEHydzQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IFbxQePqEeatidqiEHydzQ" x="-2" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_IFbKMePqEeatidqiEHydzQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_IFbKMuPqEeatidqiEHydzQ" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IFbKM-PqEeatidqiEHydzQ" points="[-12, 0, -229, -113]$[170, 89, -47, -24]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IFbxQuPqEeatidqiEHydzQ" id="(1.0,0.6470588235294118)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IFbxQ-PqEeatidqiEHydzQ" id="(0.235,0.2981366459627329)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_PO2D8OPqEeatidqiEHydzQ" type="4001" element="_POyZkOPqEeatidqiEHydzQ" source="_RV0e4OPnEeatidqiEHydzQ" target="_N2BP0OPqEeatidqiEHydzQ">
+          <children xmi:type="notation:Node" xmi:id="_PO2D9OPqEeatidqiEHydzQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PO2D9ePqEeatidqiEHydzQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PO2D9uPqEeatidqiEHydzQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PO2D9-PqEeatidqiEHydzQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PO2D-OPqEeatidqiEHydzQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PO2D-ePqEeatidqiEHydzQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_PO2D8ePqEeatidqiEHydzQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_PO2D8uPqEeatidqiEHydzQ" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PO2D8-PqEeatidqiEHydzQ" points="[0, 0, -180, -73]$[180, 73, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PO2D-uPqEeatidqiEHydzQ" id="(1.0,0.40372670807453415)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PO2rAOPqEeatidqiEHydzQ" id="(0.0,0.39751552795031053)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_uva3JuPcEeatidqiEHydzQ" name="Hashtag1" outgoingEdges="_HQMLUOPqEeatidqiEHydzQ _HnvvsOPqEeatidqiEHydzQ" incomingEdges="_CM5QkOPqEeatidqiEHydzQ" width="20" height="20" resizeKind="NSEW">
+      <target xmi:type="twitterRESTAPI:Hashtag" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.0"/>
+      <semanticElements xmi:type="twitterRESTAPI:Hashtag" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_4fhfQOPcEeatidqiEHydzQ" labelSize="12" workspacePath="/SiriusTwitterRESTAPI/images/NotEqualsHashtag.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Hashtag']/@conditionnalStyles.0/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Hashtag']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_uva3KuPcEeatidqiEHydzQ" name="User1" incomingEdges="_HQMLUOPqEeatidqiEHydzQ" width="20" height="20" resizeKind="NSEW">
+      <target xmi:type="twitterRESTAPI:User" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.1"/>
+      <semanticElements xmi:type="twitterRESTAPI:User" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_9hwqEOPcEeatidqiEHydzQ" labelSize="12" workspacePath="/SiriusTwitterRESTAPI/images/EqualsUser.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='User']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='User']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_RVw0gOPnEeatidqiEHydzQ" name="3" outgoingEdges="_POyZkOPqEeatidqiEHydzQ" incomingEdges="_HnvvsOPqEeatidqiEHydzQ _IFXf0OPqEeatidqiEHydzQ" width="20" height="20" resizeKind="NSEW">
+      <target xmi:type="twitterRESTAPI:Retweet" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.2"/>
+      <semanticElements xmi:type="twitterRESTAPI:Retweet" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_UchKEOPnEeatidqiEHydzQ" labelSize="12" workspacePath="/SiriusTwitterRESTAPI/images/NotUpperThanRetweet.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Retweet']/@conditionnalStyles.2/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Retweet']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_AmmoMOPqEeatidqiEHydzQ" name="Deck1" outgoingEdges="_CM5QkOPqEeatidqiEHydzQ" width="17" height="17" resizeKind="NSEW">
+      <target xmi:type="twitterRESTAPI:Deck" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.3"/>
+      <semanticElements xmi:type="twitterRESTAPI:Deck" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_AmmoMePqEeatidqiEHydzQ" labelSize="12" workspacePath="/SiriusTwitterRESTAPI/images/Deck.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Deck']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Deck']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_FFwUEOPqEeatidqiEHydzQ" name="Deck2" outgoingEdges="_IFXf0OPqEeatidqiEHydzQ" width="17" height="17" resizeKind="NSEW">
+      <target xmi:type="twitterRESTAPI:Deck" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.4"/>
+      <semanticElements xmi:type="twitterRESTAPI:Deck" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_FFwUEePqEeatidqiEHydzQ" labelSize="12" workspacePath="/SiriusTwitterRESTAPI/images/Deck.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Deck']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Deck']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_CM5QkOPqEeatidqiEHydzQ" sourceNode="_AmmoMOPqEeatidqiEHydzQ" targetNode="_uva3JuPcEeatidqiEHydzQ">
+      <target xmi:type="twitterRESTAPI:Deck" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_CM5QkePqEeatidqiEHydzQ" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@edgeMappings[name='DeckToFilter']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_CM5QkuPqEeatidqiEHydzQ"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@edgeMappings[name='DeckToFilter']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_HQMLUOPqEeatidqiEHydzQ" sourceNode="_uva3JuPcEeatidqiEHydzQ" targetNode="_uva3KuPcEeatidqiEHydzQ">
+      <target xmi:type="twitterRESTAPI:Hashtag" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_HQMLUePqEeatidqiEHydzQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@edgeMappings[name='FilterToFilter']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_HQMLUuPqEeatidqiEHydzQ"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@edgeMappings[name='FilterToFilter']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_HnvvsOPqEeatidqiEHydzQ" sourceNode="_uva3JuPcEeatidqiEHydzQ" targetNode="_RVw0gOPnEeatidqiEHydzQ">
+      <target xmi:type="twitterRESTAPI:Hashtag" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_HnvvsePqEeatidqiEHydzQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@edgeMappings[name='FilterToFilter']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_HnvvsuPqEeatidqiEHydzQ"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@edgeMappings[name='FilterToFilter']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_IFXf0OPqEeatidqiEHydzQ" sourceNode="_FFwUEOPqEeatidqiEHydzQ" targetNode="_RVw0gOPnEeatidqiEHydzQ">
+      <target xmi:type="twitterRESTAPI:Deck" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_IFXf0ePqEeatidqiEHydzQ" size="2" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@edgeMappings[name='DeckToFilter']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_IFXf0uPqEeatidqiEHydzQ"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@edgeMappings[name='DeckToFilter']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_N1-zkOPqEeatidqiEHydzQ" name="Mon Jan 16 00:00:00 CET 2017" incomingEdges="_POyZkOPqEeatidqiEHydzQ" width="20" height="20" resizeKind="NSEW">
+      <target xmi:type="twitterRESTAPI:Date" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.5"/>
+      <semanticElements xmi:type="twitterRESTAPI:Date" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.5"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_N1_aoOPqEeatidqiEHydzQ" labelSize="12" workspacePath="/SiriusTwitterRESTAPI/images/EqualsDate.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Date']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@nodeMappings[name='Date']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_POyZkOPqEeatidqiEHydzQ" sourceNode="_RVw0gOPnEeatidqiEHydzQ" targetNode="_N1-zkOPqEeatidqiEHydzQ">
+      <target xmi:type="twitterRESTAPI:Retweet" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#//@deck.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_POyZkePqEeatidqiEHydzQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@edgeMappings[name='FilterToFilter']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_POyZkuPqEeatidqiEHydzQ"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer/@edgeMappings[name='FilterToFilter']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_uva3PePcEeatidqiEHydzQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/SiriusTwitterRESTAPI/description/SiriusTwitterRESTAPI.odesign#//@ownedViewpoints[name='Diagram']/@ownedRepresentations[name='DeckSet']/@defaultLayer"/>
+    <target xmi:type="twitterRESTAPI:DeckSet" href="platform:/resource/TwitterRESTAPI/model/complexExpression.xmi#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

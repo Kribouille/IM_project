@@ -40,9 +40,9 @@ Une application écrite en Nodejs. Elle peut générer dynamiquement les decks q
 ##### Déclarer une instance d'application Acceleo
 - Cliquer droit sur le fichier generate.mtl dans le projet TwitterAcceleo -> Run as -> Run configuration -> Double cliquer Acceleo application. Configurer comme ci-dessous :
 ```
-Main class : Dans la fenête Select main type : sélectionner Generate
-Model : Dans la fenêtre Select a model : sélectionner le fichier xmi que vous voulez tester. \*.xmi permet de chercher tous les fichiers xmi dans le projet.
-Target : Taper `/TwitterAcceleo/src-gen`
+- Champ Main class : Dans la fenête Select main type : sélectionner Generate
+- Champ Model : Dans la fenêtre Select a model : sélectionner le fichier xmi que vous voulez tester. \*.xmi permet de chercher tous les fichiers xmi dans le projet.
+- Champ Target : Taper `/TwitterAcceleo/src-gen` (sans les backquotes)
 ```
 
 ##### Générer le fichier twitter.json
@@ -55,11 +55,6 @@ Prérequis : Vous avez node.js et npm préinstallés
 - `npm install`
 - `node server.js`
 - Ouvrir un navigateur, taper `localhost:8080`
-
-TODO
-- readme : décrire la structure du workspace (en cours) & comment le runner (OK)
-- outils de refactoring
-- outils de validation ou analyse
 
 # IM_project
 

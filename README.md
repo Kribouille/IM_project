@@ -17,8 +17,9 @@ Notre repo est un workspace à importer dans Eclipse. Il contient trois réperto
 - `/description/` contient le fichier odesign qui est la définition de l'éditeur graphique Sirius  
 
 ##### répertoire projet TwitterAcceleo
+- `/src/TwitterAcceleo/files/generate.mtl` est un fichier de génération Acceleo. Il utilise les templates en grammaire OCL et les services wrappers en java pour générer le fichier twitter.json.
 - `/src/org/eclipse/acceleo/module/sample` contient les définitions des java services wrappers. Dans notre projet, on a un java service wrapper qui sert à formatter les dates : DateFormatter.java. Cette classe complémente le travail de l'Acceleo.
-- `/src-gen/` contient les fichiers json contenant les requêtes à appliquer dans l'application Nodejs pour créer les decks de filtres 
+- `/src-gen/twitter.json` est un fichier json contenant les requêtes à appliquer dans l'application Nodejs pour créer les decks de filtres
 
 ##### répertoire website
 Une application écrite en Nodejs. Elle peut générer dynamiquement les decks qui contiennent les filtres, en fonction des requêtes définies dans `/TwitterAcceleo/src-gen/twitter.json`.

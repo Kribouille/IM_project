@@ -11,7 +11,7 @@ Lorsque l'utilisateur a terminé son dessin, une première passe est effectuée 
 Notre repo est un workspace à importer dans Eclipse. Il contient trois répertoires qui sont trois projets.
 
 ##### répertoire projet TwitterRESTAPI
-- `/model/` contient le modèle Ecore et les fichiers de test xmi
+- `/model/` contient le modèle Ecore et les fichiers xmi générés par l'éditeur graphique Sirius
 
 ##### répertoire projet SiriusTwitterRESTAPI
 - `/description/` contient le fichier odesign qui est la définition de l'éditeur graphique Sirius  
@@ -42,7 +42,7 @@ Une application écrite en Nodejs. Elle peut générer dynamiquement les decks q
 - Cliquer droit sur le fichier generate.mtl dans le projet TwitterAcceleo -> Run as -> Run configuration -> Double cliquer Acceleo application. Configurer comme ci-dessous :
 ```
 - Champ Main class : Dans la fenête Select main type : sélectionner Generate
-- Champ Model : Dans la fenêtre Select a model : sélectionner le fichier xmi que vous voulez tester. \*.xmi permet de chercher tous les fichiers xmi dans le projet.
+- Champ Model : Dans la fenêtre Select a model : sélectionner le fichier xmi que vous voulez transformer en une requête twitter. Par défaut, \*.xmi permet de chercher tous les fichiers xmi dans le projet.
 - Champ Target : Taper `/TwitterAcceleo/src-gen` (sans les backquotes)
 ```
 

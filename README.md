@@ -47,6 +47,11 @@ Une application écrite en Nodejs. Elle peut générer dynamiquement les decks q
 ```
 
 ##### Générer le fichier twitter.json
+- Créer un projet -> New -> Project -> General/Project. 
+- Ouvrer le diagramme eCore se trouvant dans TwitterRESTAPI. Sélectionner "Dynamic instance" dans la barre d'outil puis cliquer sur "DeckSet". Une nouvelle interface s'ouvrira et il faudra alors sélectionner le projet précédemment créé.
+- Cliquer droit sur le fichier .xmi, puis faire New -> Other -> Sirius/Representations file. Selectionner "Initialization from a semantic resource", Next, Next puis sélectionner le projet précédemment créé. Finish.
+- Une interface s'est ouverte : cochez "Diagram" puis validez.
+- Dessinez vos decks selon vos besoins.
 - Cliquer droit sur le fichier generate.mtl -> Run as -> Launch Acceleo application . Répéter cette étape à chaque fois que vous modifiez le contenu du fichier xmi
 - Cela crée un fichier twitter.json dans le répertoire /src-gen/ . Ce fichier sera pris en compte automatiquement par l'application Nodejs.
 
